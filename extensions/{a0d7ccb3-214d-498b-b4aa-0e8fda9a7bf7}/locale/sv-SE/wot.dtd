@@ -1,0 +1,18 @@
+<!ENTITY wot.label					"WOT">
+<!-- Menu items -->
+<!ENTITY wotEnabled.label			"Aktiverad">
+<!ENTITY wotEnabled.accesskey		"A">
+<!ENTITY wotRefresh.label			"Uppdatera">
+<!ENTITY wotRefresh.accesskey		"p">
+<!ENTITY wotContent.label			"WOT">
+<!ENTITY wotContent.accesskey		"W">
+<!ENTITY wotPreferences.label		"Inställningar…">
+<!ENTITY wotPreferences.accesskey	"I">
+<!ENTITY wotMy.label				"Mitt WOT…">
+<!ENTITY wotMy.accesskey			"W">
+<!ENTITY wotCheckUpdates.label		"Leta efter uppdateringar…">
+<!ENTITY wotCheckUpdates.accesskey	"L">
+<!ENTITY wotLinkScorecard.label		"Visa WOT-klassificeringskort…">
+<!ENTITY wotLinkScorecard.accesskey	"W">
+<!-- Rating window -->
+<!ENTITY wotRating.title			"Initierar WOT…">

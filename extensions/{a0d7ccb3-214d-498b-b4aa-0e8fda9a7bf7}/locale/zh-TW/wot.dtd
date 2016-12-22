@@ -1,0 +1,18 @@
+<!ENTITY wot.label					"WOT">
+<!-- Menu items -->
+<!ENTITY wotEnabled.label			"啟用">
+<!ENTITY wotEnabled.accesskey		"n">
+<!ENTITY wotRefresh.label			"重新整理">
+<!ENTITY wotRefresh.accesskey		"R">
+<!ENTITY wotContent.label			"WOT">
+<!ENTITY wotContent.accesskey		"W">
+<!ENTITY wotPreferences.label		"設定…">
+<!ENTITY wotPreferences.accesskey	"S">
+<!ENTITY wotMy.label				"我的 WOT…">
+<!ENTITY wotMy.accesskey			"W">
+<!ENTITY wotCheckUpdates.label		"查看更新">
+<!ENTITY wotCheckUpdates.accesskey	"C">
+<!ENTITY wotLinkScorecard.label		"檢視 WOT 計分板…">
+<!ENTITY wotLinkScorecard.accesskey	"W">
+<!-- Rating window -->
+<!ENTITY wotRating.title			"初始化 WOT…">

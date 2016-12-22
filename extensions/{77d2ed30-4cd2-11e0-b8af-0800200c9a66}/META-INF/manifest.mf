@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+
+Name: install.rdf
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: YZFqUcpiu4J67pgtC9YYug==
+SHA1-Digest: wAuZinNgduWYT2FV1V9FgnfLgpM=
+
+Name: chrome.manifest
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: TstGaMzHbw/0kAYSjI+Ftg==
+SHA1-Digest: pGs7qvcNpx95xDku+5q5rLhQWM4=
+
+Name: icon.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: AFGWGV8mkrJYWN7f6j45dg==
+SHA1-Digest: lOIkhmFZJ/6qXr1Pmf8o9fjemc0=
+
+Name: preview.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: q7YDrt02crrApUE+DKjILA==
+SHA1-Digest: xj4DjRyLWpHkFX635VuYlmf4YSw=
+
+Name: README_LICENSE.txt
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: ea6nosI+Nu9n3JE6yHSCSg==
+SHA1-Digest: UgLXw7wgxH113fczbLQI5Zi/dDs=
+
+Name: chrome/ft_deepdark.jar
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: YTDzlEHhi7896gFmeftebw==
+SHA1-Digest: /nNMy7t5kxg6T0Wus9uE8xKmHik=
+

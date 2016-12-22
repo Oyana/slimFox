@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+ <RDF:Description RDF:about="urn:mozilla:install-manifest">
+   <em:id>support@lastpass.com</em:id>
+   <em:version>3.3.2</em:version>
+   <em:type>2</em:type>
+   <em:unpack>true</em:unpack>
+   <em:multiprocessCompatible>false</em:multiprocessCompatible>
+
+   <!-- Firefox -->
+   <em:targetApplication>
+     <Description>
+       <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+       <em:minVersion>2.0</em:minVersion>
+       <em:maxVersion>*</em:maxVersion>
+     </Description>
+   </em:targetApplication>
+
+   <!-- Android -->
+   <em:targetApplication>
+     <Description>
+       <em:id>{aa3c5121-dab2-40e2-81ca-7ea25febc110}</em:id>
+       <em:minVersion>10.0a1</em:minVersion>
+       <em:maxVersion>*</em:maxVersion>
+     </Description>
+   </em:targetApplication>
+
+   <!-- SeaMonkey -->
+   <em:targetApplication>
+      <Description>
+         <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+            <em:minVersion>2.0a</em:minVersion>
+            <em:maxVersion>2.45</em:maxVersion>
+          </Description>
+   </em:targetApplication>
+
+   <!-- Mobile -->
+   <em:targetApplication>
+     <Description>
+       <em:id>{a23983c0-fd0e-11dc-95ff-0800200c9a66}</em:id>
+       <em:minVersion>0.7</em:minVersion>
+       <em:maxVersion>40.0</em:maxVersion>
+     </Description>
+   </em:targetApplication>
+
+  <!-- Songbird -->
+   <em:targetApplication>
+    <Description>
+      <em:id>songbird@songbirdnest.com</em:id>
+      <em:minVersion>1.0.0</em:minVersion>
+      <em:maxVersion>2.3.0a</em:maxVersion>
+      </Description>
+  </em:targetApplication>
+
+   <!-- Flock -->
+   <em:targetApplication>
+      <Description>
+         <em:id>{a463f10c-3994-11da-9945-000d60ca027b}</em:id>
+            <em:minVersion>0.7</em:minVersion>
+            <em:maxVersion>2.6.*</em:maxVersion>
+          </Description>
+   </em:targetApplication>
+
+   <!-- Prism -->
+   <em:targetApplication>
+     <Description>
+       <em:id>prism@developer.mozilla.org</em:id>
+       <em:minVersion>0.8</em:minVersion>
+       <em:maxVersion>1.0.0.*</em:maxVersion>
+     </Description>
+   </em:targetApplication>
+
+   <!-- MidBrowser -->
+   <em:targetApplication>
+     <Description>
+       <em:id>{aa5ca914-c309-495d-91cf-3141bbb04115}</em:id>
+       <em:minVersion>0.2</em:minVersion>
+       <em:maxVersion>3.1.*</em:maxVersion>
+     </Description>
+   </em:targetApplication>
+  
+   <!-- eMusic -->
+   <em:targetApplication> 
+      <Description>
+        <em:id>dlm@emusic.com</em:id>
+        <em:minVersion>1.0a4</em:minVersion>
+        <em:maxVersion>1.0.0.*</em:maxVersion>
+      </Description>
+   </em:targetApplication>
+  
+   <!-- Any toolkit based application -->
+   <em:targetApplication>
+     <Description>
+       <em:id>toolkit@mozilla.org</em:id>
+       <em:minVersion>1.9a2</em:minVersion>
+       <em:maxVersion>1.9.6</em:maxVersion>
+     </Description>
+   </em:targetApplication>
+
+   <!-- Front End MetaData -->
+   <em:name>LastPass</em:name>
+   <em:description>Last Password you will ever need</em:description>
+   <em:creator>LastPass Dev Team</em:creator>
+   <em:homepageURL>https://lastpass.com/</em:homepageURL>
+   <em:iconURL>chrome://lastpass/skin/icon_big.gif</em:iconURL>
+   <em:optionsURL>chrome://lastpass/content/prefs.xul</em:optionsURL>
+ </RDF:Description>
+</RDF:RDF>

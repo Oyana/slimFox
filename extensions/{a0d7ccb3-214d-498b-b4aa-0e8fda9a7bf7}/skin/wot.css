@@ -1,0 +1,418 @@
+/* toolbar button / small */
+#main-window toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/no_rep_calculated.png");
+}
+#main-window[wot-status="2"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/new_r2.png");
+}
+#main-window[wot-status="2-testimony"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/r2.png");
+}
+#main-window[wot-status="2-testimony-update"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-status="2-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/message_r2.png");
+}
+#main-window[wot-status="1"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/new_r1.png");
+}
+#main-window[wot-status="1-testimony"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/r1.png");
+}
+#main-window[wot-status="1-testimony-update"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-status="1-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/message_r1.png");
+}
+#main-window[wot-status="disabled"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-status="disabled-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/software_not_in_use.png");
+}
+#main-window[wot-status="error"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-status="error-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/problem_with_the_service.png");
+}
+#main-window[wot-status="3"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/new_r3.png");
+}
+#main-window[wot-status="3-testimony"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/r3.png");
+}
+#main-window[wot-status="3-testimony-update"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-status="3-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/message_r3.png");
+}
+#main-window[wot-status="5"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/new_r5.png");
+}
+#main-window[wot-status="5-testimony"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/r5.png");
+}
+#main-window[wot-status="5-testimony-update"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-status="5-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/message_r5.png");
+}
+#main-window[wot-status="inprogress"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-status="inprogress-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/getting_info.png");
+}
+#main-window[wot-status="nohost"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/no_rep_calculated.png");
+}
+#main-window[wot-status="nohost-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/message_r0.png");
+}
+#main-window[wot-status="notready"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/getting_info.png");
+}
+#main-window[wot-status="notready-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/getting_info.png");
+}
+#main-window[wot-status="offline"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-status="offline-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/offline.png");
+}
+#main-window[wot-status="4"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/new_r4.png");
+}
+#main-window[wot-status="4-testimony"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/r4.png");
+}
+#main-window[wot-status="4-testimony-update"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-status="4-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/message_r4.png");
+}
+#main-window[wot-status="0"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-status="0-testimony"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/r0.png");
+}
+#main-window[wot-status="0-testimony-update"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-status="0-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/message_r0.png");
+}
+#main-window[wot-status="excluded"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-status="excluded-testimony"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-status="excluded-testimony-update"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-status="excluded-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/rx.png");
+}
+
+/* toolbar button / small / accessible */
+#main-window[wot-mode="accessible"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/no_rep_calculated.png");
+}
+#main-window[wot-mode="accessible"][wot-status="2"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/new_r2.png");
+}
+#main-window[wot-mode="accessible"][wot-status="2-testimony"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/r2.png");
+}
+#main-window[wot-mode="accessible"][wot-status="2-testimony-update"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="2-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/message_r2.png");
+}
+#main-window[wot-mode="accessible"][wot-status="1"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/new_r1.png");
+}
+#main-window[wot-mode="accessible"][wot-status="1-testimony"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/r1.png");
+}
+#main-window[wot-mode="accessible"][wot-status="1-testimony-update"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="1-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/message_r1.png");
+}
+#main-window[wot-mode="accessible"][wot-status="disabled"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="disabled-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/software_not_in_use.png");
+}
+#main-window[wot-mode="accessible"][wot-status="error"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="error-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/problem_with_the_service.png");
+}
+#main-window[wot-mode="accessible"][wot-status="3"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/new_r3.png");
+}
+#main-window[wot-mode="accessible"][wot-status="3-testimony"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/r3.png");
+}
+#main-window[wot-mode="accessible"][wot-status="3-testimony-update"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="3-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/message_r3.png");
+}
+#main-window[wot-mode="accessible"][wot-status="5"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/new_r5.png");
+}
+#main-window[wot-mode="accessible"][wot-status="5-testimony"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/r5.png");
+}
+#main-window[wot-mode="accessible"][wot-status="5-testimony-update"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="5-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/message_r5.png");
+}
+#main-window[wot-mode="accessible"][wot-status="inprogress"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="inprogress-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/getting_info.png");
+}
+#main-window[wot-mode="accessible"][wot-status="nohost"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/no_rep_calculated.png");
+}
+#main-window[wot-mode="accessible"][wot-status="nohost-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/message_r0.png");
+}
+#main-window[wot-mode="accessible"][wot-status="notready"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/getting_info.png");
+}
+#main-window[wot-mode="accessible"][wot-status="notready-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/getting_info.png");
+}
+#main-window[wot-mode="accessible"][wot-status="offline"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="offline-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/offline.png");
+}
+#main-window[wot-mode="accessible"][wot-status="4"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/new_r4.png");
+}
+#main-window[wot-mode="accessible"][wot-status="4-testimony"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/r4.png");
+}
+#main-window[wot-mode="accessible"][wot-status="4-testimony-update"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="4-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/message_r4.png");
+}
+#main-window[wot-mode="accessible"][wot-status="0"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="0-testimony"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/r0.png");
+}
+#main-window[wot-mode="accessible"][wot-status="0-testimony-update"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="0-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/16_16/message_r0.png");
+}
+#main-window[wot-mode="accessible"][wot-status="excluded"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="excluded-testimony"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="excluded-testimony-update"] toolbar[iconsize="small"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="excluded-update"] toolbar[iconsize="small"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/16_16/rx.png");
+}
+
+/* toolbar button */
+#main-window #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/no_rep_calculated.png");
+}
+#main-window[wot-status="2"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/new_r2.png");
+}
+#main-window[wot-status="2-testimony"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/r2.png");
+}
+#main-window[wot-status="2-testimony-update"] #wot-button,
+#main-window[wot-status="2-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/message_r2.png");
+}
+#main-window[wot-status="1"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/new_r1.png");
+}
+#main-window[wot-status="1-testimony"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/r1.png");
+}
+#main-window[wot-status="1-testimony-update"] #wot-button,
+#main-window[wot-status="1-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/message_r1.png");
+}
+#main-window[wot-status="disabled"] #wot-button,
+#main-window[wot-status="disabled-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/software_not_in_use.png");
+}
+#main-window[wot-status="error"] #wot-button,
+#main-window[wot-status="error-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/problem_with_the_service.png");
+}
+#main-window[wot-status="3"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/new_r3.png");
+}
+#main-window[wot-status="3-testimony"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/r3.png");
+}
+#main-window[wot-status="3-testimony-update"] #wot-button,
+#main-window[wot-status="3-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/message_r3.png");
+}
+#main-window[wot-status="5"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/new_r5.png");
+}
+#main-window[wot-status="5-testimony"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/r5.png");
+}
+#main-window[wot-status="5-testimony-update"] #wot-button,
+#main-window[wot-status="5-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/message_r5.png");
+}
+#main-window[wot-status="inprogress"] #wot-button,
+#main-window[wot-status="inprogress-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/getting_info.png");
+}
+#main-window[wot-status="nohost"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/no_rep_calculated.png");
+}
+#main-window[wot-status="nohost-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/message_r0.png");
+}
+#main-window[wot-status="notready"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/getting_info.png");
+}
+#main-window[wot-status="notready-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/getting_info.png");
+}
+#main-window[wot-status="offline"] #wot-button,
+#main-window[wot-status="offline-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/offline.png");
+}
+#main-window[wot-status="4"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/new_r4.png");
+}
+#main-window[wot-status="4-testimony"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/r4.png");
+}
+#main-window[wot-status="4-testimony-update"] #wot-button,
+#main-window[wot-status="4-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/message_r4.png");
+}
+#main-window[wot-status="0"] #wot-button,
+#main-window[wot-status="0-testimony"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/r0.png");
+}
+#main-window[wot-status="0-testimony-update"] #wot-button,
+#main-window[wot-status="0-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/message_r0.png");
+}
+#main-window[wot-status="excluded"] #wot-button,
+#main-window[wot-status="excluded-testimony"] #wot-button,
+#main-window[wot-status="excluded-testimony-update"] #wot-button,
+#main-window[wot-status="excluded-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/rx.png");
+}
+
+/* toolbar button / accessible */
+#main-window[wot-mode="accessible"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/no_rep_calculated.png");
+}
+#main-window[wot-mode="accessible"][wot-status="2"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/new_r2.png");
+}
+#main-window[wot-mode="accessible"][wot-status="2-testimony"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/r2.png");
+}
+#main-window[wot-mode="accessible"][wot-status="2-testimony-update"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="2-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/message_r2.png");
+}
+#main-window[wot-mode="accessible"][wot-status="1"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/new_r1.png");
+}
+#main-window[wot-mode="accessible"][wot-status="1-testimony"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/r1.png");
+}
+#main-window[wot-mode="accessible"][wot-status="1-testimony-update"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="1-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/message_r1.png");
+}
+#main-window[wot-mode="accessible"][wot-status="disabled"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="disabled-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/software_not_in_use.png");
+}
+#main-window[wot-mode="accessible"][wot-status="error"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="error-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/problem_with_the_service.png");
+}
+#main-window[wot-mode="accessible"][wot-status="3"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/new_r3.png");
+}
+#main-window[wot-mode="accessible"][wot-status="3-testimony"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/r3.png");
+}
+#main-window[wot-mode="accessible"][wot-status="3-testimony-update"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="3-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/message_r3.png");
+}
+#main-window[wot-mode="accessible"][wot-status="5"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/new_r5.png");
+}
+#main-window[wot-mode="accessible"][wot-status="5-testimony"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/r5.png");
+}
+#main-window[wot-mode="accessible"][wot-status="5-testimony-update"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="5-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/message_r5.png");
+}
+#main-window[wot-mode="accessible"][wot-status="inprogress"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="inprogress-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/getting_info.png");
+}
+#main-window[wot-mode="accessible"][wot-status="nohost"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/no_rep_calculated.png");
+}
+#main-window[wot-mode="accessible"][wot-status="nohost-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/message_r0.png");
+}
+#main-window[wot-mode="accessible"][wot-status="notready"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/getting_info.png");
+}
+#main-window[wot-mode="accessible"][wot-status="notready-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/getting_info.png");
+}
+#main-window[wot-mode="accessible"][wot-status="offline"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="offline-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/offline.png");
+}
+#main-window[wot-mode="accessible"][wot-status="4"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/new_r4.png");
+}
+#main-window[wot-mode="accessible"][wot-status="4-testimony"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/r4.png");
+}
+#main-window[wot-mode="accessible"][wot-status="4-testimony-update"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="4-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/message_r4.png");
+}
+#main-window[wot-mode="accessible"][wot-status="0"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="0-testimony"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/r0.png");
+}
+#main-window[wot-mode="accessible"][wot-status="0-testimony-update"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="0-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/accessible/24_24/message_r0.png");
+}
+#main-window[wot-mode="accessible"][wot-status="excluded"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="excluded-testimony"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="excluded-testimony-update"] #wot-button,
+#main-window[wot-mode="accessible"][wot-status="excluded-update"] #wot-button {
+	list-style-image: url("chrome://wot/skin/fusion/24_24/rx.png");
+}
+
+/* toolbar menu */
+#wot-url-menu > menuitem[visible="false"],
+#wot-url-menu > menuseparator[visible="false"]
+{
+	display: none !important;
+}
+
+/* rating window */
+#wot-popup {
+    background: #ffffff !important;
+    opacity: 1;
+	padding: 0;
+	margin: 0;
+	font-family: Tahoma, Arial, sans-serif;
+    width: 580px;
+    height: 444px;
+    overflow: hidden;
+    overflow-y: hidden;
+    border: 0;
+}
+
+#wot-rwframe {
+    background: #ffffff !important;
+    opacity: 1;
+}
+
+#wot-warning {
+    -moz-transition: height 0.4s;
+    overflow: hidden;
+}

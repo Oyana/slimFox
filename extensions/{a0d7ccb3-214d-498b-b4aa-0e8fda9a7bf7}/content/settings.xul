@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+		hidden="true" id="wot-settings" onload="opensettings();">
+	<script>
+		function opensettings() {
+			try {
+				var browser = Components.classes['@mozilla.org/appshell/window-mediator;1']
+								.getService(Components.interfaces.nsIWindowMediator)
+								.getMostRecentWindow('navigator:browser')
+								.gBrowser;
+				browser.selectedTab = browser.addTab("http://www.mywot.com/settings");
+			} catch (e) {
+			}
+			document.getElementById("wot-settings").cancelDialog();
+		}
+	</script>
+</dialog>

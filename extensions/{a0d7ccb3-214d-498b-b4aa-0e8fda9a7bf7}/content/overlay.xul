@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://wot/skin/wot.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://wot/locale/wot.dtd">
+
+<!--
+	overlay.xul
+	Copyright © 2005 - 2015  WOT Services Oy <info@mywot.com>
+
+	This file is part of WOT.
+
+	WOT is free software: you can redistribute it and/or modify it
+	under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	WOT is distributed in the hope that it will be useful, but WITHOUT
+	ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+	or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public
+	License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with WOT. If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<overlay id="wot-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script type="application/x-javascript" src="chrome://wot/content/config.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/tools.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/cache.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/categories.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/commands.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/shared.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/util.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/ratingwindow.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/ui.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/prefs.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/storage.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/my.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/warning.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/surveys.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/update.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/popup.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/search.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/settings.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/cookies.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/api.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/firstrun.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/partner.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/wg.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/stats.js"/>
+    <script type="application/x-javascript" src="chrome://wot/content/core.js"/>
+
+    <stringbundleset id="stringbundleset">
+        <stringbundle id="wot-strings" src="chrome://wot/locale/wot.properties"/>
+    </stringbundleset>
+
+    <commandset id="mainCommandSet">
+        <command id="wot-command-enabled" oncommand="wot_commands.enabled();"/>
+        <command id="wot-command-refresh" oncommand="wot_commands.refresh();"/>
+        <command id="wot-command-preferences" oncommand="wot_commands.preferences();"/>
+        <command id="wot-command-checkupdates" oncommand="wot_commands.checkupdates();"/>
+        <command id="wot-command-my" oncommand="wot_commands.my();"/>
+        <command id="wot-command-openlinkscorecard" oncommand="wot_commands.open_scorecard_link();"/>
+    </commandset>
+
+    <popupset id="mainPopupSet">
+        <!-- Warning screen should be behind the Rating Window -->
+        <panel id="wot-warning" noautohide="true" position="topcenter topleft" style="opacity: 1 !important">
+            <iframe id="wot-warning-frame" type="content" width="388px" />
+        </panel>
+
+        <!-- Testimony window -->
+        <panel id="wot-popup" position="bottomcenter bottomright"
+                   onpopupshowing="wot_rw.on_rw_open(event);"
+                   onpopuphiding="wot_rw.on_hide_popup();" noautofocus="false"
+                   style="opacity: 1 !important">
+
+            <iframe id="wot-rwframe" src="chrome://wot/content/rw/ratingwindow.html" type="content"
+                    width="576px" height="444px"/>
+        </panel>
+
+        <!-- Indicator tooltip -->
+        <tooltip id="wot-tooltip"
+                 onpopupshowing="return wot_commands.tooltip_update(document.tooltipNode);">
+            <label id="wot-tooltip-text" value="&wotRating.title;" crop="center"/>
+        </tooltip>
+
+        <!-- Indicator menu -->
+        <!-- XXX: shouldn't need onpopupshowing, but checkmarks aren't shown otherwise -->
+        <menupopup id="wot-context-indicator"
+                   onpopupshowing="wot_commands.update('indicator');">
+            <menuitem id="wot-indicator-refresh"
+                      label="&wotRefresh.label;"
+                      accesskey="&wotRefresh.accesskey;"
+                      command="wot-command-refresh"/>
+            <menuitem label="&wotCheckUpdates.label;"
+                      accesskey="&wotCheckUpdates.accesskey;"
+                      command="wot-command-checkupdates"/>
+            <menuseparator/>
+            <menuitem label="&wotMy.label;"
+                      accesskey="&wotMy.accesskey;"
+                      command="wot-command-my"/>
+            <menuitem label="&wotPreferences.label;"
+                      accesskey="&wotPreferences.accesskey;"
+                      command="wot-command-preferences"/>
+            <menuseparator/>
+            <menuitem id="wot-indicator-enabled"
+                      label="&wotEnabled.label;"
+                      accesskey="&wotEnabled.accesskey;"
+                      type="checkbox"
+                      command="wot-command-enabled"/>
+        </menupopup>
+    </popupset>
+
+    <!-- Browser content area menu -->
+    <popup id="contentAreaContextMenu">
+        <menuitem id="wot-content-openlinkscorecard"
+                  label="&wotLinkScorecard.label;"
+                  accesskey="&wotLinkScorecard.accesskey;"
+                  command="wot-command-openlinkscorecard"
+                  insertbefore="context-bookmarkpage"/>
+    </popup>
+
+    <!-- Tools menu -->
+    <menupopup id="menu_ToolsPopup">
+        <menu id="wot-context-tools" insertbefore="devToolsSeparator"
+              label="&wotContent.label;">
+            <menupopup id="wot-tools-popup">
+                <menuitem label="&wotMy.label;"
+                          accesskey="&wotMy.accesskey;"
+                          command="wot-command-my"/>
+                <menuitem label="&wotPreferences.label;"
+                          accesskey="&wotPreferences.accesskey;"
+                          command="wot-command-preferences"/>
+                <menuseparator/>
+                <menuitem label="&wotEnabled.label;"
+                          accesskey="&wotEnabled.accesskey;"
+                          type="checkbox"
+                          command="wot-command-enabled"/>
+            </menupopup>
+        </menu>
+    </menupopup>
+
+    <!-- Toolbar indicator -->
+    <toolbarpalette id="BrowserToolbarPalette">
+        <toolbarbutton id="wot-button"
+                       class="toolbarbutton-1"
+                       label="&wot.label;"
+                       popup="wot-popup"
+                       context="wot-context-indicator"
+                       tooltip="wot-tooltip"
+                       insertbefore="urlbar-container"
+                       onclick="wot_events.click_button(event);"/>
+    </toolbarpalette>
+</overlay>

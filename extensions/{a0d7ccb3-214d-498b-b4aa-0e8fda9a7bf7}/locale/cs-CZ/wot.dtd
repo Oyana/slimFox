@@ -1,0 +1,18 @@
+<!ENTITY wot.label					"WOT:">
+<!-- Menu items -->
+<!ENTITY wotEnabled.label			"Povoleno">
+<!ENTITY wotEnabled.accesskey		"P">
+<!ENTITY wotRefresh.label			"Obnovit">
+<!ENTITY wotRefresh.accesskey		"O">
+<!ENTITY wotContent.label			"WOT">
+<!ENTITY wotContent.accesskey		"W">
+<!ENTITY wotPreferences.label		"Nastavení…">
+<!ENTITY wotPreferences.accesskey	"a">
+<!ENTITY wotMy.label				"Můj WOT…">
+<!ENTITY wotMy.accesskey			"W">
+<!ENTITY wotCheckUpdates.label		"Zjistit aktualizace…">
+<!ENTITY wotCheckUpdates.accesskey	"Z">
+<!ENTITY wotLinkScorecard.label		"Zobrazit výsledkovou kartu WOT…">
+<!ENTITY wotLinkScorecard.accesskey	"W">
+<!-- Rating window -->
+<!ENTITY wotRating.title			"Probíhá inicializace WOT…">

@@ -1,0 +1,18 @@
+<!ENTITY wot.label					"WOT">
+<!-- Menu items -->
+<!ENTITY wotEnabled.label			"Aktiviert">
+<!ENTITY wotEnabled.accesskey		"k">
+<!ENTITY wotRefresh.label			"Aktualisieren">
+<!ENTITY wotRefresh.accesskey		"t">
+<!ENTITY wotContent.label			"WOT">
+<!ENTITY wotContent.accesskey		"W">
+<!ENTITY wotPreferences.label		"Einstellungen…">
+<!ENTITY wotPreferences.accesskey	"E">
+<!ENTITY wotMy.label				"Mein WOT…">
+<!ENTITY wotMy.accesskey			"M">
+<!ENTITY wotCheckUpdates.label		"Updates suchen…">
+<!ENTITY wotCheckUpdates.accesskey	"p">
+<!ENTITY wotLinkScorecard.label		"WOT-Wertungsliste anzeigen…">
+<!ENTITY wotLinkScorecard.accesskey	"W">
+<!-- Rating window -->
+<!ENTITY wotRating.title			"WOT wird initialisiert…">

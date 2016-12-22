@@ -1,0 +1,2 @@
+function Arcfour(){this.j=this.i=0;this.S=[]}function ARC4init(b){var a,c,d;for(a=0;256>a;++a)this.S[a]=a;for(a=c=0;256>a;++a)c=c+this.S[a]+b[a%b.length]&255,d=this.S[a],this.S[a]=this.S[c],this.S[c]=d;this.j=this.i=0}function ARC4next(){var b;this.i=this.i+1&255;this.j=this.j+this.S[this.i]&255;b=this.S[this.i];this.S[this.i]=this.S[this.j];this.S[this.j]=b;return this.S[b+this.S[this.i]&255]}Arcfour.prototype.init=ARC4init;Arcfour.prototype.next=ARC4next;
+function prng_newstate(){return new Arcfour}var rng_psize=256;

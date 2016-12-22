@@ -1,0 +1,18 @@
+<!ENTITY wot.label					"WOT">
+<!-- Menu items -->
+<!ENTITY wotEnabled.label			"실행">
+<!ENTITY wotEnabled.accesskey		"n">
+<!ENTITY wotRefresh.label			"새로고침">
+<!ENTITY wotRefresh.accesskey		"R">
+<!ENTITY wotContent.label			"WOT">
+<!ENTITY wotContent.accesskey		"W">
+<!ENTITY wotPreferences.label		"설정…">
+<!ENTITY wotPreferences.accesskey	"S">
+<!ENTITY wotMy.label				"나의 WOT…">
+<!ENTITY wotMy.accesskey			"W">
+<!ENTITY wotCheckUpdates.label		"업데이트 확인…">
+<!ENTITY wotCheckUpdates.accesskey	"C">
+<!ENTITY wotLinkScorecard.label  "WOT 평가지수 보기…">
+<!ENTITY wotLinkScorecard.accesskey	"s">
+<!-- Rating window -->
+<!ENTITY wotRating.title			"WOT 초기화…">

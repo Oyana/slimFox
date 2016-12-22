@@ -1,0 +1,18 @@
+<!ENTITY wot.label					"WOT">
+<!-- Menu items -->
+<!ENTITY wotEnabled.label			"Uruchomiony">
+<!ENTITY wotEnabled.accesskey		"U">
+<!ENTITY wotRefresh.label			"Odśwież">
+<!ENTITY wotRefresh.accesskey		"O">
+<!ENTITY wotContent.label			"WOT">
+<!ENTITY wotContent.accesskey		"W">
+<!ENTITY wotPreferences.label		"Ustawienia…">
+<!ENTITY wotPreferences.accesskey	"e">
+<!ENTITY wotMy.label				"Mój WOT…">
+<!ENTITY wotMy.accesskey			"W">
+<!ENTITY wotCheckUpdates.label		"Sprawdź dostępność aktualizacji…">
+<!ENTITY wotCheckUpdates.accesskey	"a">
+<!ENTITY wotLinkScorecard.label		"Wyświetl kartę ocen WOT…">
+<!ENTITY wotLinkScorecard.accesskey	"W">
+<!-- Rating window -->
+<!ENTITY wotRating.title			"Trwa inicjowanie dodatku WOT…">

@@ -1,0 +1,18 @@
+<!ENTITY wot.label					"WOT">
+<!-- Menu items -->
+<!ENTITY wotEnabled.label			"有効化">
+<!ENTITY wotEnabled.accesskey		"n">
+<!ENTITY wotRefresh.label			"更新">
+<!ENTITY wotRefresh.accesskey		"R">
+<!ENTITY wotContent.label			"WOT">
+<!ENTITY wotContent.accesskey		"W">
+<!ENTITY wotPreferences.label		"設定…">
+<!ENTITY wotPreferences.accesskey	"S">
+<!ENTITY wotMy.label				"My WOT…">
+<!ENTITY wotMy.accesskey			"W">
+<!ENTITY wotCheckUpdates.label		"変更の確認…">
+<!ENTITY wotCheckUpdates.accesskey	"C">
+<!ENTITY wotLinkScorecard.label		"WOTスコアカードを表示…">
+<!ENTITY wotLinkScorecard.accesskey	"W">
+<!-- Rating window -->
+<!ENTITY wotRating.title			"WOTを初期化しています…">

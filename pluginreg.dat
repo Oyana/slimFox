@@ -1,0 +1,116 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version|0.17|$
+Arch|x86-msvc|$
+
+[PLUGINS]
+npGoogleUpdate3.dll|$
+C:\Program Files (x86)\Google\Update\1.3.32.7\npGoogleUpdate3.dll|$
+1.3.32.7|$
+1481964176329|0|0|0|$
+Google Update|$
+Google Update|$
+2
+0|application/x-vnd.google.update3webcontrol.3|||$
+1|application/x-vnd.google.oneclickctrl.9|||$
+NPWLPG.dll|$
+C:\Program Files (x86)\Windows Live\Photo Gallery\NPWLPG.dll|$
+16.4.3528.331|$
+1396294458000|0|0|0|$
+NPWLPG|$
+Photo Gallery|$
+2
+0|application/x-wlpg3-detect|Photo Gallery|wlpg|$
+1|application/x-wlpg-detect|Photo Gallery|wlpg|$
+npjp2.dll|$
+C:\Program Files (x86)\Java\jre1.8.0_91\bin\plugin2\npjp2.dll|$
+11.91.2.14|$
+1461159945321|0|0|0|$
+Next Generation Java Plug-in 11.91.2 for Mozilla browsers|$
+Java(TM) Platform SE 8 U91|$
+40
+0|application/x-java-applet|Java Applet||$
+1|application/x-java-bean|JavaBeans||$
+2|application/x-java-vm|||$
+3|application/x-java-applet;version=1.1.1|||$
+4|application/x-java-bean;version=1.1.1|||$
+5|application/x-java-applet;version=1.1|||$
+6|application/x-java-bean;version=1.1|||$
+7|application/x-java-applet;version=1.2|||$
+8|application/x-java-bean;version=1.2|||$
+9|application/x-java-applet;version=1.1.3|||$
+10|application/x-java-bean;version=1.1.3|||$
+11|application/x-java-applet;version=1.1.2|||$
+12|application/x-java-bean;version=1.1.2|||$
+13|application/x-java-applet;version=1.3|||$
+14|application/x-java-bean;version=1.3|||$
+15|application/x-java-applet;version=1.2.2|||$
+16|application/x-java-bean;version=1.2.2|||$
+17|application/x-java-applet;version=1.2.1|||$
+18|application/x-java-bean;version=1.2.1|||$
+19|application/x-java-applet;version=1.3.1|||$
+20|application/x-java-bean;version=1.3.1|||$
+21|application/x-java-applet;version=1.4|||$
+22|application/x-java-bean;version=1.4|||$
+23|application/x-java-applet;version=1.4.1|||$
+24|application/x-java-bean;version=1.4.1|||$
+25|application/x-java-applet;version=1.4.2|||$
+26|application/x-java-bean;version=1.4.2|||$
+27|application/x-java-applet;version=1.5|||$
+28|application/x-java-bean;version=1.5|||$
+29|application/x-java-applet;version=1.6|||$
+30|application/x-java-bean;version=1.6|||$
+31|application/x-java-applet;version=1.7|||$
+32|application/x-java-bean;version=1.7|||$
+33|application/x-java-applet;version=1.8|||$
+34|application/x-java-bean;version=1.8|||$
+35|application/x-java-applet;jpi-version=1.8.0_91|||$
+36|application/x-java-bean;jpi-version=1.8.0_91|||$
+37|application/x-java-vm-npruntime|||$
+38|application/x-java-applet;deploy=11.91.2|||$
+39|application/x-java-applet;javafx=8.0.91|||$
+npdeployJava1.dll|$
+C:\Program Files (x86)\Java\jre1.8.0_91\bin\dtplugin\npdeployJava1.dll|$
+11.91.2.14|$
+1461159945207|0|0|0|$
+NPRuntime Script Plug-in Library for Java(TM) Deploy|$
+Java Deployment Toolkit 8.0.910.14|$
+1
+0|application/java-deployment-toolkit|||$
+npIntelWebAPIIPT.dll|$
+C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT\npIntelWebAPIIPT.dll|$
+4.0.5.0|$
+1378252422000|0|0|0|$
+Intel web components for Intel® Identity Protection Technology|$
+Intel® Identity Protection Technology|$
+1
+0|application/x-vnd-intel-webapi-ipt-4.0.5|npIntelWebAPIipt-3-5||$
+npIntelWebAPIUpdater.dll|$
+C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT\npIntelWebAPIUpdater.dll|$
+4.0.5.0|$
+1378252422000|0|0|0|$
+Intel web components updater - Installs and updates the Intel web components|$
+Intel® Identity Protection Technology|$
+1
+0|application/x-vnd-intel-webapi-updater|npIntelWebAPIupdater-2-0|intel_webapi_updater-2-0|$
+npGoogleUpdate3.dll|$
+C:\Users\Golga\AppData\Local\Google\Update\1.3.31.5\npGoogleUpdate3.dll|$
+1.3.31.5|$
+1471373739326|0|0|0|$
+Google Update|$
+Google Update|$
+2
+0|application/x-vnd.google.update3webcontrol.3|||$
+1|application/x-vnd.google.oneclickctrl.9|||$
+NPSWF32_20_0_0_306.dll|$
+C:\Windows\SysWOW64\Macromed\Flash\NPSWF32_20_0_0_306.dll|$
+20.0.0.306|$
+1455717932599|0|0|0|$
+Shockwave Flash 20.0 r0|$
+Shockwave Flash|$
+2
+0|application/x-shockwave-flash|Adobe Flash movie|swf|$
+1|application/futuresplash|FutureSplash movie|spl|$
+
+[INVALID]

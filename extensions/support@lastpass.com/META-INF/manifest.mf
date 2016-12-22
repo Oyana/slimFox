@@ -1,0 +1,217 @@
+Manifest-Version: 1.0
+
+Name: install.rdf
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: EIpQFYEeqzLoqGDhEGDT8g==
+SHA1-Digest: /tkAz104Ahbt04iBflhvX7YFsbE=
+
+Name: chrome.manifest
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: ++k56HD48wHJJhk7LtrgQQ==
+SHA1-Digest: kaWdxu6cAvjMIENWGMKLKDT0z0g=
+
+Name: chrome/lastpass.jar
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: YimiISuLulAOkWl5KPySgQ==
+SHA1-Digest: uOeTE8W92Rtre4z5dCEOB2YV6Ik=
+
+Name: components/aboutlastpassvault.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: PoYqQ1ww8rxYYeWDHPryig==
+SHA1-Digest: Q7jWPXXPBvmGjI5Jl3YpzU/jLuo=
+
+Name: components/lastpass.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: OYHpV2qdha3HkG/VzHNhQA==
+SHA1-Digest: QWCbPhPrnX/brN7aUsAjDEan9ng=
+
+Name: components/lastpassext.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: wSSdIwNoS1pAqJZ58BRNcg==
+SHA1-Digest: Yr5B8EY8IOLMX9ReyysNQdQGjPc=
+
+Name: components/lastpasssearch.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: wH5OEYkvQg57/vMSBaAqnQ==
+SHA1-Digest: 0RyzjjN8u87NwLMQPxtbYV+gmW0=
+
+Name: components/lp.xpt
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: dRBqmfr59huw7HHrHPQWnQ==
+SHA1-Digest: cbIRQy4BSa721qWooL3vufdLf80=
+
+Name: components/lpjs.xpt
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: QFORlSwRsh+qOb0P6DAtPQ==
+SHA1-Digest: EJsQ3HZ0B/S/OYDLeL70HxsNJic=
+
+Name: defaults/preferences/defaults.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: RaMMloGCsKZ4UqJNbRThwQ==
+SHA1-Digest: jgP4g8QaWZNAXHQpCeDSwuNOvQw=
+
+Name: modules/AES.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: zvz+hQpGpMsTbqjB5rCoIw==
+SHA1-Digest: FzCzHAmjh+Ap/i5GnLfkehnaK10=
+
+Name: modules/asn1.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: XZbFXfTdPaoyot9RapOtBA==
+SHA1-Digest: b05ElSe7RM90+ot1n29Yr6SkY3I=
+
+Name: modules/base64.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: tPWoYCDmzOHJzNXS3rUOCA==
+SHA1-Digest: dTVCEXCpQ8h2HaC5uerCHBFavtY=
+
+Name: modules/console.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: BZROrS2TbhP05KrRGnnTTg==
+SHA1-Digest: NTYyFoVm3jC07jLcXaJoZiP8gpM=
+
+Name: modules/crc32.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: mZxMv83DEBuFnY7Uji9VyA==
+SHA1-Digest: udctRrCx6ZrT47/5fTMD+9v9vMo=
+
+Name: modules/detect_timezone.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 2ULWXzabZM8kcC5BqxLzaQ==
+SHA1-Digest: jlhii4/Z5Bc/w9WBwtlM9wvH3So=
+
+Name: modules/gpw.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: OeH5Dd+o7GIDk2n/dSTzRQ==
+SHA1-Digest: ipveLLIdFMkosLoVTvBVA3LlJyA=
+
+Name: modules/hex.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: UA/aWynRXz8ch4TiRnzLNg==
+SHA1-Digest: m8J3Lk8Xx4MexGGtFraYhTLvV3w=
+
+Name: modules/jsbn.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: xXMzt2yJWbDE3hwL8WKbTw==
+SHA1-Digest: 1ZfWZ46KgT+GabKhadR/oM46Luc=
+
+Name: modules/jsbn2.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: P8bUdSb5LpIKPXTRsZ3Khg==
+SHA1-Digest: iq79Jj2ndZIIN59xAq+woIrDo/8=
+
+Name: modules/prng4.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: qOOkjgdlvsJd/lDADcW2Gw==
+SHA1-Digest: slscCg/4LQ1+y6se7CA1xma4GpI=
+
+Name: modules/punycode.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: fYOnLWnzwCZE2abhqMFCrQ==
+SHA1-Digest: aK+xTPCyhkpUbkIgcv6cvAwN41c=
+
+Name: modules/rng.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: sezy6qjNkEkN5gKRCBl+Gg==
+SHA1-Digest: TF75T3Av9DV6IyTln1X2of73hHQ=
+
+Name: modules/rsacat.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: u8vL9+wI9gjNQtJEBxky/w==
+SHA1-Digest: +EY/wSXXOgeY05l35DfSbaI34FE=
+
+Name: modules/sha256.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: Cah3DbKnkdoZAHQkUQM6qQ==
+SHA1-Digest: oe00SQXeHcO5ZA3ZMNeBoZIbrFg=
+
+Name: modules/shared/AESc.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: npaw3aQDd+/WnfCOKNGPEg==
+SHA1-Digest: l0/LeL6YTZw95CK4x26yE8Ca/1I=
+
+Name: modules/shared/asn1c.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: HwvmxEUnz7y+X3oeYGUhNQ==
+SHA1-Digest: 3+vdFgXt77JQ8lWP0VOskXLCTLM=
+
+Name: modules/shared/base64c.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: ryOOqNBnoXLK6uIYzZbblg==
+SHA1-Digest: FQZ/qYe7cOUj7EQPAHhg6XIcsK8=
+
+Name: modules/shared/detect_timezonec.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: JvaS7wk01oCj3Z3tMrFctw==
+SHA1-Digest: 8vC3SeG26Vx9hwx6e7n/L5HagIE=
+
+Name: modules/shared/gpwc.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 1+QM086Q7i7wXkKzI2eKhA==
+SHA1-Digest: RyFYL4GSLYkiY9UyqRPGOFCO3vU=
+
+Name: modules/shared/hexc.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: Qhw1REl8AN3fsqawQ3nLFw==
+SHA1-Digest: 8F4KQjo/sqy2RdVhiHih4m2jb2c=
+
+Name: modules/shared/jsbn2c.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: cOK0ZO27d0n9SLqlneg/ow==
+SHA1-Digest: bPpiOEMz9MlLRFror9IdxCddjQA=
+
+Name: modules/shared/jsbnc.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: Hh1MSpnXAO9G/HXBqWLQCg==
+SHA1-Digest: No4nUAalIr7m4jmC9CH8ZOQxDRM=
+
+Name: modules/shared/prng4c.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: VguL4WMu1K70PYQlU34Vrw==
+SHA1-Digest: sxv3znhGwKWJ5AQnbqGVjaDujlM=
+
+Name: modules/shared/punycodec.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 47qMG7av2pKWyutTcY85Kg==
+SHA1-Digest: xort50N6CQD2mCtcAtyUTCfuCC8=
+
+Name: modules/shared/rngc.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: EYQnW9uYDvl65nqexUJt6Q==
+SHA1-Digest: 3bXJwEGIr+o0cbRB1MVRIMiEWqo=
+
+Name: modules/shared/rsacatc.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: xBZu0HC0hsSxKHAEcek5dg==
+SHA1-Digest: iVMgZpVc5hN3C1TeC5AcTJTgKvg=
+
+Name: platform/Darwin/components/lpxpcom.dylib
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 5Ppm9pePP0LeKEInKNolMg==
+SHA1-Digest: zq5XGXmChhtF/4v442iL4yEbag8=
+
+Name: platform/Darwin_x86_64-gcc3/components/lpxpcom_x86_64.dylib
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: JmbmmAjgC1QXdTuLh0mGlQ==
+SHA1-Digest: t6uiS6JDMH1jyWUeOPxHA2fffIo=
+
+Name: platform/Linux_x86-gcc3/components/lpxpcom.so
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: dI4Er73/p+EwK5T3yiiTHQ==
+SHA1-Digest: TPh2tI36sy2wuhDTfV4/QLEXXbM=
+
+Name: platform/Linux_x86_64-gcc3/components/lpxpcom_x86_64.so
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: woUetNUbmEr5TjQAjtFLgw==
+SHA1-Digest: uLQ1LTeJO8a6zg/royvfhUSdIys=
+
+Name: platform/WINNT_x86-msvc/components/lpxpcom.dll
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: HaT/8F/IaidR92f3+dqqxA==
+SHA1-Digest: Nlv7R9T9X8oxXqM8i2HfYuhZ8YY=
+
+Name: platform/WINNT_x86_64-msvc/components/lpxpcom_x86_64.dll
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: AN5TZt+f42m4VKe4VnhiSw==
+SHA1-Digest: Dd/zYh1+fryrbD7yYVetic59uJM=
+

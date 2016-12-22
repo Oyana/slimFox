@@ -1,0 +1,18 @@
+<!ENTITY wot.label					"WOT">
+<!-- Menu items -->
+<!ENTITY wotEnabled.label			"Etkin">
+<!ENTITY wotEnabled.accesskey		"n">
+<!ENTITY wotRefresh.label			"Güncelleme">
+<!ENTITY wotRefresh.accesskey		"R">
+<!ENTITY wotContent.label			"WOT">
+<!ENTITY wotContent.accesskey		"W">
+<!ENTITY wotPreferences.label		"Ayarlar…">
+<!ENTITY wotPreferences.accesskey	"S">
+<!ENTITY wotMy.label				"My WOT…">
+<!ENTITY wotMy.accesskey			"W">
+<!ENTITY wotCheckUpdates.label		"Güncelleştirmeleri denetleyin…">
+<!ENTITY wotCheckUpdates.accesskey	"C">
+<!ENTITY wotLinkScorecard.label		"Puan kartını görüntüle…">
+<!ENTITY wotLinkScorecard.accesskey	"s">
+<!-- Rating window -->
+<!ENTITY wotRating.title			"WOT başlatılıyor…">

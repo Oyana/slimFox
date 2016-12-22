@@ -1,0 +1,3 @@
+var Cc=Components.classes,Ci=Components.interfaces;Components.utils.import("resource://gre/modules/XPCOMUtils.jsm");function AboutLastPassVault(){}
+AboutLastPassVault.prototype={classDescription:"about:lastpassvault",contractID:"@mozilla.org/network/protocol/about;1?what=lastpassvault",classID:Components.ID("{062fe0fa-70d9-11e4-b116-123b93f75cba}"),QueryInterface:XPCOMUtils.generateQI([Ci.nsIAboutModule]),getURIFlags:function(){return Ci.nsIAboutModule.ALLOW_SCRIPT},newChannel:function(b){var a=Cc["@mozilla.org/network/io-service;1"].getService(Ci.nsIIOService).newChannel("chrome://lastpass/content/home2.xul",null,null);a.originalURI=b;return a}};
+var NSGetFactory=XPCOMUtils.generateNSGetFactory([AboutLastPassVault]);

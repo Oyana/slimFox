@@ -1,0 +1,18 @@
+<!ENTITY wot.label					"WOT">
+<!-- Menu items -->
+<!ENTITY wotEnabled.label			"Включена">
+<!ENTITY wotEnabled.accesskey		"В">
+<!ENTITY wotRefresh.label			"Оновити">
+<!ENTITY wotRefresh.accesskey		"О">
+<!ENTITY wotContent.label			"WOT">
+<!ENTITY wotContent.accesskey		"W">
+<!ENTITY wotPreferences.label		"Налаштування…">
+<!ENTITY wotPreferences.accesskey	"Н">
+<!ENTITY wotMy.label				"MyWOT…">
+<!ENTITY wotMy.accesskey			"W">
+<!ENTITY wotCheckUpdates.label		"Перевірка оновлень…">
+<!ENTITY wotCheckUpdates.accesskey	"p">
+<!ENTITY wotLinkScorecard.label		"Переглянути детальніше про рейтинг">
+<!ENTITY wotLinkScorecard.accesskey	"W">
+<!-- Rating window -->
+<!ENTITY wotRating.title			"Ініціалізація WOT…">

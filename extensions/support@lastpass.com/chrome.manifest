@@ -1,0 +1,112 @@
+content lastpass jar:chrome/lastpass.jar!/content/
+content lastpass-locales jar:chrome/lastpass.jar!/locale/
+resource lastpass modules/
+
+overlay chrome://browser/content/browser.xul chrome://lastpass/content/lastpass.xul 
+overlay chrome://browser/content/browser.xul chrome://lastpass/content/statusbar.xul
+
+overlay chrome://messenger/content/messenger.xul chrome://lastpass/content/statusbar.xul
+overlay chrome://messenger/content/messenger.xul chrome://lastpass/content/lastpass.xul 
+
+overlay chrome://songbird/content/xul/layoutWithBrowserOverlay.xul chrome://lastpass/content/lastpass.xul
+overlay chrome://songbird/content/xul/layoutWithBrowserOverlay.xul chrome://lastpass/content/statusbar.xul
+overlay chrome://navigator/content/navigator.xul chrome://lastpass/content/lastpass.xul 
+overlay chrome://navigator/content/navigator.xul chrome://lastpass/content/statusbar.xul
+overlay chrome://webrunner/content/webrunner.xul chrome://lastpass/content/prism_lastpass.xul 
+overlay chrome://webrunner/content/webrunner.xul chrome://lastpass/content/prism_statusbar.xul
+
+overlay chrome://midbrowser/content/midbrowser.xul chrome://lastpass/content/statusbar.xul
+overlay chrome://midbrowser/content/midbrowser.xul chrome://lastpass/content/lastpass.xul
+
+overlay chrome://emusic/content/startup.xul  chrome://lastpass/content/lastpass.xul
+overlay chrome://emusic/content/startup.xul  chrome://lastpass/content/statusbar.xul
+
+overlay chrome://global/content/commonDialog.xul chrome://lastpass/content/basicauth.xul
+
+override chrome://lastpass/content/prefs.xul chrome://lastpass/content/prefs-fennec.xul application={a23983c0-fd0e-11dc-95ff-0800200c9a66}
+
+overlay chrome://foxmarks/content/foxmarks-login.xul chrome://lastpass/content/xmarks.xul
+
+skin lastpass classic/1.0 jar:chrome/lastpass.jar!/skin/
+style chrome://global/content/customizeToolbar.xul chrome://lastpass/content/lastpass.css 
+
+interfaces components/lp.xpt
+interfaces components/lpjs.xpt
+
+component {01258260-ceed-11de-8a39-0800200c9a66} components/lastpasssearch.js
+contract @mozilla.org/autocomplete/search;1?name=lastpass {01258260-ceed-11de-8a39-0800200c9a66}
+#category profile-after-change LastPass @mozilla.org/autocomplete/search;1?name=lastpass
+
+component {27befaa9-ce4f-406c-9f3d-b794519d5a03} components/lastpassext.js
+contract @lastpass.com/external/lastpass;1 {27befaa9-ce4f-406c-9f3d-b794519d5a03} 
+#category profile-after-change LastPass @lastpass.com/external/lastpass;1
+
+component {89cfce0b-8110-11dd-ad8b-0800200c9a66} components/lastpass.js
+contract @lastpass.com/lastpass;1 {89cfce0b-8110-11dd-ad8b-0800200c9a66}
+#category profile-after-change LastPass @lastpass.com/lastpass;1
+
+component {062fe0fa-70d9-11e4-b116-123b93f75cba} components/aboutlastpassvault.js
+contract @mozilla.org/network/protocol/about;1?what=lastpassvault {062fe0fa-70d9-11e4-b116-123b93f75cba}
+
+locale lastpass af-ZA jar:chrome/lastpass.jar!/locale/af-ZA/
+locale lastpass ar-SA jar:chrome/lastpass.jar!/locale/ar-SA/
+locale lastpass ar-EG jar:chrome/lastpass.jar!/locale/ar-EG/
+locale lastpass az-AZ jar:chrome/lastpass.jar!/locale/az-AZ/
+locale lastpass bg-BG jar:chrome/lastpass.jar!/locale/bg-BG/
+locale lastpass bn-BD jar:chrome/lastpass.jar!/locale/bn-BD/
+locale lastpass bs-BA jar:chrome/lastpass.jar!/locale/bs-BA/
+locale lastpass ca-ES jar:chrome/lastpass.jar!/locale/ca-ES/
+locale lastpass cs-CZ jar:chrome/lastpass.jar!/locale/cs-CZ/
+locale lastpass da-DK jar:chrome/lastpass.jar!/locale/da-DK/
+locale lastpass de-DE jar:chrome/lastpass.jar!/locale/de-DE/
+locale lastpass el-GR jar:chrome/lastpass.jar!/locale/el-GR/
+locale lastpass en-GB jar:chrome/lastpass.jar!/locale/en-GB/
+locale lastpass en-US jar:chrome/lastpass.jar!/locale/en-US/
+locale lastpass eo-US jar:chrome/lastpass.jar!/locale/eo-US/
+locale lastpass es-ES jar:chrome/lastpass.jar!/locale/es-ES/
+locale lastpass es-MX jar:chrome/lastpass.jar!/locale/es-MX/
+locale lastpass et-EE jar:chrome/lastpass.jar!/locale/et-EE/
+locale lastpass fa-IR jar:chrome/lastpass.jar!/locale/fa-IR/
+locale lastpass fi-FI jar:chrome/lastpass.jar!/locale/fi-FI/
+locale lastpass fr-FR jar:chrome/lastpass.jar!/locale/fr-FR/
+locale lastpass fr-CA jar:chrome/lastpass.jar!/locale/fr-CA/
+locale lastpass gl-ES jar:chrome/lastpass.jar!/locale/gl-ES/
+locale lastpass gu-IN jar:chrome/lastpass.jar!/locale/gu-IN/
+locale lastpass he-IL jar:chrome/lastpass.jar!/locale/he-IL/
+locale lastpass hi-IN jar:chrome/lastpass.jar!/locale/hi-IN/
+locale lastpass hr-HR jar:chrome/lastpass.jar!/locale/hr-HR/
+locale lastpass hu-HU jar:chrome/lastpass.jar!/locale/hu-HU/
+locale lastpass id-ID jar:chrome/lastpass.jar!/locale/id-ID/
+locale lastpass is-IS jar:chrome/lastpass.jar!/locale/is-IS/
+locale lastpass it-IT jar:chrome/lastpass.jar!/locale/it-IT/
+locale lastpass ja-JP jar:chrome/lastpass.jar!/locale/ja-JP/
+locale lastpass ka-GE jar:chrome/lastpass.jar!/locale/ka-GE/
+locale lastpass ko-KR jar:chrome/lastpass.jar!/locale/ko-KR/
+locale lastpass lt-LT jar:chrome/lastpass.jar!/locale/lt-LT/
+locale lastpass lv-LV jar:chrome/lastpass.jar!/locale/lv-LV/
+locale lastpass mg-MG jar:chrome/lastpass.jar!/locale/mg-MG/
+locale lastpass mk-MK jar:chrome/lastpass.jar!/locale/mk-MK/
+locale lastpass ms-MY jar:chrome/lastpass.jar!/locale/ms-MY/
+locale lastpass nl-NL jar:chrome/lastpass.jar!/locale/nl-NL/
+locale lastpass nb-NO jar:chrome/lastpass.jar!/locale/nb-NO/
+locale lastpass no-NO jar:chrome/lastpass.jar!/locale/no-NO/
+locale lastpass pa-IN jar:chrome/lastpass.jar!/locale/pa-IN/
+locale lastpass pl-PL jar:chrome/lastpass.jar!/locale/pl-PL/
+locale lastpass pt-BR jar:chrome/lastpass.jar!/locale/pt-BR/
+locale lastpass pt-PT jar:chrome/lastpass.jar!/locale/pt-PT/
+locale lastpass ro-RO jar:chrome/lastpass.jar!/locale/ro-RO/
+locale lastpass ru-RU jar:chrome/lastpass.jar!/locale/ru-RU/
+locale lastpass sk-SK jar:chrome/lastpass.jar!/locale/sk-SK/
+locale lastpass sl-SI jar:chrome/lastpass.jar!/locale/sl-SI/
+locale lastpass sq-AL jar:chrome/lastpass.jar!/locale/sq-AL/
+locale lastpass sr-RS jar:chrome/lastpass.jar!/locale/sr-RS/
+locale lastpass sv-SE jar:chrome/lastpass.jar!/locale/sv-SE/
+locale lastpass ta-IN jar:chrome/lastpass.jar!/locale/ta-IN/
+locale lastpass th-TH jar:chrome/lastpass.jar!/locale/th-TH/
+locale lastpass tl-PH jar:chrome/lastpass.jar!/locale/tl-PH/
+locale lastpass tr-TR jar:chrome/lastpass.jar!/locale/tr-TR/
+locale lastpass uk-UA jar:chrome/lastpass.jar!/locale/uk-UA/
+locale lastpass ur-PK jar:chrome/lastpass.jar!/locale/ur-PK/
+locale lastpass vi-VN jar:chrome/lastpass.jar!/locale/vi-VN/
+locale lastpass zh-CN jar:chrome/lastpass.jar!/locale/zh-CN/
+locale lastpass zh-TW jar:chrome/lastpass.jar!/locale/zh-TW/

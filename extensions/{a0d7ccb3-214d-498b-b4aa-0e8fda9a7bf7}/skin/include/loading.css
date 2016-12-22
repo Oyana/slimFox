@@ -1,0 +1,50 @@
+body {
+	background-color: white;
+}
+#loading {
+	position: fixed;
+	top: 17%;
+	width: 100%;
+	text-align: center;
+}
+#images {
+	margin: 0 auto;
+	width: 210px;
+}
+.image {
+	background: url("chrome://wot/skin/fusion/28_28/no_rep_calculated.png") top left no-repeat;
+	width: 32px;
+	height: 32px;
+	margin-right: 5px;
+	margin-left: 5px;
+	float: left;
+}
+#image-0 {
+	background: url("chrome://wot/skin/fusion/28_28/r1.png") top left no-repeat;
+}
+#image-1 {
+	background: url("chrome://wot/skin/fusion/28_28/r2.png") top left no-repeat;
+}
+#image-2 {
+	background: url("chrome://wot/skin/fusion/28_28/r3.png") top left no-repeat;
+}
+.accessible .image {
+	background: url("chrome://wot/skin/fusion/accessible/28_28/r0.png") top left no-repeat;
+}
+.accessible #image-0 {
+	background: url("chrome://wot/skin/fusion/accessible/28_28/r1.png") top left no-repeat;
+}
+.accessible #image-1 {
+	background: url("chrome://wot/skin/fusion/accessible/28_28/r2.png") top left no-repeat;
+}
+.accessible #image-2 {
+	background: url("chrome://wot/skin/fusion/accessible/28_28/r3.png") top left no-repeat;
+}
+#text {
+	clear: both;
+	color: #222222;
+	font-family: "Tahoma", "Arial", sans-serif;
+	font-size: 25px;
+	width: 100%;
+	padding-top: 24px;
+}

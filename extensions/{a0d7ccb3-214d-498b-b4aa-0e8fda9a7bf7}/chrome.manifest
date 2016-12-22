@@ -1,0 +1,25 @@
+content     wot    content/
+content     wot    content/ contentaccessible=yes
+resource    wot-base-dir content/
+overlay	chrome://browser/content/browser.xul	chrome://wot/content/overlay.xul
+overlay	chrome://navigator/content/navigatorOverlay.xul	chrome://wot/content/overlay.xul
+locale	wot	en-US	locale/en-US/
+locale	wot	ru-RU	locale/ru-RU/
+locale	wot	cs-CZ	locale/cs-CZ/
+locale	wot	de-DE	locale/de-DE/
+locale	wot	fi-FI	locale/fi-FI/
+locale	wot	pl-PL	locale/pl-PL/
+locale	wot	sv-SE	locale/sv-SE/
+locale	wot	it-IT	locale/it-IT/
+locale	wot	fr-FR	locale/fr-FR/
+locale	wot	pt-BR	locale/pt-BR/
+locale	wot	es-ES	locale/es-ES/
+locale	wot	ja-JP	locale/ja-JP/
+locale	wot	ko-KR	locale/ko-KR/
+locale	wot	zh-CN	locale/zh-CN/
+locale	wot	zh-TW	locale/zh-TW/
+locale	wot	uk-UA	locale/uk-UA/
+locale	wot	tr-TR	locale/tr-TR/
+locale	wot	hi-IN	locale/hi-IN/
+skin	wot	classic/1.0	skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://wot/skin/toolbar.css

@@ -1,0 +1,18 @@
+<!ENTITY wot.label					"WOT">
+<!-- Menu items -->
+<!ENTITY wotEnabled.label			"Activé">
+<!ENTITY wotEnabled.accesskey		"A">
+<!ENTITY wotRefresh.label			"Rafraîchir">
+<!ENTITY wotRefresh.accesskey		"R">
+<!ENTITY wotContent.label			"WOT">
+<!ENTITY wotContent.accesskey		"W">
+<!ENTITY wotPreferences.label		"Paramètres…">
+<!ENTITY wotPreferences.accesskey	"P">
+<!ENTITY wotMy.label				"Mon WOT…">
+<!ENTITY wotMy.accesskey			"W">
+<!ENTITY wotCheckUpdates.label		"Recherche de mises à jour…">
+<!ENTITY wotCheckUpdates.accesskey	"h">
+<!ENTITY wotLinkScorecard.label		"Consulter la carte de score WOT…">
+<!ENTITY wotLinkScorecard.accesskey	"W">
+<!-- Rating window -->
+<!ENTITY wotRating.title			"Initialisation de WOT…">

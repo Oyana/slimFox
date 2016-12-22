@@ -1,0 +1,2309 @@
+/*
+	ratingwindow.css
+	Copyright © 2009 - 2014  WOT Services Oy <info@mywot.com>
+
+	This file is part of WOT.
+
+	WOT is free software: you can redistribute it and/or modify it
+	under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	WOT is distributed in the hope that it will be useful, but WITHOUT
+	ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+	or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public
+	License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with WOT. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+body {
+    overflow: hidden;
+    cursor: default;
+    -moz-user-select: none; /* FF specific */
+    width: 580px;
+    height: 444px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    margin: 0; /* FF specific */
+    padding: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+textarea {
+    resize: none;
+}
+
+.link {
+    color: #3073c5;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link.modest {
+    color: #8f8f8f;
+    color: #8f8f8f;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #3073c5; /* explicitly set for .modest mode */
+}
+
+.pseudo-link {
+    color: #3073c5;
+    cursor: pointer;
+    border-bottom: 1px dotted #3073c5;
+}
+
+.pseudo-link:hover {
+    color: red;
+    border-color: red;
+}
+
+#wot-ratingwindow {
+    display: block;
+    padding: 10px 10px 0;
+    /*min-height: 390px;*/
+}
+
+#wot-ratingwindow.wgexpanded {
+    min-height: 407px; /* prevent window to collapse */
+}
+
+#wot-elements {
+    display: block;
+    height: 444px;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+#wot-elements.blur {
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    filter: blur(20px);
+}
+
+/* header, always visible */
+#wot-header {
+    position: relative;
+    height: 40px;
+}
+
+/* Always visible */
+#ratings-area {
+    min-height: 120px;
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 4px 8px;
+    margin: 0 -16px;
+}
+
+/* height of rating area depends on the mode:
+ low height (120px): unrated, rate
+ high height: (122px): rated, commenting, thanks
+ */
+.view-mode #ratings-area {
+    min-height: 100px; /* to fit categories or activity score */
+}
+
+.commenting #ratings-area,
+.thanks #ratings-area {
+    min-height: 112px; /* to fit categories or activity score */
+}
+
+.rate #ratings-area,
+.commenting #ratings-area,
+.thanks #ratings-area {
+    border-bottom: 1px solid #D4D4D4;
+}
+
+#ratings-area:before,
+#ratings-area:after {
+    position: absolute;
+    left: -13px;
+    width: 105%;
+    content: "";
+}
+
+#ratings-area:before {
+    border-top: 1px solid #D2D2D2;
+    top: 0;
+}
+
+#ratings-area:after {
+    /*border-bottom: 1px solid #D2D2D2;*/
+    /*content: "";*/
+    /*bottom: 0;*/
+}
+
+#ratings-area[disabled=disabled],
+#ratings-area[disabled=disabled] .wot-rating-slider {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+    opacity: 0.7;
+}
+
+/* Always visible */
+#main-area {
+    min-height: 241px;
+    padding: 0px 8px;
+    margin: 0 -11px;
+    background-color: #f9f9f9;
+}
+
+.rate #main-area {
+    min-height: 210px;
+    background-color: white;
+}
+
+.commenting #main-area,
+.thanks #main-area {
+    background-color: white;
+}
+
+.wg.view-mode #main-area,
+.wg.wgcommenting #main-area {
+    min-height: 165px;
+}
+
+/* Always visible */
+#bottom-area {
+    /*min-height: 3em;*/
+    padding: 0 8px;
+}
+
+.rate #bottom-area {
+    min-height: 3em;
+}
+
+#header-line-1 {
+    min-height: 34px;
+}
+
+#wot-header-logo {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background: url("chrome://wot/skin/c/WOT_header_logo_x2.png") top left no-repeat;
+    background-size: 68px auto;
+    cursor: pointer;
+    display: inline-block;
+    /*float: left;*/
+    height: 28px;
+    width: 66px;
+}
+
+@-moz-keyframes flashing {
+    0% { opacity: 0.1; }
+    50% { opacity: 0.9; }
+    100% { opacity: 0.1; }
+}
+
+#message-indicator {
+    background-size: 16px auto;
+    width: 16px;
+    height: 16px;
+    display: table-cell;
+    background-position-y: 1px;
+    padding: 0 0.6em;
+    background-repeat: no-repeat;
+    background-image: url("chrome://wot/skin/b/message.png");
+    background-position: 0 4px; /* diff in FF */
+    visibility: hidden;
+}
+
+#message-indicator.unseen {
+    -moz-animation: flashing 0.8s linear infinite;
+    visibility: visible;
+}
+
+#message-indicator.unseen:hover {
+    -moz-animation: none;
+    opacity: 1;
+}
+
+#message-indicator.seen {
+    opacity: 0.1;
+    visibility: visible;
+}
+
+#message-indicator.seen:hover {
+    opacity: 1;
+}
+
+#floating-message {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    width: 362px;
+    z-index: 5;
+    background-color: #F5F5F5;
+    padding: 10px 15px;
+    border: 1px solid #C0C0C0;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px 1px rgba(94, 94, 94, 0.48);
+}
+
+#floating-message-text {
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
+#wot-header-links {
+    position: absolute;
+    top: 6px;
+    right: 0;
+}
+
+.wot-header-link {
+    color: #444444;
+    display: table-cell;
+    font-size: 12px;
+    height: 16px;
+    font-weight: 200;
+    padding: 0 0.6em;
+}
+
+.wot-header-link:not(.notlink):hover {
+    color: #3073c5;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#header-link-profile-text {
+    display: inline-block;
+}
+
+.unregistered #header-link-profile-text {
+    color: #727272;
+    background-color: #E7F1FF;
+    border-radius: 5px;
+    padding: 2px 0.6em 2px;
+}
+
+
+#header-boardmsg {
+    background-color: #FF4C4C;
+    border-radius: 4px;
+    font-size: 10px;
+    text-align: center;
+    color: #FFF;
+    display: inline-block;
+    padding: 1px 4px;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    left: 0px;
+    visibility: hidden;
+}
+
+#header-boardmsg.messages {
+    visibility: visible;
+}
+
+#wot-header-close {
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    height: 14px;
+    width: 14px;
+    background-color: #FFF;
+    margin: 0 0 0 1px;
+    border-radius: 3px;
+    border: 1px solid #B9B9B9;
+    cursor: pointer;
+}
+
+#wot-header-close:hover {
+    background-color: #f4f4f4;
+    border: 1px solid #939393;
+}
+
+/* Cross inside the "close" icon */
+#wot-header-close:after,
+#wot-header-close:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    left: 6px;
+    width: 2px;
+    height: 12px;
+    margin-top: -6px;
+    background: #A2A2A2;
+}
+
+#wot-header-close:before {
+    transform: rotate(45deg);
+}
+
+#wot-header-close:after {
+    transform: rotate(135deg);
+}
+
+#target-title {
+    max-width: 202px;
+    margin-left: 70px;
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow: hidden;
+    max-height: 34px;
+    display: inline-block;
+    margin-top: -14px;
+}
+
+#wot-title-text {
+    /*position: absolute;*/
+    color: #777676;
+    font-size: 16px;
+    font-weight: 200;
+    overflow: hidden;
+}
+
+/* Hostname */
+#hostname-text {
+    color: #131313;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 43px;
+    overflow: hidden;
+    -moz-user-select: text;
+}
+
+
+#header-line-2 {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 70px;
+}
+
+#wot-scorecard-visit {
+    display: inline;
+    font-size: 10px;
+    color: #3685DF;
+    font-weight: 500;
+    /*max-width: 250px;*/
+    /*max-height: 1em;*/
+    /*overflow: hidden;*/
+}
+
+/*#hostname-text[status="information"] {*/
+/*color: #4e4e4e;*/
+/*}*/
+
+#tiny-thankyou {
+    display: none;
+    position: absolute;
+    margin: -35px 0 0 150px;
+    padding: 0.6em 1.5em;
+    background-color: rgba(195, 241, 173, 0.8);
+    color: #000;
+    font-size: 13px;
+    z-index: 25;
+    border-radius: 3px;
+}
+
+.wot-rating {
+    position: absolute;
+    top: 26px;
+    height: 85px; /* diff in FF */
+    width: 248px;
+    margin-left: 10px;
+    margin-right: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #D4D4D4;
+    border-bottom: none;
+    -moz-user-select: none;
+    padding: 3px 2px 0 15px;
+}
+
+#wot-ratingwindow.rate .wot-rating,
+#wot-ratingwindow.commenting .wot-rating,
+#wot-ratingwindow.thanks .wot-rating {
+    /* in the rate mode it has short look */
+    border-bottom: 1px solid #D4D4D4;
+}
+
+/* rating header */
+.wot-rating-header {
+    color: #444444;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#wot-myratings-header {
+}
+
+.title {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #454545;
+}
+
+#myrating-header {
+
+}
+
+/* Headers for rating controls */
+#wot-myrating-0-header,
+#wot-myrating-4-header {
+    /*left: 1em;*/
+    font-size: 12px;
+    position: absolute;
+    color: #5C5C5C;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+
+/* Diff for CS rating control */
+#wot-myrating-4-header {
+    left: 268px;
+    color: rgb(92, 92, 92);
+    font-size: 9pt;
+}
+
+/* rating */
+.wot-rating-border {
+    border-top: 1px solid #f4f4f4;
+    display: block;
+    height: 1px;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 312px;
+}
+
+#rated-votes {
+    margin-top: 74px;
+    font-size: 12px;
+    padding: 0px 0px 0px 25px;
+    max-height: 2em;
+    display: none;
+    position: absolute;
+    top: -9999px;
+
+}
+
+#wot-ratingwindow:not(.commenting) #rated-votes.commented,
+#wot-ratingwindow:not(.commenting) #rated-votes:not(.commented):not(.voted) {
+    padding-left: 53px;
+}
+
+#rated-votes:before {
+    content: "";
+    position: absolute;
+    background-image: url("chrome://wot/skin/b/input-icons.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 40px auto;
+    width: 21px;
+    height: 20px;
+    margin-left: -30px;
+    margin-top: 0;
+}
+
+#rated-votes:not(.commented).voted:before {
+    /* don't show icon if website is not commented */
+    /*background-position: 0 -20px;*/
+    display: none;
+}
+
+#rated-votes.voted.commented:before {
+    background-position: -20px 0px;
+    margin-top: 2px;
+}
+
+#rated-votes:not(.voted).commented:before {
+    /*background-position: 0 -62px;*/
+    background-position: 0 0;
+}
+
+.commenting #rated-votes:before {
+    /* hide icon in Commenting mode */
+    display: none;
+}
+
+#voted-categories {
+    width: 430px;
+    position: absolute;
+    overflow: hidden;
+    color: #acacac;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 1px 0;
+    height: 20px;
+}
+
+#rated-votes.voted {
+    height: 24px; /* fixing a bug when mode is switched from wgcomment to wgexpanded */
+}
+
+#rated-votes.voted #voted-categories {
+    color: #6A6A6A;
+}
+
+#voted-categories.wider {
+    width: 530px;
+}
+
+#voted-categories-content {
+    border-bottom: 1px dotted transparent;
+    cursor: pointer;
+}
+
+#rated-votes:not(.voted) #voted-categories-content {
+    color: #d14540;
+    font-weight: bold;
+    display: inline;
+}
+
+/*#rated-votes #voted-categories-content:hover {*/
+/*border-bottom-color: #acacac;*/
+/*}*/
+
+#rated-votes:not(.voted) #voted-categories-content:hover {
+    border-bottom-color: #d14540;
+}
+
+#voted-categories-content .votedcategory {
+    width: auto;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border: 1px solid #DEDEDE;
+    background-color: #DEDEDE;
+    height: 15px;
+    width: 81px;
+    float: left;
+    margin: 2px 4px 2px 0;
+}
+
+#voted-categories-content .category-text {
+    float: left;
+    font-size: 11px;
+    color: #515151;
+    padding-left: 7px;
+    line-height: 15px;
+    width: 52px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* For Up votes no need to show thumbs up */
+#voted-categories-content .votedcategory.hand-up .category-text {
+    width: 58px;
+}
+
+#voted-categories-content .more-categories {
+    font-size: 11px;
+    color: #808080;
+    padding: 5px 0;
+}
+
+.category-hand {
+    padding: 0 6px 4px 4px;
+    float: left;
+    border-radius: 100px 0 0 100px;
+    -moz-border-radius: 100px 0 0 100px;
+    -webkit-border-radius: 100px 0 0 100px;
+    height: 11px;
+    width: 8px;
+}
+
+.category-hand.hand-up {
+    background-color: #FCFCFC;
+    width: 0;
+    /*display: none;*/
+}
+
+.category-hand.hand-up.c-negative {
+    background-color: #f77448;
+}
+
+.category-hand.hand-up.c-questionable {
+    background-color: #f6cd0e;
+}
+
+.category-hand.hand-up.c-positive {
+    background-color: #6dc14a;
+}
+
+.category-hand.hand-up.c-neutral {
+    background-color: #FCFCFC;
+}
+
+.category-hand.hand-down {
+    background-color: #7DA6DB;
+}
+
+.hand-up .hand-icon {
+    width: 12px;
+    height: 14px;
+}
+
+.hand-down .hand-icon {
+    background-image: url("chrome://wot/skin/b/thumbs.png");
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 14px;
+}
+
+.hand-down .hand-icon {
+    background-position: -12px 0;
+}
+
+#change-ratings {
+    margin-top: 213px;
+    font-size: 10px;
+    text-align: center;
+    color: #3C88E0;
+    font-weight: 600;
+    cursor: pointer;
+    display: none;
+}
+
+#change-ratings:hover {
+    text-decoration: underline;
+}
+
+/* don't chow this link during "commenting" mode */
+.commenting #change-ratings {
+    visibility: hidden;
+}
+
+.rating-values {
+    position: relative;
+    min-height: 66px;
+    padding-right: 22px;
+    padding-left: 10px;
+}
+
+.rep-tr-block {
+    position: absolute;
+    top: 0px;
+}
+
+.rep-cs-block {
+    width: 250px;
+    position: absolute;
+    top: 0px;
+    left: 289px;
+}
+
+.wot-rating-reputation {
+	background-image: url("chrome://wot/skin/c/donuts_150.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 75px 510px;
+    height: 85px;
+    width: 75px;
+    margin: 26px auto 0 auto;
+}
+
+/*#wot-ratingwindow.accessible .wot-rating-reputation {*/
+    /*background-image: url("b/accessible/donuts_150.png");*/
+/*}*/
+
+.wot-rating-reputation[reputation="rx"] {
+    background-position: 0 0;
+}
+
+.wot-rating-reputation[reputation="r0"] {
+    background-position: 0 0;
+}
+
+.wot-rating-reputation[reputation="r1"] {
+    background-position: 0 -425px;
+}
+
+.wot-rating-reputation[reputation="r2"] {
+    background-position: 0 -340px;
+}
+
+.wot-rating-reputation[reputation="r3"] {
+    background-position: 0 -255px;
+}
+
+.wot-rating-reputation[reputation="r4"] {
+    background-position: 0 -170px;
+}
+
+.wot-rating-reputation[reputation="r5"] {
+    background-position: 0 -85px;
+}
+
+.wot-rating-confidence-block {
+    margin-top: 4px;
+    font-weight: 500;
+    margin-left: -10px;
+}
+
+.wot-rating-confidence {
+    display: inline-block;
+    position: absolute;
+    left: 77px;
+    width: 172px;
+    height: 20px;
+}
+
+.wot-rating-confidence-label {
+    font-size: 12px;
+}
+
+.confidence-dot {
+    border: 1px solid #676767;
+    border-radius: 50%/50%;
+    width: 4px;
+    height: 4px;
+    margin-right: -1.5px;
+    display: inline-block;
+}
+
+.wot-rating-confidence[confidence="c1"] .confidence-dot-1 {
+    background-color: #676767;
+}
+
+.wot-rating-confidence[confidence="c2"] .confidence-dot-1,
+.wot-rating-confidence[confidence="c2"] .confidence-dot-2 {
+    background-color: #676767;
+}
+
+.wot-rating-confidence[confidence="c3"] .confidence-dot-1,
+.wot-rating-confidence[confidence="c3"] .confidence-dot-2,
+.wot-rating-confidence[confidence="c3"] .confidence-dot-3 {
+    background-color: #676767;
+}
+
+.wot-rating-confidence[confidence="c4"] .confidence-dot-1,
+.wot-rating-confidence[confidence="c4"] .confidence-dot-2,
+.wot-rating-confidence[confidence="c4"] .confidence-dot-3,
+.wot-rating-confidence[confidence="c4"] .confidence-dot-4 {
+    background-color: #676767;
+}
+
+.wot-rating-confidence[confidence="c5"] .confidence-dot-1,
+.wot-rating-confidence[confidence="c5"] .confidence-dot-2,
+.wot-rating-confidence[confidence="c5"] .confidence-dot-3,
+.wot-rating-confidence[confidence="c5"] .confidence-dot-4,
+.wot-rating-confidence[confidence="c5"] .confidence-dot-5 {
+    background-color: #676767;
+}
+
+.rating-legend-wrapper {
+    position: absolute;
+    margin: -4px 0 0 0;
+    height: 23px;
+}
+
+.rating-legend {
+    position: relative;
+    height: 16px;
+    color: #454545;
+    font-size: 15px;
+    text-align: left;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.rating-legend[r=r1] {
+    color: #dd2e31;
+}
+
+.rating-legend[r=r2] {
+    color: #e25533;
+}
+
+.rating-legend[r=r3] {
+    color: #de7c1b;
+}
+
+.rating-legend[r=r4] {
+    color: #5bab28;
+}
+
+.rating-legend[r=r5] {
+    color: #3b9013;
+}
+
+
+/* Reputation Info area */
+
+#reputation-info {
+    padding: 0 5px;
+}
+
+.rep-info-sections {
+    position: relative;
+    padding-top: 9px;
+}
+
+#wot-rating-header-wot {
+    display: inline-block;
+    width: 264px;
+    margin-top: 8px;
+    text-align: left;
+}
+
+#rep-blocks {
+    /*width: 200px;*/
+}
+
+.rep-block {
+    width: 254px;
+    padding: 14px 0px 0 11px;
+    background-color: #FFFFFF;
+    border: 1px solid #D4D4D4;
+    border-top: none;
+    height: 202px;
+}
+
+.rep-block-header {
+    font-size: 18px;
+    color: #444444;
+    font-weight: 500;
+    /*max-height: 1.3em; *//* Diff in FF */
+    /*overflow: hidden;*/
+}
+
+#wot-scorecard-comment-container {
+    display: block;
+    margin: 0;
+    width: 310px;
+}
+#wot-scorecard-comment {
+    display: block;
+    margin-bottom: 0px;
+    margin-top: 2px;
+    padding-left: 1px;
+}
+
+.categories-area {
+    position: absolute;
+    top: 105px;
+    left: 75px; /* Diff in FF */
+    width: 172px;
+    height: 42px;
+}
+
+/* Categories view list */
+
+.rating-reasons {
+    margin-left: -10px;
+    margin-top: -5px;   /* Diff in FF */
+}
+
+.rating-reasons-label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#tr-categories-list,
+#cs-categories-list {
+    margin: 0px 0 0 0;
+    padding: 0;
+    height: 36px;
+    line-height: 16px;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+.cat-item {
+    font-size: 9px;
+    color: #656565;
+    display: inline-block;
+    font-weight: 200;
+    line-height: 18px;
+    padding: 1px;
+    white-space: nowrap;
+}
+
+.cat-item.my-vote {
+    font-size: 12px;
+}
+
+.categories-tooltip .cat-item {
+    display: block;
+    line-height: 14px;
+    padding: 4px 1px;
+}
+
+.cat-item-limited {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    vertical-align: bottom;
+    text-overflow: clip;
+    -ms-word-break: break-all;
+    word-break: break-all;
+
+    /* Non standard for webkit */
+    word-break: break-all;
+    white-space: nowrap;
+}
+
+.names-limited .cat-item-limited {
+    max-width: 70px;
+}
+
+.names-limited .cat-item-limited.faded:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6px;
+    height: 12px;
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, white 80%, white 100%);
+    background-image: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, white 80%, white 100%);
+    background-image: -o-linear-gradient(left, rgba(255,255,255,0) 0%, white 80%, white 100%);
+    background-image: linear-gradient(left, rgba(255,255,255,0) 0%, white 80%, white 100%);
+    pointer-events: none;
+}
+
+.cat-item.c-negative {
+    color: #d90012;
+}
+
+.cat-item.c-neutral {
+    color: #55A928;
+}
+
+.cat-item.c-positive {
+    color: #55A928;
+
+}
+
+.cat-item.c-questionable {
+    color: #ec7f22;
+}
+
+
+.c0 {
+    font-size: 9px !important;
+    color: #656565 !important;
+}
+
+.c1 {
+    font-size: 10px;
+    font-weight: 200;
+}
+
+.c2,
+.c3 {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.c4,
+.c5 {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.cat-separator {
+    display: inline-block;
+}
+
+/* Bottom area */
+
+/* user */
+.wot-user {
+    display: none;
+    width: 316px;
+}
+
+/* hidden by default, shown in some modes only */
+#user-communication {
+    display: none;
+    height: 45px;
+}
+
+.wg #user-communication {
+    display: none !important;
+}
+
+.user-comm-activity {
+    margin: -4px 10px 0 12px;
+    text-align: center;
+    visibility: hidden;
+    height: 20px;
+    vertical-align: top;
+    padding-top: 0;
+}
+
+
+.unrated .user-comm-activity {
+    visibility: visible;
+}
+
+.wot-user-header {
+    /* "your activity score" */
+    color: #8f8f8f;
+    font-size: 11px;
+}
+
+#user-activityscore {
+    color: #838383;
+    font-size: 11px;
+    margin-left: 1px;
+    font-weight: bold;
+}
+
+#user-activityscore:after {
+    font-weight: normal;
+    content: ".";
+}
+
+.wot-user-notice {
+    color: #8F8F8F;
+    font-size: 11px;
+}
+
+.user-level {
+    font-weight: bold;
+}
+
+.wot-user-text {
+    /* Link to the user's profile */
+    color: #8f8f8f;
+    display: none;
+    font-size: 11px;
+    height: 23px;
+    line-height: 11px;
+}
+
+.wot-user-text[url^="http"]:hover {
+    color: #3073c5;
+    cursor: pointer;
+}
+
+/* message */
+#wot-message {
+    display: none;
+    height: 45px;
+    background-color: white;
+}
+
+#wot-message:before {
+    position: absolute;
+    height: 0px;
+    border-top: 1px solid #D9D9D9;
+    content: "";
+    width: 100%;
+    margin-top: 0;
+    margin-left: -19px;
+}
+
+#wot-message-text {
+    color: #989898;
+    display: block;
+    font-size: 11px;
+    height: auto;
+    line-height: 13px;
+    overflow: hidden;
+    padding: 8px 20px 8px;
+    text-align: center;
+    white-space: normal;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#wot-message-text[url^="http"]:hover,
+#wot-message[status="important"] #wot-message-text[url^="http"]:hover,
+#wot-message[status="critical"] #wot-message-text[url^="http"]:hover,
+#floating-message[url^="http"]:hover {
+    color: #3073c5;
+    cursor: pointer;
+}
+
+#wot-message[status="important"] {
+    border-color: #ea8b2b;
+}
+#wot-message[status="critical"] {
+    border-color: #d81f27;
+}
+#wot-message[status="important"] #wot-message-text {
+    color: #ea8b2b;
+}
+#wot-message[status="critical"] #wot-message-text {
+    color: #d81f27;
+}
+
+#floating-message[status="important"] {
+    background-color: #FFD5AB;
+}
+
+#floating-message[status="critical"] {
+    background-color: #FF8B90;
+}
+
+/* -- Web Guide */
+
+#wg-area {
+    display: none;
+    min-height: 65px;
+}
+
+#wg-area:before {
+    position: absolute;
+    height: 0;
+    border-top: 1px solid #D9D9D9;
+    content: "";
+    width: 100%;
+    margin-top: 0px;
+    margin-left: -24px;
+}
+
+.wgexpanded #wg-area:before {
+    margin-top: -1px; /* hide the top line to avoid doubling of the separator */
+}
+
+#wg-about-area {
+    display: none;
+    padding: 0px 20px;
+    font-size: 13px;
+}
+
+#wg-about-area p {
+    line-height: 1.5em;
+}
+
+.text-title {
+    font-weight: bold;
+}
+
+#wg-about-learnmore {
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+}
+
+#wg-about-ok {
+    display: inline-block;
+}
+
+.wg-title-bar {
+    width: 274px;
+    display: block;
+    margin-bottom: 3px;
+}
+
+#wg-title {
+    display: inline-block;
+    margin-top: 11px;
+    margin-bottom: 2px;
+}
+
+.wg-beta {
+    vertical-align: super;
+    font-size: 9px;
+    padding-left: 4px;
+    color: #5C5C5C;
+}
+
+#wg-right-bar {
+    position: absolute;
+    right: 33px;
+    margin-top: -25px;
+}
+
+#wg-right-bar * {
+    -moz-user-select: none;
+}
+
+#wg-change {
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 4px;
+    font-variant: small-caps;
+    border: 1px solid rgba(49, 99, 185, 0.7); /* diff in FF */
+    color: #3163B9;
+    cursor: pointer;
+    padding: 1px 12px;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+#wg-change:hover {
+    color: #FFF;
+    background-color: rgba(49, 99, 185, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+}
+
+#wg-expander {
+    display: inline-block;
+    font-size: 11px;
+    padding: 0px 0px;
+    margin: 0 4px;
+}
+
+#wg-expander:hover {
+    /*color: #FFF;*/
+    /*background-color: rgba(49, 99, 185, 0.94);*/
+    /*border-bottom: 1px solid rgba(255, 255, 255, 0.32);*/
+}
+
+.wgcommenting #wg-change {
+    display: none;
+}
+
+#wg-about {
+    display: inline-block;
+    font-size: 11px;
+    margin: 0 4px;
+    border-bottom: 1px dotted #E2E2E2;
+    color: #B8B8B8;
+    cursor: pointer;
+}
+
+#wg-about:hover {
+    border-bottom: 1px dotted #3163B9;
+    color: #3163B9;
+}
+
+#wg-tags {
+    margin-left: 2px;
+    margin-top: -1px; /* Diff in FF */
+    height: 27px;  /* Diff in FF */
+    max-height: none;
+    overflow: hidden;
+    -moz-margin-before: 0;
+    -moz-margin-after: 0;
+    -moz-padding-start: 0;
+    list-style-type: none;
+}
+
+#wg-tags.expanded {
+    height: auto;
+    max-height: 190px;
+}
+
+.wg-tag {
+    display: inline-block;
+    font-size: 14px;
+    padding: 2px 4px;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 1px;
+    line-height: 1.4em;
+    color: #5a5450;
+    text-decoration: none;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.wg-tag:not(.group):hover {
+    text-decoration: underline;
+}
+
+.wg-tag.group {
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+
+.wg-tag.mytag {
+    font-size: 12px;
+}
+
+.wg-tag.mytag:not(.group):hover:before {
+    content: "#";
+    color: #757575;
+    margin-left: -7px;
+    position: absolute;
+    font-size: 10px;
+    font-weight: lighter;
+    margin-top: 1px;
+}
+
+.wg-tag.group:hover {
+    border-color: rgba(68, 137, 255, 0.5);;
+    color: #3163B9;
+}
+
+.wg-tag.info:after {
+    position: relative;
+    top: -5px;
+    left: 1px;
+    line-height: 1.2em;
+    display: inline-block;
+    transition: background-color 0.2s;
+    content: "W";
+    font-family: serif;
+    background-color: #B3B3B3;
+    font-size: 9px;
+    color: #FFF;
+    /*padding: 1px 2px;*/
+    padding: 2px 2px 0; /* Diff in FF */
+    border-radius: 4px;
+}
+
+.wg-tag.info:hover:after {
+    background-color: #171717;
+}
+
+#wg-addmore {
+    display: inline-block;
+    color: #C0C0C0;
+    font-style: italic;
+    font-size: 12px;
+    margin: 5px 10px;
+    cursor: pointer;
+    transition: border 0.2s, color 0.2s;
+    overflow: hidden;
+    height: 1.3em;
+}
+
+#wg-addmore:hover {
+    border-bottom: 1px dotted #898989;
+    color: #898989;
+}
+
+#wg-viewer {
+    position: absolute;
+    top: 30px;
+    left: 66px;
+    width: 420px;
+    height: 330px;
+    border: 1px solid #C0C0C0;
+    box-shadow: 2px 2px 11px rgba(73, 73, 73, 0.48);
+    border-radius: 3px;
+    background-color: #FFF;
+    z-index: 60;
+    transition: opacity 0.5s;
+    padding-bottom: 10px;
+}
+
+#wg-viewer-frame.mini {       /* pre-loading style to compensate flickering of the content inside iframe */
+    opacity: 0.01;
+}
+
+.wg-viewer-title {
+    height: 20px;
+    padding: 7px 10px 3px 10px;
+    background-color: #D7D7DB;
+    color: #494949;
+}
+
+#wg-viewer-frame {
+    display: none;
+    border: none;
+    width: 400px;
+    height: 305px;
+    margin: 0 10px;
+    transition: opacity 0.5s;
+}
+
+.wgcommenting #wg-addmore {
+    visibility: hidden;
+    width: 0;   /* hacky way of hiding the element */
+}
+
+/* -- // -- */
+
+/* partner */
+#wot-partner {
+    display: none;
+    height: 32px;
+    margin-bottom: 3px;
+    margin-left: 6px;
+    margin-right: 12px;
+    margin-top: 4px;
+    padding: 0;
+    text-align: left;
+    width: 298px;
+}
+/*#wot-partner[partner="name"] {
+	display: block;
+	background: url("partner/name.png") center right no-repeat;
+}*/
+#wot-partner-text {
+    color: #333;
+    display: block;
+    font-size: 11px;
+    height: 32px;
+    margin: 0;
+    padding-top: 7px;
+    width: 148px;
+}
+
+/* Hidden by default */
+#rate-buttons,
+#ok-button {
+    position: absolute;
+    bottom: 0.2em; /* different in FF */
+    width: 544px;
+    height: 30px;
+    display: none;
+}
+
+.wgcommenting #rate-buttons {
+/* buttons in WebGuide commenting mode are positioned differently */
+    bottom: 90px;
+}
+
+.wgcommenting #btn-comment {
+    display: none !important;  /* hide this redundant button */
+}
+
+.buttons-wrapper {
+    position: relative;
+}
+
+.right-side {
+    position: absolute;
+    right: 0;
+}
+
+.left-side {
+    position: absolute;
+    left: 8px;
+    margin-top: 0.2em;
+}
+
+.rw-button {
+    display: inline;
+    float: left;
+    padding: 0.4em 1.5em;
+    margin: 0.2em 0.5em;
+    border-radius: 2px;
+    font-weight: 600;
+    color: #656565;
+    cursor: pointer;
+    border: 1px solid #656565;
+    font-size: 10px;
+    min-width: 51px;
+    text-align: center;
+}
+
+.rw-button:not(.disabled):active {
+    box-shadow: 1px 1px 1px #d2d2d2 inset;
+    text-shadow: 0px 0px #DDD;
+}
+
+.rw-button:not(.disabled):hover {
+    /*background-image: -webkit-linear-gradient(top, #FFF 0%,#dadada 83%, #f3f1f1 100%);*/
+    /*color: #6aac43;*/
+    background-color: #656565;
+    opacity: 0.5;
+    color: white;
+}
+
+.rw-button.disabled {
+    color: #A5A5A5;
+    text-shadow: none;
+    cursor: default;
+}
+
+#btn-comment {
+    position: absolute;
+    left: 112px;
+}
+
+#btn-delete {
+    margin-top: 3px;
+    margin-left: -3px;
+    cursor: pointer;
+}
+
+.btn-delete_icon {
+    height: 17px;
+    width: 15px;
+    background: url("chrome://wot/skin/c/recycling-bin.png") top left no-repeat;
+    background-size: 15px 17px;
+    float: left;
+    margin-right: 4px;
+}
+
+#btn-delete:hover .btn-delete_icon {
+    background: url("chrome://wot/skin/c/recycling-bin-red.png") top left no-repeat;
+    background-size: 15px 17px;
+}
+
+.btn-delete_label {
+    font-size: 10px;
+    white-space: nowrap;
+    padding: 3px 2px 0 2px;
+    font-weight: 200;
+    color: #ea4d4c;
+    display: none;
+}
+
+#btn-delete:hover .btn-delete_label {
+    display: block;
+}
+
+.wgcommenting #btn-delete {
+    display: none !important;
+}
+
+.btn-submit {
+    padding-left: 2em;
+    padding-right: 2em;
+    text-transform: capitalize;
+}
+
+.btn-submit:not(.disabled).warning {
+    border: 1px solid #e4991c;
+    color: #e4991c;
+}
+
+.rw-button:not(.disabled).warning:hover {
+    background-color: #e4991c;
+    color: white;
+    opacity: 0.9;
+}
+
+.btn-submit:not(.disabled).highlight {
+    border: 1px solid #55A651;
+    color: #55A651;
+}
+
+.rw-button:not(.disabled).highlight:hover {
+    background-color: #55A651;
+    color: white;
+    opacity: 0.9;
+}
+
+.rw-buttons-expander {
+    display: inline;
+    float: left;
+    width: 38%;
+}
+
+
+/* Categorues selector style */
+
+#categories-selection-area {
+    display: none;
+    padding: 0 15px;
+    position: relative;
+    height: 213px;
+}
+
+.category-description {
+    display: none;
+    position: relative;
+    top: 4px;
+    background-color: #f7f7f7;
+    height: 28px;
+    width: 525px;
+    font-size: 11px;
+    padding: 2px 5px 6px; /* Different in FF */
+    border-radius: 2px;
+    color: #676767;
+    line-height: 1.2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    border: 0px solid #f7f7f7;
+    vertical-align: middle;
+}
+
+.category-description.warning {
+    font-size: 12px;
+    color: red;
+    font-weight: 200;
+    border-radius: 1px;
+}
+
+.group-title {
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.category-title,
+.comment-title {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 11px;
+    height: 25px;
+    color: #454545;
+    text-align: center;
+}
+
+.category-selector {
+    height: 168px;/* to occupy space and give other elements proper positioning */
+    position: absolute;
+    margin-top: 1px;
+}
+
+.category-selector .dropdown-menu {
+    min-height: 120px;
+    display: block;
+    float: left;
+    padding: 0;
+    list-style: none;
+    margin-top: 5px;
+}
+
+.category-selector li {
+    display: block;
+    margin: 1px 0;
+    padding: 11px 5px 11px 5px;
+    width: 103px;
+    z-index: 1000;
+    list-style: none;
+    cursor: pointer;
+    background: #ffffff; /* Old browsers */
+    text-align: right;
+}
+
+.category-selector li.invisible {
+    display: none;
+}
+
+.category-selector li .group-title {
+    display: block;
+    clear: both;
+    line-height: 10px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.category-selector .popover {
+    position: absolute;
+    z-index: 990;
+    display: none;
+    min-height: 172px;
+    max-height: 172px;
+    width: 420px;
+    padding: 2px 0;
+    text-align: left;
+    white-space: normal;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    color: #444444;
+}
+
+.category-selector.warning .popover {
+    /*border: 1px solid #FF2C00;*/
+}
+
+.category-selector .category {
+    line-height: 12px;
+    font-weight: normal;
+    font-size: 11px;
+    padding: 3px 8px;
+    position: relative;
+    margin: 1px 4px;
+}
+
+.category-selector .shortlist .category {
+    line-height: 15px;
+}
+
+.category-selector .category:hover,
+.category-selector .category:hover .cat-vote-right {
+    cursor: pointer;
+}
+
+.category-selector .category.invisible:not([voted]) {
+    /* voted and identified categories should be always visible in both short/full list modes */
+    display: none;
+}
+
+
+/* If category is identified by WOT */
+.category-selector .identified .cat-name {
+    font-weight: bold;
+    /*color: #747474;*/
+}
+
+.category-selector .dynamic .cat-vote {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.category-selector .cat-vote-left {
+    display: inline;
+    float: left;
+    margin: 1px 0px 0 0;
+    padding: 0px 2px;
+    border: 0px solid transparent;
+    font-size: 10px;
+    background-image: url("chrome://wot/skin/c/checkbox_empty.png");
+    background-size: 17px 13px;
+    background-repeat:no-repeat;
+    width: 17px;
+    height: 13px;
+}
+
+.category-selector .cat-vote-right {
+    display: inline;
+    float: left;
+    margin: 2px 2px 0 0;
+    padding: 1px 5px 0;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    font-size: 10px;
+    background-color: white;
+}
+
+.category-selector .category[voted="1"][grp-index="5"] .cat-name,
+.category-selector .category[grp-index="5"]:hover .cat-name,
+.category-selector .category[voted="1"][grp-index="3"] .cat-name,
+.category-selector .category[grp-index="3"]:hover .cat-name,
+
+/* 404 category - Site for kids */
+.category-selector .category[voted="1"][data-cat="404"] .cat-name,
+.category-selector .category[data-cat="404"]:hover .cat-name
+{
+    color: #55A928;
+}
+
+.category-selector .category[voted="1"][grp-index="2"] .cat-name,
+.category-selector .category[grp-index="2"]:hover .cat-name,
+
+/* 402 - Incidental nudity */
+.category-selector .category[voted="1"][data-cat="402"] .cat-name,
+.category-selector .category[data-cat="402"]:hover .cat-name
+{
+    color: #ec7f22;
+}
+
+.category-selector .category[voted="1"][grp-index="1"] .cat-name,
+.category-selector .category[grp-index="1"]:hover .cat-name,
+
+/* 401 - porno, 403 - gruesome/shocking content */
+.category-selector .category[voted="1"][data-cat="401"] .cat-name,
+.category-selector .category[data-cat="401"]:hover .cat-name,
+.category-selector .category[voted="1"][data-cat="403"] .cat-name,
+.category-selector .category[data-cat="403"]:hover .cat-name
+{
+    color: #d90012;
+}
+
+
+
+
+/*.category-selector .cat-vote-left:after {*/
+/*padding-left: 3px;*/
+/*position: absolute;*/
+/*color: silver;*/
+/*content: "|";*/
+/*}*/
+
+/* when yes/no is hovered, hide the vertical pipe-separator */
+/*.category-selector .cat-vote:hover .cat-vote-left:after,*/
+/*.category-selector .category[voted] .cat-vote-left:after {*/
+/*content: "";*/
+/*}*/
+
+.category-selector .cat-vote-left:hover {
+}
+
+/* Checkbox in voted state */
+.category-selector .category[voted="1"] .cat-vote-left {
+    background-image: url("chrome://wot/skin/c/checkbox_black.png");
+}
+
+.category-selector .category[voted="1"][data-cat="403"] .cat-vote-left,
+.category-selector .category[voted="1"][data-cat="401"] .cat-vote-left,
+.category-selector .category[voted="1"][grp-index="1"] .cat-vote-left {
+    background-image: url("chrome://wot/skin/c/checkbox_red.png");
+}
+
+.category-selector .category[voted="1"][grp-index="2"] .cat-vote-left,
+.category-selector .category[voted="1"][data-cat="402"] .cat-vote-left {
+    background-image: url("chrome://wot/skin/c/checkbox_orange.png");
+}
+
+.category-selector .category[voted="1"][grp-index="5"] .cat-vote-left,
+.category-selector .category[voted="1"][data-cat="404"] .cat-vote-left {
+    background-image: url("chrome://wot/skin/c/checkbox_green.png");
+}
+
+.category-selector .category .cat-vote-right:hover {
+    border: 1px solid #74B1FF;
+    background-color: white;
+    color: #319de7;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 4px;
+}
+
+/* "I disagree" in voted state */
+.category-selector .category[voted="-1"] .cat-vote-right,
+.category-selector .category[voted="-1"] .cat-vote-right:hover {
+    border: 1px solid white;
+    background: #2C7FE9 !important;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 4px;
+    color: #ffffff !important;
+}
+
+.category-selector .category-breakline {
+    height: 1px;
+    width: 100%;
+    background: #E1E0E0;
+    margin: 1px auto;
+}
+
+.category-selector li:first-of-type {
+}
+
+.category-selector li:not(.invisible):last-of-type {
+}
+
+.category-selector .maintainHover {
+    color: #525252;
+    font-weight: 400;
+    background: #ffffff;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+.category-selector .maintainHover[grp-name="1"] {
+    color: #fff;
+    font-weight: 400;
+    background: #55A928;
+}
+
+.category-selector .maintainHover[grp-name="2"] {
+    color: #fff;
+    font-weight: 400;
+    background: #ec7f22;
+}
+
+.category-selector .maintainHover[grp-name="3"] {
+    color: #fff;
+    background: #d90012;
+}
+
+.category-selector .maintainHover[grp-name="5"] {
+    color: #525252;
+    background: #c0c0c0;
+}
+
+.category-selector li[grp-name="1"]:not(.maintainHover):hover .group-title {
+    color: #55A928;
+}
+
+.category-selector li[grp-name="2"]:not(.maintainHover):hover .group-title {
+    color: #ec7f22;
+}
+
+.category-selector li[grp-name="3"]:not(.maintainHover):hover .group-title {
+    color: #d90012;
+}
+
+.category-selector li[grp-name="5"]:not(.maintainHover):hover .group-title {
+    color: #000;
+}
+
+input[type=checkbox].css-checkbox {
+    display:none;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left: 20px;
+    height: 15px;
+    display: inline-block;
+    line-height: 12px;  /* diff in FF */
+    background-image: url('chrome://wot/skin/c/full-list-off.png');
+    font-size: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    background-position-y: 0px;  /* diff in FF */
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-image: url('chrome://wot/skin/c/full-list-on.png');
+}
+
+.css-label {
+    background-repeat: no-repeat;
+    background-size: 14px auto;
+}
+
+label.css-label span {
+    display: none;
+}
+
+.cat-full-list {
+    position: absolute;
+    margin-left: 2px;
+    margin-top: 170px;  /* diff in FF */
+}
+
+.cat-full-list label {
+    color: #585858;
+}
+
+.cat-full-list:hover .css-label span {
+    display: inline;
+}
+
+/* The commenting feature */
+
+#commenting-area {
+    display: none;  /* is shown from JS when needed */
+    margin: auto 19px;
+    min-height: 225px;
+    -moz-user-select: none; /* FF specific */
+}
+
+.wgcommenting #commenting-area {
+    min-height: 275px;
+}
+
+.wgcommenting #commenting-area:before {
+    position: absolute;
+    height: 0;
+    border-top: 1px solid #D9D9D9;
+    content: "";
+    width: 100%;
+    margin-top: -9px;
+    margin-left: -34px;
+}
+
+.comment-title {
+    /* see the initial values at the beginning of this file */
+    padding: 3px 0 4px;
+}
+
+#comment-top-hint {
+    display: none;
+    color: #979797;
+    font-size: 12px;
+    margin-bottom: 15px;
+    line-height: 1.5em;
+}
+
+.wgcommenting #comment-top-hint {
+    display: block;
+}
+
+.user-comment-wrapper {
+    float: right;
+}
+
+#user-comment {
+    -moz-appearance: textfield-multiline;  /* different in Firefox */
+    -moz-user-select: text;  /* different in Firefox */
+    cursor: text;  /* different in Firefox */
+    height: 152px;
+    width: 402px;
+    /*margin-right: 10px;*/
+    padding: 8px;
+    border: 2px solid #acacac;
+    border-radius: 3px;
+    font-size: 13px;
+    /*font-family: Arial;*/
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: none;
+}
+
+#user-comment.warning {
+    padding-top: 28px;
+    height: 138px;
+}
+
+#user-comment[disabled] {
+    background-color: #F7F7F7;
+    color: #999;
+}
+
+#comment-side-hint {
+    padding: 10px 0 0 0;
+    float: left;
+    width: 100px;
+}
+
+#comment-side-hint p {
+    /* hints pieces */
+    margin: 0 0 8px;
+    font-size: 11px;
+    color: #666;
+}
+
+#comment-register,
+#comment-captcha {
+    display: none;
+    padding: 4px;
+    width: 412px;
+    position: absolute;
+    background-color: #F3F3F3;
+    font-weight: 400;
+    font-size: 11px;
+    right: 27px;
+    margin-top: 1px;
+    text-align: center;
+}
+
+#comment-register-text,
+#comment-captcha-text {
+    color: #e75159;
+    /*font-size: 9px;*/
+}
+
+#comment-register-link,
+#comment-captcha-link {
+    /*font-size: 12px;*/
+}
+
+#comment-bottom-hint {
+    font-size: 10px;
+    text-align: right;
+    position: absolute;
+    bottom: 62px;
+    right: 30px;
+    background-color: #F76B74;
+    padding: 3px 10px;
+    font-weight: 200;
+    border-radius: 3px;
+    color: #FFF;
+    display: none;
+}
+
+#comment-bottom-hint.error {
+    display: block;
+}
+
+.wgcommenting #comment-bottom-hint {
+    bottom: 142px;
+}
+
+#thanks-area {
+    display: none;
+    min-height: 194px;
+}
+
+.thanks-text {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 2em;
+    font-weight: 500;
+    color: #525252;
+}
+
+.thanks-activityscore {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 1em;
+    color: #525252;
+    font-weight: 200;
+}
+
+.thanks-activityscore-number {
+    font-weight: bold;
+    color: #525252;
+}
+
+.thanks-ratemore {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 0.5em;
+    color: #525252;
+    font-weight: 200;
+}
+
+/* Tooltips */
+
+.tooltip-logo {
+    display: inline-block;
+    width: 33px;
+    height: 14px;
+    background-image: url('chrome://wot/skin/b/logo.png');
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position-y: 4px;
+}
+
+.tooltip-title {
+    text-align: center;
+    padding: 2px 2px 5px 2px;
+}
+
+.tooltip-title span {
+    display: inline-block;
+    font-weight: 400;
+    color: #525252;
+    font-size: 13px;
+}
+
+.wot-tooltip .desc {
+    font-weight: 400;
+    color: #525252;
+    font-size: 10px;
+    text-align: left;
+    max-width: 190px;
+}
+
+/* Share screen styles */
+
+#wot-share {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.wot-share-title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #444444;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.wot-share-graphics {
+    background-image: url("chrome://wot/skin/c/share_WOT.png");
+    background-repeat: no-repeat;
+    width: 106px;
+    height: 98px;
+    margin: auto auto;
+    background-size: contain;
+}
+
+.wot-share-text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+    color: #444444;
+    padding: 10px 0 0;
+}
+
+.wot-share-text p {
+    margin: 2px 0;
+}
+
+.wot-share-icons {
+    width: 312px;
+    margin: 30px auto 18px;
+}
+
+.wot-share-icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.wot-share-icon-fb {
+    background-image: url("chrome://wot/skin/c/facebook.png");
+}
+
+.wot-share-icon-twitter {
+    background-image: url("chrome://wot/skin/c/twitter.png");
+}
+
+.wot-share-icon-mail {
+    background-image: url("chrome://wot/skin/c/mail.png");
+}
+
+.wot-share-close-line {
+    text-align: center;
+}
+
+#wot-share-close {
+    font-size: 16px;
+    color: grey;
+    font-weight: 200;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.typeahead {
+    /*font-family: "Arial", sans-serif;*/
+    font-size: 12px;
+}
+
+/* overriding default styles of Jquery UI elements */
+.ui-widget-content {
+    background-image: none;
+    background-color: rgba(254, 254, 254, 0.90);
+}
+
+.ui-widget {
+
+}
+
+.ui-corner-all {
+
+}
+
+.ui-tooltip {
+    padding: 8px;
+    position: absolute;
+    z-index: 9999;
+    max-width: 300px;
+    min-width: 150px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+body .ui-tooltip {
+    border: 1px solid #c7c7c7;
+}
+
+body .ui-tooltip:before, body .ui-tooltip:after {
+    content: "";
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: -10px;
+    left: 10px;
+    margin-left: 0px;
+}
+
+body .ui-tooltip:before {
+    border-top: 10px solid rgba(100, 100, 100, 0.50);
+    margin-top: 5px;
+}
+
+body .ui-tooltip:after {
+    border-top: 10px solid #ffffff;
+    margin-top: 0px;
+    bottom: -9px;
+    z-index: 1;
+}
+
+/* Tooltips with tail directed to up */
+body .ui-tooltip.tail-top:before, body .ui-tooltip.tail-top:after {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: none;
+    top: -10px;
+    bottom: auto;
+    left: 20px;
+}
+
+body .ui-tooltip.tail-top:before {
+    border-bottom: 10px solid rgba(100, 100, 100, 0.50);
+    border-top: none;
+    margin-top: 0px;
+}
+
+body .ui-tooltip.tail-top:after {
+    border-bottom: 10px solid #ffffff;
+    border-top: none;
+    margin-top: 0px;
+    top: -9px;
+    bottom: auto;
+}

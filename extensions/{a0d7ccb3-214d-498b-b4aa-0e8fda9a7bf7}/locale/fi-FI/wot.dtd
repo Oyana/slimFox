@@ -1,0 +1,19 @@
+<!ENTITY wot.label					"WOT">
+<!-- Menu items -->
+<!ENTITY wotEnabled.label			"Käytössä">
+<!ENTITY wotEnabled.accesskey		"K">
+<!ENTITY wotRefresh.label			"Päivitä">
+<!ENTITY wotRefresh.accesskey		"P">
+<!ENTITY wotContent.label			"WOT">
+<!ENTITY wotContent.accesskey		"W">
+<!ENTITY wotPreferences.label		"Asetukset…">
+<!ENTITY wotPreferences.accesskey	"A">
+<!ENTITY wotMy.label				"My WOT…">
+<!ENTITY wotMy.accesskey			"M">
+<!ENTITY wotCheckUpdates.label		"Etsi päivityksiä…">
+<!ENTITY wotCheckUpdates.accesskey	"p">
+<!ENTITY wotLinkScorecard.label		"Näytä WOT-tuloskortti…">
+<!ENTITY wotLinkScorecard.accesskey	"W">
+<!-- Rating window -->
+<!ENTITY wotRating.title			"Alustetaan WOT…">
+
