@@ -1,3 +1,15 @@
+# usless root files #
+#####################
+cert8.db
+places.sqlite-shm
+places.sqlite-wal
+search.json.mozlz4
+sessionCheckpoints.json
+storage.sqlite
+times.json
+webappsstore.sqlite-wal
+xulstore.json
+webappsstore.sqlite-shm
 cookies.sqlite
 cookies.sqlite-shm
 cookies.sqlite-wal
@@ -5,6 +17,8 @@ directoryLinks.json
 ShutdownDuration.json
 SiteSecuritySerciveState.txt
 
+# personal user data #
+######################
 bookmarkbackups/*
 !bookmarkbackups/index.php
 archived/*
@@ -12,20 +26,12 @@ archived/*
 features/*
 !features/index.php
 
-gm_scripts/*
-!gm_scripts/index.php
-gmp/WINNT_x86-msvc/*
-!gmp/WINNT_x86-msvc/index.php
+# logs #
+########
 minidumps/*
 !minidumps/index.php
 sessionstore-backups/*
 !saved-telemetry-pings/previous.js
-weave/logs/*
-!weave/logs/index.php
-weave/changes/*
-!weave/changes/index.php
-weave/toFetch/*
-!weave/toFetch/index.php
 
 # health #
 ##########
@@ -70,6 +76,12 @@ cache2/doomed/*
 cache2/entries/*
 !cache2/entries/index.php
 !cache2/doomed/index.php
+weave/logs/*
+!weave/logs/index.php
+weave/changes/*
+!weave/changes/index.php
+weave/toFetch/*
+!weave/toFetch/index.php
 
 # module #
 ##########
@@ -79,6 +91,10 @@ safebrowsing/*
 !safebrowsing/index.php
 WOT/*
 !WOT/index.php
+gm_scripts/*
+!gm_scripts/index.php
+gmp/WINNT_x86-msvc/*
+!gmp/WINNT_x86-msvc/index.php
 
 # ignore all temp files #
 #########################
@@ -120,3 +136,4 @@ Thumbs.db
 # ignore node/grunt dependency directories #
 ############################################
 node_modules/
+SiteSecurityServiceState.txt
