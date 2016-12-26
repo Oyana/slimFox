@@ -15,7 +15,8 @@ cookies.sqlite-shm
 cookies.sqlite-wal
 directoryLinks.json
 ShutdownDuration.json
-SiteSecuritySerciveState.txt
+SiteSecurityServiceState.txt
+Telemetry.ShutdownTime.txt
 
 # personal user data #
 ######################
@@ -103,11 +104,16 @@ gmp/WINNT_x86-msvc/*
 
 storage/default/*
 !storage/default/index.php
-storage/default/*
+storage/default/**/*
+!storage/default/**/index.php
 storage/temporary/*
 !storage/temporary/index.php
 storage/temporary/**/*
 !storage/temporary/**/index.php
+storage/permanent/*
+!storage/permanent/index.php
+storage/permanent/**/*
+!storage/permanent/**/index.php
 fftmp/*
 !fftmp/index.php
 
@@ -136,4 +142,3 @@ Thumbs.db
 # ignore node/grunt dependency directories #
 ############################################
 node_modules/
-SiteSecurityServiceState.txt
