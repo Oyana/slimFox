@@ -1,10 +1,445 @@
 {
   "data": [
     {
-      "guid": "/^(jid0-S9kkzfTvEmC985BVmf8ZOzA5nLM@jetpack|jid0-xGZYdxpAkROWMUMfWKINyrXigBA@jetpack|jid1-qps14pkDB6UDvA@jetpack|jid1-Tsr09YnAqIWL0Q@jetpack|shole@ats.ext|voipgrid@jetpack|{38a64ef0-7181-11e3-981f-0800200c9a66}|eochoa@ualberta.ca)$/",
+      "guid": "mozilla_cc2@internetdownloadmanager.com",
+      "enabled": true,
+      "last_modified": 1489514734167,
+      "details": {
+        "who": "All users who have these versions of the add-on installed.",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1338832",
+        "name": "IDM Integration",
+        "why": "Old versions of the Internet Download Manager Integration add-on cause performance and stability problems in Firefox 53 and above."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [
+            {
+              "minVersion": "53.0a1",
+              "guid": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
+              "maxVersion": "*"
+            }
+          ],
+          "minVersion": "0",
+          "maxVersion": "6.26.11",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "d33f6d48-a555-49dd-96ff-8d75473403a8",
+      "schema": 1489007018796,
+      "_status": "synced"
+    },
+    {
+      "guid": "WebProtection@360safe.com",
+      "enabled": true,
+      "last_modified": 1489006863588,
+      "details": {
+        "who": "All users of Firefox 52 and above who have this add-on installed.",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1336635",
+        "name": "360 Internet Protection",
+        "why": "This add-on breaks the Firefox user interface starting with version 52."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [
+            {
+              "minVersion": "52.0a1",
+              "guid": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
+              "maxVersion": "*"
+            }
+          ],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "08addad8-2f03-4cff-a791-e6f2a1b170ed",
+      "schema": 1489006712382,
+      "_status": "synced"
+    },
+    {
+      "guid": "InternetProtection@360safe.com",
+      "enabled": true,
+      "last_modified": 1489006816246,
+      "details": {
+        "who": "All Firefox users who have this add-on installed.",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1336635",
+        "name": "360 Internet Protection",
+        "why": "This add-on breaks the Firefox user interface starting with version 52."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [
+            {
+              "minVersion": "52.0a1",
+              "guid": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
+              "maxVersion": "*"
+            }
+          ],
+          "minVersion": "0",
+          "maxVersion": "5.0.0.1002",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "89a61123-79a2-45d1-aec2-97afca0863eb",
+      "schema": 1489006712382,
+      "_status": "synced"
+    },
+    {
+      "guid": "{95E84BD3-3604-4AAC-B2CA-D9AC3E55B64B}",
+      "enabled": true,
+      "last_modified": 1487288975999,
+      "details": {
+        "who": "All users who have this add-on installed.",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1338690",
+        "name": "youtube adblock (malware)",
+        "why": "This is a malicious add-on that is silently installed in users' systems."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "04b25e3d-a725-493e-be07-cbd74fb37ea7",
+      "schema": 1487179851382,
+      "_status": "synced"
+    },
+    {
+      "guid": "ext@alibonus.com",
+      "blockID": "i1524",
+      "enabled": true,
+      "last_modified": 1485301116629,
+      "details": {
+        "who": "All Firefox users who have these versions installed.",
+        "created": "2017-01-24T22:45:39Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1333471",
+        "name": "Alibonus 1.20.9 and lower",
+        "why": "Versions 1.20.9 and lower of this add-on contain critical security issues."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "1.20.9",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "a015d5a4-9184-95db-0c74-9262af2332fa",
+      "schema": 1485297431051,
+      "_status": "synced"
+    },
+    {
+      "guid": "{a0d7ccb3-214d-498b-b4aa-0e8fda9a7bf7}",
+      "blockID": "i1523",
+      "enabled": true,
+      "last_modified": 1485297214072,
+      "details": {
+        "who": "All Firefox users who have these versions of the Web of Trust add-on installed.",
+        "created": "2017-01-24T22:01:08Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1314332",
+        "name": "Web of Trust 20170120 and lower",
+        "why": "Versions 20170120 and lower of the Web of Trust add-on send excessive user data to its service, which has been reportedly shared with third parties without sufficient sanitization. These versions are also affected by a vulnerability that could lead to unwanted remote code execution."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "20170120",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "2224c139-9b98-0900-61c1-04031de11ad3",
+      "schema": 1485295513652,
+      "_status": "synced"
+    },
+    {
+      "guid": "/^(ciscowebexstart1@cisco\\.com|ciscowebexstart_test@cisco\\.com|ciscowebexstart@cisco\\.com|ciscowebexgpc@cisco\\.com)$/",
+      "blockID": "i1522",
+      "enabled": true,
+      "last_modified": 1485215014902,
+      "details": {
+        "who": "All Firefox users who have any Cisco WebEx add-ons installed.",
+        "created": "2017-01-23T22:55:58Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1333225",
+        "name": "Cisco WebEx add-ons",
+        "why": "A critical security vulnerability has been discovered in Cisco WebEx add-ons that enable malicious websites to execute code on the user's system."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "1.0.0",
+          "maxVersion": "1.0.1",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "30368779-1d3b-490a-0a34-253085af7754",
+      "schema": 1485212610474,
+      "_status": "synced"
+    },
+    {
+      "guid": "{de71f09a-3342-48c5-95c1-4b0f17567554}",
+      "blockID": "i1493",
+      "enabled": true,
+      "last_modified": 1484867614757,
+      "details": {
+        "who": "All users who have this add-on installed.",
+        "created": "2017-01-12T22:17:59Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1329654",
+        "name": "Search for Firefox Convertor (malware)",
+        "why": "This is a malicious add-on that is installed using a fake name. It changes search and homepage settings."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "1.3.9",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "d6ec9f54-9945-088e-ba68-40117eaba24e",
+      "schema": 1484335370642,
+      "_status": "synced"
+    },
+    {
+      "guid": "googlotim@gmail.com",
+      "blockID": "i1492",
+      "enabled": true,
+      "last_modified": 1483646608603,
+      "details": {
+        "who": "All users who have Savogram version 1.3.2 installed. Version 1.3.1 doesn't have this problem and can be installed from the <a href=\"https://addons.mozilla.org/addon/savogram/\">add-on page</a>. Note that this is an older version, so affected users won't be automatically updated to it. New versions should correct this problem if they become available.",
+        "created": "2017-01-05T19:58:39Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1328594",
+        "name": "Savogram 1.3.2",
+        "why": "Version 1.3.2 of this add-on loads remote code and performs DOM injection in an unsafe manner."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "1.3.2",
+          "maxVersion": "1.3.2",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "0756ed76-7bc7-ec1e-aba5-3a9fac2107ba",
+      "schema": 1483389810787,
+      "_status": "synced"
+    },
+    {
+      "guid": "support@update-firefox.com",
+      "blockID": "i21",
+      "enabled": true,
+      "last_modified": 1483389809169,
+      "details": {
+        "who": "All users of the add-on in all Mozilla applications.",
+        "created": "2011-01-31T16:23:48Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=629717",
+        "name": "Browser Update (spyware)",
+        "why": "This add-on is adware/spyware masquerading as a Firefox update mechanism."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "dfb06be8-3594-28e4-d163-17e27119f15d",
+      "schema": 1483387107003,
+      "_status": "synced"
+    },
+    {
+      "guid": "{2224e955-00e9-4613-a844-ce69fccaae91}",
+      "blockID": "i7",
+      "enabled": true,
+      "last_modified": 1483389809147,
+      "details": {
+        "who": "All users of Internet Saving Optimizer for all Mozilla applications.",
+        "created": "2011-03-31T16:28:25Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=512406",
+        "name": "Internet Saving Optimizer (extension)",
+        "why": "This add-on causes a high volume of Firefox crashes and is considered malware."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "b9efb796-97c2-6434-d28f-acc83436f8e5",
+      "schema": 1483387107003,
+      "_status": "synced"
+    },
+    {
+      "guid": "supportaccessplugin@gmail.com",
+      "blockID": "i43",
+      "enabled": true,
+      "last_modified": 1483389809124,
+      "details": {
+        "who": "All users with Firefox Access Plugin installed",
+        "created": "2011-10-11T11:24:05Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=693673",
+        "name": "Firefox Access Plugin (spyware)",
+        "why": "This add-on is spyware that reports all visited websites to a third party with no user value."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "1ed230a4-e174-262a-55ab-0c33f93a2529",
+      "schema": 1483387107003,
+      "_status": "synced"
+    },
+    {
+      "guid": "{8CE11043-9A15-4207-A565-0C94C42D590D}",
+      "blockID": "i10",
+      "enabled": true,
+      "last_modified": 1483389809102,
+      "details": {
+        "who": "All users of this add-on in all Mozilla applications.",
+        "created": "2011-03-31T16:28:25Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=541302",
+        "name": "Internal security options editor (malware)",
+        "why": "This add-on secretly hijacks all search results in most major search engines and masks as a security add-on."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "e2e0ac09-6d68-75f5-2424-140f51904876",
+      "schema": 1483387107003,
+      "_status": "synced"
+    },
+    {
+      "guid": "youtube@youtube2.com",
+      "blockID": "i47",
+      "enabled": true,
+      "last_modified": 1483389809079,
+      "details": {
+        "who": "All users with any version of Free Cheesecake Factory installed on any Mozilla product.",
+        "created": "2011-12-22T13:11:36Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=713050",
+        "name": "Free Cheesecake Factory (malware)",
+        "why": "This add-on hijacks your Facebook account."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "85f5c1db-433b-bee3-2a3b-325165cacc6e",
+      "schema": 1483387107003,
+      "_status": "synced"
+    },
+    {
+      "guid": "admin@youtubespeedup.com",
+      "blockID": "i48",
+      "enabled": true,
+      "last_modified": 1483389809057,
+      "details": {
+        "who": "All users with any version of Youtube Speed UP! installed on any Mozilla product.",
+        "created": "2011-12-29T19:48:06Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=714221",
+        "name": "Youtube Speed UP! (malware)",
+        "why": "This add-on hijacks your Facebook account."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "a93922c4-8a8a-5230-8f76-76fecb0653b6",
+      "schema": 1483387107003,
+      "_status": "synced"
+    },
+    {
+      "guid": "{E8E88AB0-7182-11DF-904E-6045E0D72085}",
+      "blockID": "i13",
+      "enabled": true,
+      "last_modified": 1483389809035,
+      "details": {
+        "who": "All users of this add-on for all Mozilla applications.",
+        "created": "2011-03-31T16:28:25Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=578085",
+        "name": "Mozilla Sniffer (malware)",
+        "why": "This add-on intercepts website login credentials and is malware. For more information, please <a href=\"http://blog.mozilla.com/addons/2010/07/13/add-on-security-announcement/\">read our security announcement</a>."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "ebbd6de9-fc8a-3e5b-2a07-232bee589c7c",
+      "schema": 1483387107003,
+      "_status": "synced"
+    },
+    {
+      "guid": "sigma@labs.mozilla",
+      "blockID": "i44",
+      "enabled": true,
+      "last_modified": 1483389809012,
+      "details": {
+        "who": "All users of Lab Kit in all versions of Firefox.",
+        "created": "2011-10-11T11:51:34Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=690819",
+        "name": "Mozilla Labs: Lab Kit",
+        "why": "The Lab Kit add-on has been retired due to compatibility issues with Firefox 7 and future Firefox browser releases. You can still install Mozilla Labs add-ons <a href=\"https://addons.mozilla.org/en-US/firefox/user/5133025/\">individually</a>.\r\n\r\nFor more information, please read <a href=\"http://mozillalabs.com/blog/2011/10/lab-kit-is-retiring/\">this announcement</a>."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "d614e9cd-220f-3a19-287b-57e122f8c4b5",
+      "schema": 1483387107003,
+      "_status": "synced"
+    },
+    {
+      "guid": "/^(jid0-S9kkzfTvEmC985BVmf8ZOzA5nLM@jetpack|jid1-qps14pkDB6UDvA@jetpack|jid1-Tsr09YnAqIWL0Q@jetpack|shole@ats.ext|{38a64ef0-7181-11e3-981f-0800200c9a66}|eochoa@ualberta.ca)$/",
       "blockID": "i1424",
       "enabled": true,
-      "last_modified": 1482343886415,
+      "last_modified": 1483378113482,
       "details": {
         "who": "All users who have any of the affected versions installed.",
         "created": "2016-12-21T17:22:12Z",
@@ -22,7 +457,1586 @@
       ],
       "prefs": [],
       "id": "0699488d-2a19-6735-809e-f229849fe00b",
-      "schema": 1482341309012,
+      "schema": 1483376308298,
+      "_status": "synced"
+    },
+    {
+      "guid": "pink@rosaplugin.info",
+      "blockID": "i84",
+      "enabled": true,
+      "last_modified": 1482945810971,
+      "details": {
+        "who": "All Firefox users who have this add-on installed",
+        "created": "2012-04-09T10:13:51Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=743484",
+        "name": "Facebook Rosa (malware)",
+        "why": "Add-on acts like malware and performs user actions on Facebook without their consent."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "66ad8de9-311d-076c-7356-87fde6d30d8f",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "videoplugin@player.com",
+      "blockID": "i90",
+      "enabled": true,
+      "last_modified": 1482945810949,
+      "details": {
+        "who": "All Firefox users who have installed this add-on.",
+        "created": "2012-05-07T08:58:30Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=752483",
+        "name": "FlashPlayer 11 (malware)",
+        "why": "This add-on is malware disguised as a Flash Player update. It can hijack Google searches and Facebook accounts."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "d25943f1-39ef-b9ec-ab77-baeef3498365",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "youtb3@youtb3.com",
+      "blockID": "i60",
+      "enabled": true,
+      "last_modified": 1482945810927,
+      "details": {
+        "who": "All Firefox users who have this extension installed.",
+        "created": "2012-02-02T16:38:41Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=723753",
+        "name": "Video extension (malware)",
+        "why": "Malicious extension installed under false pretenses."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "cae3093f-a7b3-5352-a264-01dbfbf347ce",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "{8f42fb8b-b6f6-45de-81c0-d6d39f54f971}",
+      "blockID": "i82",
+      "enabled": true,
+      "last_modified": 1482945810904,
+      "details": {
+        "who": "All Firefox users who have installed this add-on.",
+        "created": "2012-04-09T10:04:28Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=743012",
+        "name": "Face Plus (malware)",
+        "why": "This add-on maliciously manipulates Facebook and is installed under false pretenses."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "09319ab3-55e7-fec1-44e0-84067d014b9b",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "cloudmask@cloudmask.com",
+      "blockID": "i1233",
+      "enabled": true,
+      "last_modified": 1482945810881,
+      "details": {
+        "who": "Any user who has version 2.0.788, or earlier, installed.",
+        "created": "2016-06-17T14:31:57Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1280431",
+        "name": "CloudMask",
+        "why": "These versions of the add-on (before 2.0.788) execute code from a website in a privileged local browser context, potentially allowing dangerous, unreviewed, actions to affect the user's computer.  This is fixed in later versions."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "2.0.788",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "2a8b40c7-a1d2-29f4-b7d7-ccfc5066bae1",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "{95ff02bc-ffc6-45f0-a5c8-619b8226a9de}",
+      "blockID": "i105",
+      "enabled": true,
+      "last_modified": 1482945810858,
+      "details": {
+        "who": "All Firefox users who have this add-on installed.",
+        "created": "2012-06-08T14:34:25Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=763065",
+        "name": "Eklenti Dünyası (malware)",
+        "why": "This is a malicious add-on that inserts scripts into Facebook and hijacks the user's session.\r\n"
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "afbbc08d-2414-f51e-fdb8-74c0a2d90323",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "{fa277cfc-1d75-4949-a1f9-4ac8e41b2dfd}",
+      "blockID": "i77",
+      "enabled": true,
+      "last_modified": 1482945810835,
+      "details": {
+        "who": "All Firefox users who have installed this add-on.",
+        "created": "2012-03-22T14:39:08Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=738419",
+        "name": "Adobe Flash (malware)",
+        "why": "This add-on is malware that is installed under false pretenses as an Adobe plugin."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "81753a93-382d-5f9d-a4ca-8a21b679ebb1",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "youtube@youtube3.com",
+      "blockID": "i57",
+      "enabled": true,
+      "last_modified": 1482945810811,
+      "details": {
+        "who": "All Firefox users that have installed this add-on.",
+        "created": "2012-01-31T13:54:20Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=722823",
+        "name": "Divx 2012 Plugin (malware)",
+        "why": "Malware installed on false pretenses."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "4a93a0eb-a513-7272-6199-bc4d6228ff50",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "{392e123b-b691-4a5e-b52f-c4c1027e749c}",
+      "blockID": "i109",
+      "enabled": true,
+      "last_modified": 1482945810788,
+      "details": {
+        "who": "All Firefox users who have this add-on installed.",
+        "created": "2012-06-29T13:20:22Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=769781",
+        "name": "Zaman Tuneline Hayır! (malware)",
+        "why": "This add-on pretends to be developed by Facebook and injects scripts that manipulate users' Facebook accounts."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "b9a805aa-cae7-58d6-5a53-2af4442e4cf6",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "msntoolbar@msn.com",
+      "blockID": "i18",
+      "enabled": true,
+      "last_modified": 1482945810764,
+      "details": {
+        "who": "Users of Bing Bar 6.0 and older for all versions of Firefox.",
+        "created": "2011-03-31T16:28:25Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=599971",
+        "name": "Bing Bar",
+        "why": "This add-on has security issues and was blocked at Microsoft's request. For more information, please see <a href=\"http://support.microsoft.com/kb/2430460\">this article</a>."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": " 0",
+          "maxVersion": "6.*",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "9b2f2039-b997-8993-d6dc-d881bc1ca7a1",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "yasd@youasdr3.com",
+      "blockID": "i104",
+      "enabled": true,
+      "last_modified": 1482945810740,
+      "details": {
+        "who": "All Firefox users who have this add-on installed.",
+        "created": "2012-06-08T14:33:31Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=763065",
+        "name": "Play Now (malware)",
+        "why": "This is a malicious add-on that inserts scripts into Facebook and hijacks the user's session.\r\n"
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "8a352dff-d09d-1e78-7feb-45dec7ace5a5",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "fdm_ffext@freedownloadmanager.org",
+      "blockID": "i2",
+      "enabled": true,
+      "last_modified": 1482945810393,
+      "details": {
+        "who": "Users of Firefox 3 and later with versions 1.0 through 1.3.1 of Free Download Manager",
+        "created": "2011-03-31T16:28:25Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=408445",
+        "name": "Free Download Manager",
+        "why": "This add-on causes a high volume of crashes."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [
+            {
+              "minVersion": "3.0a1",
+              "guid": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
+              "maxVersion": "*"
+            }
+          ],
+          "minVersion": "1.0",
+          "maxVersion": "1.3.1",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "fc46f8e7-0489-b90f-a373-d93109479ca5",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "flash@adobe.com",
+      "blockID": "i56",
+      "enabled": true,
+      "last_modified": 1482945810371,
+      "details": {
+        "who": "All Firefox users who have this add-on installed.",
+        "created": "2012-01-30T15:41:51Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=722526",
+        "name": "Adobe Flash Update (malware)",
+        "why": "This add-on poses as an Adobe Flash update and injects malicious scripts into web pages. It hides itself in the Add-ons Manager."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "696db959-fb0b-8aa4-928e-65f157cdd77a",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "youtubeer@youtuber.com",
+      "blockID": "i66",
+      "enabled": true,
+      "last_modified": 1482945810348,
+      "details": {
+        "who": "All Firefox users who have installed this add-on.",
+        "created": "2012-02-13T15:44:20Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=726787",
+        "name": "Plug VDS (malware)",
+        "why": "Add-on behaves maliciously, and is installed under false pretenses."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "0878ce4e-b476-ffa3-0e06-21a65b7917a1",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "{B13721C7-F507-4982-B2E5-502A71474FED}",
+      "blockID": "i8",
+      "enabled": true,
+      "last_modified": 1482945810326,
+      "details": {
+        "who": "Users of all versions of the original Skype Toolbar in all versions of Firefox.",
+        "created": "2011-03-31T16:28:25Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=627278",
+        "name": "Original Skype Toolbar",
+        "why": "This add-on causes a high volume of Firefox crashes and introduces severe performance issues. Please <a href=\"http://www.skype.com/intl/en/get-skype/on-your-computer/click-and-call/\">update to the latest version</a>. For more information, please <a href=\"http://blog.mozilla.com/addons/2011/01/20/blocking-the-skype-toolbar-in-firefox/\">read our announcement</a>."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "5a320611-59a3-0eee-bb30-9052be870e00",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "yslow@yahoo-inc.com",
+      "blockID": "i11",
+      "enabled": true,
+      "last_modified": 1482945810303,
+      "details": {
+        "who": "Users of YSlow version 2.0.5 for Firefox 3.5.7 and later.",
+        "created": "2011-03-31T16:28:25Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=542686",
+        "name": "YSlow",
+        "why": "This add-on causes a high volume of Firefox crashes and other stability issues. Users should <a href=\"https://addons.mozilla.org/firefox/addon/yslow/\">update to the latest version</a>."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [
+            {
+              "minVersion": "3.5.7",
+              "guid": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
+              "maxVersion": "*"
+            }
+          ],
+          "minVersion": "2.0.5",
+          "maxVersion": "2.0.5",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "a9b34e8f-45ce-9217-b791-98e094c26352",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "youtube@youtuber.com",
+      "blockID": "i63",
+      "enabled": true,
+      "last_modified": 1482945810281,
+      "details": {
+        "who": "All Firefox users who have installed this add-on.",
+        "created": "2012-02-06T15:39:38Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=724691",
+        "name": "Mozilla Essentials (malware)",
+        "why": "Installs under false pretenses and delivers malware."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "18216e6f-9d70-816f-4d4c-63861f43ff3c",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "flash@adobee.com",
+      "blockID": "i83",
+      "enabled": true,
+      "last_modified": 1482945810259,
+      "details": {
+        "who": "All Firefox users who have this add-on installed.",
+        "created": "2012-04-09T10:08:22Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=743497",
+        "name": "FlashPlayer 11 (malware)",
+        "why": "This add-on is malware installed under false pretenses."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "09bb4661-331c-f7ba-865b-9e085dc437af",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "youtube@2youtube.com",
+      "blockID": "i71",
+      "enabled": true,
+      "last_modified": 1482945810236,
+      "details": {
+        "who": "All Firefox users who have installed this add-on.",
+        "created": "2012-02-27T10:23:23Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=730399",
+        "name": "YouTube extension (malware)",
+        "why": "Extension is malware, installed under false pretenses."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "5d389c1f-b3a0-b06f-6ffb-d1e8aa055e3c",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "webmaster@buzzzzvideos.info",
+      "blockID": "i58",
+      "enabled": true,
+      "last_modified": 1482945810213,
+      "details": {
+        "who": "All Firefox users who have installed this add-on.",
+        "created": "2012-01-31T14:51:06Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=722844",
+        "name": "Buzz Video (malware)",
+        "why": "Malware add-on that is installed under false pretenses."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "f7aab105-e2c2-42f5-d9be-280eb9c0c8f7",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "play5@vide04flash.com",
+      "blockID": "i92",
+      "enabled": true,
+      "last_modified": 1482945810191,
+      "details": {
+        "who": "All Firefox users who have this add-on installed.",
+        "created": "2012-05-15T13:27:22Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=755443",
+        "name": "Lastest Flash PLayer (malware)",
+        "why": "This add-on impersonates a Flash Player update (poorly), and inserts malicious scripts into Facebook."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "7190860e-fc1f-cd9f-5d25-778e1e9043b2",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "support3_en@adobe122.com",
+      "blockID": "i97",
+      "enabled": true,
+      "last_modified": 1482945810168,
+      "details": {
+        "who": "All Firefox users who have installed this add-on.",
+        "created": "2012-05-28T13:42:54Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=759164",
+        "name": "FlashPlayer 11 (malware)",
+        "why": "This add-on is malware disguised as the Flash Player plugin."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "decf93a1-2bb0-148c-a1a6-10b3757b554b",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "a1g0a9g219d@a1.com",
+      "blockID": "i73",
+      "enabled": true,
+      "last_modified": 1482945810146,
+      "details": {
+        "who": "All Firefox users who have installed this add-on.",
+        "created": "2012-03-15T15:03:04Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=736275",
+        "name": "Flash Player (malware)",
+        "why": "This add-on is malware disguised as Flash Player. It steals user cookies and sends them to a remote location."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "6dd66b43-897d-874a-2227-54e240b8520f",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "ghostviewer@youtube2.com",
+      "blockID": "i59",
+      "enabled": true,
+      "last_modified": 1482945810123,
+      "details": {
+        "who": "All Firefox users who have installed this add-on.",
+        "created": "2012-02-02T16:32:15Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=723683",
+        "name": "Ghost Viewer (malware)",
+        "why": "Malicious add-on that automatically posts to Facebook."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "06dfe833-8c3d-90ee-3aa8-37c3c28f7c56",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "{46551EC9-40F0-4e47-8E18-8E5CF550CFB8}",
+      "blockID": "i19",
+      "enabled": true,
+      "last_modified": 1482945810101,
+      "details": {
+        "who": "Users of Stylish version 1.1b1 for Firefox.",
+        "created": "2011-03-31T16:28:25Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=621660",
+        "name": "Stylish",
+        "why": "Version 1.1b1 of this add-on causes compatibility issues with Firefox. Users should update to the latest version."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "1.1b1",
+          "maxVersion": "1.1b1",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "aaea37e1-ff86-4565-8bd5-55a6bf942791",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "kdrgun@gmail.com",
+      "blockID": "i103",
+      "enabled": true,
+      "last_modified": 1482945810078,
+      "details": {
+        "who": "All Firefox users who have this add-on installed.",
+        "created": "2012-06-08T14:32:51Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=763065",
+        "name": "Timeline Kapat (malware)",
+        "why": "This is a malicious add-on that inserts scripts into Facebook and hijacks the user's session."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "a9a46ab2-2f56-1046-201c-5faa3435e248",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "youtube2@youtube2.com",
+      "blockID": "i67",
+      "enabled": true,
+      "last_modified": 1482945810055,
+      "details": {
+        "who": "All Firefox users who have installed this add-on.",
+        "created": "2012-02-18T09:10:30Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=728476",
+        "name": "Youtube Online (malware)",
+        "why": "This add-on is malware, installed under false pretenses."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "14650ece-295b-a667-f9bc-a3d973e2228c",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "masterfiler@gmail.com",
+      "blockID": "i12",
+      "enabled": true,
+      "last_modified": 1482945810032,
+      "details": {
+        "who": "All users of this add-on for all Mozilla applications.",
+        "created": "2010-02-05T15:01:27Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=542081",
+        "name": "Master File (malware)",
+        "why": "This add-on is malware and attempts to install a Trojan on the user's computer."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "a256d79d-5af8-92e9-a29d-350adf822efe",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "{847b3a00-7ab1-11d4-8f02-006008948af5}",
+      "blockID": "i9",
+      "enabled": true,
+      "last_modified": 1482945810003,
+      "details": {
+        "who": "Users of Enigmail versions older than 0.97a for Thunderbird 3 and later.",
+        "created": "2011-03-31T16:28:25Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=531047",
+        "name": "Enigmail",
+        "why": "This add-on causes a high volume of crashes and other stability issues. Users should <a href=\"https://addons.mozilla.org/en-US/thunderbird/addon/enigmail/\">update Enigmail</a>."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [
+            {
+              "minVersion": "3.0pre",
+              "guid": "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
+              "maxVersion": "*"
+            }
+          ],
+          "minVersion": "0",
+          "maxVersion": "0.97a",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "115f46b6-059d-202a-4373-2ca79b096347",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "mozilla_cc@internetdownloadmanager.com",
+      "blockID": "i14",
+      "enabled": true,
+      "last_modified": 1482945809979,
+      "details": {
+        "who": "Users of Firefox 4 and later with Internet Download Manager version 6.9.8 and older.",
+        "created": "2011-03-31T16:28:25Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=578443",
+        "name": "Internet Download Manager",
+        "why": "This add-on causes a high volume of crashes and has other stability issues."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [
+            {
+              "minVersion": "3.7a1pre",
+              "guid": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
+              "maxVersion": "*"
+            }
+          ],
+          "minVersion": "0",
+          "maxVersion": "6.9.8",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "773ffcfb-75d1-081d-7431-ebe3fa5dbb44",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "admin@youtubeplayer.com",
+      "blockID": "i51",
+      "enabled": true,
+      "last_modified": 1482945809957,
+      "details": {
+        "who": "All Firefox users with this extension installed.",
+        "created": "2012-01-18T14:34:55Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=717165",
+        "name": "Youtube player (malware)",
+        "why": "This add-on is malware, doing nothing more than inserting advertisements into websites through iframes."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "16b2ce94-88db-0d79-33fc-a93070ceb509",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "personas@christopher.beard",
+      "blockID": "i15",
+      "enabled": true,
+      "last_modified": 1482945809934,
+      "details": {
+        "who": "All users of Personas Plus 1.6 in all versions of Firefox.",
+        "created": "2011-03-31T16:28:25Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=590978",
+        "name": "Personas Plus",
+        "why": "This version of Personas Plus is incompatible with certain Firefox functionality and other add-ons. Users should upgrade to the latest version."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [
+            {
+              "minVersion": "3.6",
+              "guid": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
+              "maxVersion": "3.6.*"
+            }
+          ],
+          "minVersion": "1.6",
+          "maxVersion": "1.6",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "e36479c6-ca00-48d4-4fd9-ec677fd032da",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "youtubeee@youtuber3.com",
+      "blockID": "i96",
+      "enabled": true,
+      "last_modified": 1482945809912,
+      "details": {
+        "who": "All Firefox users who have installed this add-on.",
+        "created": "2012-05-25T09:26:47Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=758503",
+        "name": "Divx 2012 Plugins (malware)",
+        "why": "This is a malicious add-on that is disguised as a DivX plugin."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "f01be9cb-5cf2-774a-a4d7-e210a24db5b9",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "{3252b9ae-c69a-4eaf-9502-dc9c1f6c009e}",
+      "blockID": "i17",
+      "enabled": true,
+      "last_modified": 1482945809886,
+      "details": {
+        "who": "Users of version 2.2 of this add-on in all versions of Firefox.",
+        "created": "2011-03-31T16:28:25Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=599971",
+        "name": "Default Manager (Microsoft)",
+        "why": "This add-on has security issues and was blocked at Microsoft's request. For more information, please see <a href=\"http://support.microsoft.com/kb/2430460\">this article</a>."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "2.2",
+          "maxVersion": "2.2",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "38be28ac-2e30-37fa-4332-852a55fafb43",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "{68b8676b-99a5-46d1-b390-22411d8bcd61}",
+      "blockID": "i93",
+      "enabled": true,
+      "last_modified": 1482945809863,
+      "details": {
+        "who": "All Firefox users who have this add-on installed.",
+        "created": "2012-05-16T10:44:42Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=755635",
+        "name": "Zaman Tünelini Kaldır! (malware)",
+        "why": "This is a malicious add-on that post content on Facebook accounts and steals user data."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "733aff15-9b1f-ec04-288f-b78a55165a1c",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "applebeegifts@mozilla.doslash.org",
+      "blockID": "i54",
+      "enabled": true,
+      "last_modified": 1482945809840,
+      "details": {
+        "who": "All Firefox users that install this add-on.",
+        "created": "2012-01-26T16:17:49Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=721562",
+        "name": "Applebees Gift Card (malware)",
+        "why": "Add-on is malware installed under false pretenses."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "1372c8ab-5452-745a-461a-aa78e3e12c4b",
+      "schema": 1482945809444,
+      "_status": "synced"
+    },
+    {
+      "guid": "activity@facebook.com",
+      "blockID": "i65",
+      "enabled": true,
+      "last_modified": 1482945809437,
+      "details": {
+        "who": "All Firefox users who have installed this add-on.",
+        "created": "2012-02-13T15:41:02Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=726803",
+        "name": "Facebook extension (malware)",
+        "why": "Add-on behaves maliciously and poses as an official Facebook add-on."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "79ad1c9b-0828-7823-4574-dd1cdd46c3d6",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "jid0-EcdqvFOgWLKHNJPuqAnawlykCGZ@jetpack",
+      "blockID": "i62",
+      "enabled": true,
+      "last_modified": 1482945809415,
+      "details": {
+        "who": "All Firefox users who have installed this add-on.",
+        "created": "2012-02-06T14:46:33Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=724650",
+        "name": "YouTube extension (malware)",
+        "why": "Add-on is installed under false pretenses and delivers malware."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "5ae1e642-b53c-54c0-19e7-5562cfdac3a3",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "{B7082FAA-CB62-4872-9106-E42DD88EDE45}",
+      "blockID": "i25",
+      "enabled": true,
+      "last_modified": 1482945809393,
+      "details": {
+        "who": "Users of McAfee SiteAdvisor below version 3.3.1 for Firefox 4.\r\n\r\nUsers of McAfee SiteAdvisor 3.3.1 and below for Firefox 5 and higher.",
+        "created": "2011-03-14T15:53:07Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=637542",
+        "name": "McAfee SiteAdvisor",
+        "why": "This add-on causes a high volume of crashes and is incompatible with certain versions of Firefox."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [
+            {
+              "minVersion": "3.7a1",
+              "guid": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
+              "maxVersion": "*"
+            }
+          ],
+          "minVersion": "0.1",
+          "maxVersion": "3.3.0.*",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "c950501b-1f08-2ab2-d817-7c664c0d16fe",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "{B7082FAA-CB62-4872-9106-E42DD88EDE45}",
+      "blockID": "i38",
+      "enabled": true,
+      "last_modified": 1482945809371,
+      "details": {
+        "who": "Users of McAfee SiteAdvisor below version 3.3.1 for Firefox 4.\r\n\r\nUsers of McAfee SiteAdvisor 3.3.1 and below for Firefox 5 and higher.",
+        "created": "2011-05-27T13:55:02Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=660111",
+        "name": "McAfee SiteAdvisor",
+        "why": "This add-on causes a high volume of crashes and is incompatible with certain versions of Firefox."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [
+            {
+              "minVersion": "5.0a1",
+              "guid": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
+              "maxVersion": "*"
+            }
+          ],
+          "minVersion": "3.3.1",
+          "maxVersion": "*",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "f11de388-4511-8d06-1414-95d3b2b122c5",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "{3f963a5b-e555-4543-90e2-c3908898db71}",
+      "blockID": "i6",
+      "enabled": true,
+      "last_modified": 1482945809348,
+      "details": {
+        "who": "Users of AVG SafeSearch version 8.5 and older for all Mozilla applications.",
+        "created": "2009-06-17T13:12:12Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=527135",
+        "name": "AVG SafeSearch",
+        "why": "This add-on causes a high volume of crashes and causes other stability issues."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "8.5",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "0d6f7d4c-bf5d-538f-1ded-ea4c6b775617",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "langpack-vi-VN@firefox.mozilla.org",
+      "blockID": "i3",
+      "enabled": true,
+      "last_modified": 1482945809326,
+      "details": {
+        "who": "Users of Vietnamese Language Pack version 2.0 for all Mozilla applications.",
+        "created": "2011-03-31T16:28:25Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=432406",
+        "name": "Vietnamese Language Pack",
+        "why": "Corrupted files. For more information, please see <a href=\"http://blog.mozilla.com/security/2008/05/07/compromised-file-in-vietnamese-language-pack-for-firefox-2/\">this blog post</a>."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "2.0",
+          "maxVersion": "2.0",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "51d4b581-d21c-20a1-6147-b17c3adc7867",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "youtube@youtube7.com",
+      "blockID": "i55",
+      "enabled": true,
+      "last_modified": 1482945809304,
+      "details": {
+        "who": "All Firefox users with this add-on installed.",
+        "created": "2012-01-27T09:39:31Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=721646",
+        "name": "Plugin Video (malware)",
+        "why": "This is malware posing as video software."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "08ceedf5-c7c1-f54f-db0c-02f01f0e319a",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "crossriderapp3924@crossrider.com",
+      "blockID": "i76",
+      "enabled": true,
+      "last_modified": 1482945809279,
+      "details": {
+        "who": "All Firefox users who have installed this add-on.",
+        "created": "2012-03-22T10:38:47Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=738282",
+        "name": "Fblixx (malware)",
+        "why": "This add-on compromises Facebook privacy and security and spams friends lists without user intervention."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "39d0a019-62fb-837b-1f1f-6831e56442b5",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "{45147e67-4020-47e2-8f7a-55464fb535aa}",
+      "blockID": "i86",
+      "enabled": true,
+      "last_modified": 1482945809255,
+      "details": {
+        "who": "All Firefox users who have this add-on installed.",
+        "created": "2012-04-25T16:33:21Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=748993",
+        "name": "Mukemmel Face+",
+        "why": "This add-on injects scripts into Facebook and performs malicious activity."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "960443f9-cf48-0b71-1ff2-b8c34a3411ea",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "{4B3803EA-5230-4DC3-A7FC-33638F3D3542}",
+      "blockID": "i4",
+      "enabled": true,
+      "last_modified": 1482945809232,
+      "details": {
+        "who": "Users of Firefox 3 and later with version 1.2 of Crawler Toolbar",
+        "created": "2008-07-08T10:23:31Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=441649",
+        "name": "Crawler Toolbar",
+        "why": "This add-on causes a high volume of crashes."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [
+            {
+              "minVersion": "3.0a1",
+              "guid": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
+              "maxVersion": "*"
+            }
+          ],
+          "minVersion": "1.2",
+          "maxVersion": "1.2",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "a9818d53-3a6a-8673-04dd-2a16f5644215",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "flashupdate@adobe.com",
+      "blockID": "i68",
+      "enabled": true,
+      "last_modified": 1482945809208,
+      "details": {
+        "who": "All Firefox users who have this add-on installed.",
+        "created": "2012-02-21T13:55:10Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=722526",
+        "name": "Flash Update (malware)",
+        "why": "Add-on is malware, installed under false pretenses."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "1ba5b46e-790d-5af2-9580-a5f1e6e65522",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "plugin@youtubeplayer.com",
+      "blockID": "i127",
+      "enabled": true,
+      "last_modified": 1482945809185,
+      "details": {
+        "who": "All users who have this add-on installed.",
+        "created": "2012-08-16T13:03:10Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=783356",
+        "name": "Youtube Facebook Player (malware)",
+        "why": "This add-on tries to pass as a YouTube player and runs malicious scripts on webpages."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "17a8bece-e2df-a55d-8a72-95faff028b83",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "GifBlock@facebook.com",
+      "blockID": "i79",
+      "enabled": true,
+      "last_modified": 1482945809162,
+      "details": {
+        "who": "All Firefox users who have installed this extension.",
+        "created": "2012-03-27T10:53:33Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=739482",
+        "name": "Facebook Essentials (malware)",
+        "why": "This extension is malicious and is installed under false pretenses."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "728451e8-1273-d887-37e9-5712b1cc3bff",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "ff-ext@youtube",
+      "blockID": "i52",
+      "enabled": true,
+      "last_modified": 1482945809138,
+      "details": {
+        "who": "All Firefox users that have this add-on installed.",
+        "created": "2012-01-19T08:26:35Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=719296",
+        "name": "Youtube player (malware)",
+        "why": "This add-on poses as a YouTube player while posting spam into Facebook account."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "cd2dd72a-dd52-6752-a0cd-a4b312fd0b65",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "ShopperReports@ShopperReports.com",
+      "blockID": "i22",
+      "enabled": true,
+      "last_modified": 1482945809115,
+      "details": {
+        "who": "Users of Shopper Reports version 3.1.22.0 in Firefox 4 and later.",
+        "created": "2011-02-09T17:03:39Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=630191",
+        "name": "Shopper Reports",
+        "why": "This add-on causes a high volume of Firefox crashes."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "3.1.22.0",
+          "maxVersion": "3.1.22.0",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "f26b049c-d856-750f-f050-996e6bec7cbb",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "{27182e60-b5f3-411c-b545-b44205977502}",
+      "blockID": "i16",
+      "enabled": true,
+      "last_modified": 1482945809092,
+      "details": {
+        "who": "Users of version 1.0 of this add-on in all versions of Firefox.",
+        "created": "2011-03-31T16:28:25Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=599971",
+        "name": "Search Helper Extension (Microsoft)",
+        "why": "This add-on has security issues and was blocked at Microsoft's request. For more information, please see <a href=\"http://support.microsoft.com/kb/2430460\">this article</a>."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "1.0",
+          "maxVersion": "1.0",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "2655f230-11f3-fe4c-7c3d-757d37d5f9a5",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "{841468a1-d7f4-4bd3-84e6-bb0f13a06c64}",
+      "blockID": "i46",
+      "enabled": true,
+      "last_modified": 1482945809069,
+      "details": {
+        "who": "Users of all versions of Nectar Search Toolbar in Firefox 9.",
+        "created": "2011-12-20T11:38:17Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=712369",
+        "name": "Nectar Search Toolbar",
+        "why": "This add-on causes crashes and other stability issues in Firefox."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [
+            {
+              "minVersion": "9.0a1",
+              "guid": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
+              "maxVersion": "9.0"
+            }
+          ],
+          "minVersion": "0.1",
+          "maxVersion": "*",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "b660dabd-0dc0-a55c-4b86-416080b345d9",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "support@daemon-tools.cc",
+      "blockID": "i5",
+      "enabled": true,
+      "last_modified": 1482945809045,
+      "details": {
+        "who": "Users of Daemon Tools Toolbar version 1.0.0.5 and older for all Mozilla applications.",
+        "created": "2009-02-13T18:39:01Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=459850",
+        "name": "Daemon Tools Toolbar",
+        "why": "This add-on causes a high volume of crashes."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "1.0.0.5",
+          "severity": 1
+        }
+      ],
+      "prefs": [],
+      "id": "8cabafd3-576a-b487-31c8-ab59e0349a0e",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "{a3a5c777-f583-4fef-9380-ab4add1bc2a8}",
+      "blockID": "i53",
+      "enabled": true,
+      "last_modified": 1482945809021,
+      "details": {
+        "who": "All users of Firefox with this add-on installed.",
+        "created": "2012-01-19T15:58:10Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=719605",
+        "name": "Peliculas-FLV (malware)",
+        "why": "This add-on is being offered as an online movie viewer, when it reality it only inserts scripts and ads into known sites."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "2.0.3",
+          "maxVersion": "2.0.3",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "07bc0962-60da-087b-c3ab-f2a6ab84d81c",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "royal@facebook.com",
+      "blockID": "i64",
+      "enabled": true,
+      "last_modified": 1482945808997,
+      "details": {
+        "who": "All Firefox users who have installed this add-on.",
+        "created": "2012-02-09T13:24:23Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=725777",
+        "name": "Facebook ! (malware)",
+        "why": "Malicious add-on posing as a Facebook tool."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "dd1d2623-0d15-c93e-8fbd-ba07b0299a44",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "{28bfb930-7620-11e1-b0c4-0800200c9a66}",
+      "blockID": "i108",
+      "enabled": true,
+      "last_modified": 1482945808973,
+      "details": {
+        "who": "All Firefox user who have this add-on installed.",
+        "created": "2012-06-21T09:24:11Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=766852",
+        "name": "Aplicativo (malware)",
+        "why": "This is malware disguised as an Adobe product. It spams Facebook pages."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "908dc4fb-ebc9-cea1-438f-55e4507ba834",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "socialnetworktools@mozilla.doslash.org",
+      "blockID": "i78",
+      "enabled": true,
+      "last_modified": 1482945808950,
+      "details": {
+        "who": "All Firefox users who have installed this add-on.",
+        "created": "2012-03-26T16:46:55Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=739441",
+        "name": "Social Network Tools (malware)",
+        "why": "This add-on hijacks the Facebook UI and adds scripts to track users."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "1064cd25-3b87-64bb-b0a6-2518ad281574",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "youtubeeing@youtuberie.com",
+      "blockID": "i98",
+      "enabled": true,
+      "last_modified": 1482945808927,
+      "details": {
+        "who": "All Firefox users who have installed this add-on.",
+        "created": "2012-05-30T09:30:14Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=759663",
+        "name": "Youtube Video Player (malware)",
+        "why": "This add-on is malware disguised as a Youtube add-on."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "3484f860-56e1-28e8-5a70-cdcd5ab9d6ee",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "{3a12052a-66ef-49db-8c39-e5b0bd5c83fa}",
+      "blockID": "i101",
+      "enabled": true,
+      "last_modified": 1482945808904,
+      "details": {
+        "who": "All Firefox users who have installed this add-on.",
+        "created": "2012-06-05T18:37:42Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=761874",
+        "name": "Timeline Remove (malware)",
+        "why": "This add-on is malware disguised as a Facebook timeline remover."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "b01b321b-6628-7166-bd15-52f21a04d8bd",
+      "schema": 1482945112982,
+      "_status": "synced"
+    },
+    {
+      "guid": "pfzPXmnzQRXX6@2iABkVe.com",
+      "blockID": "i99",
+      "enabled": true,
+      "last_modified": 1482945808881,
+      "details": {
+        "who": "All Firefox users who have this add-on installed.",
+        "created": "2012-05-30T17:10:18Z",
+        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=759950",
+        "name": "Flash Player (malware)",
+        "why": "This add-on is malware disguised as a Flash Player update."
+      },
+      "versionRange": [
+        {
+          "targetApplication": [],
+          "minVersion": "0",
+          "maxVersion": "*",
+          "severity": 3
+        }
+      ],
+      "prefs": [],
+      "id": "29cc4abc-4f52-01f1-eb0b-cad84ba4db13",
+      "schema": 1482945112982,
       "_status": "synced"
     },
     {
@@ -76,30 +2090,6 @@
       "_status": "synced"
     },
     {
-      "guid": "flash@adobee.com",
-      "blockID": "i83",
-      "enabled": true,
-      "last_modified": 1480349217185,
-      "details": {
-        "who": "All Firefox users who have this add-on installed.",
-        "created": "2012-04-09T10:08:22Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=743497",
-        "name": "FlashPlayer 11 (malware)",
-        "why": "This add-on is malware installed under false pretenses."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "09bb4661-331c-f7ba-865b-9e085dc437af",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "{cc8f597b-0765-404e-a575-82aefbd81daf}",
       "blockID": "i380",
       "enabled": true,
@@ -121,30 +2111,6 @@
       ],
       "prefs": [],
       "id": "4950d7aa-c602-15f5-a7a2-d844182d5cbd",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "msntoolbar@msn.com",
-      "blockID": "i18",
-      "enabled": true,
-      "last_modified": 1480349217127,
-      "details": {
-        "who": "Users of Bing Bar 6.0 and older for all versions of Firefox.",
-        "created": "2011-03-31T16:28:25Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=599971",
-        "name": "Bing Bar",
-        "why": "This add-on has security issues and was blocked at Microsoft's request. For more information, please see <a href=\"http://support.microsoft.com/kb/2430460\">this article</a>."
-      },
-      "versionRange": [
-        {
-          "minVersion": " ",
-          "maxVersion": "6.*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "9b2f2039-b997-8993-d6dc-d881bc1ca7a1",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -224,36 +2190,6 @@
       "_status": "synced"
     },
     {
-      "guid": "{847b3a00-7ab1-11d4-8f02-006008948af5}",
-      "blockID": "i9",
-      "enabled": true,
-      "last_modified": 1480349216898,
-      "details": {
-        "who": "Users of Enigmail versions older than 0.97a for Thunderbird 3 and later.",
-        "created": "2011-03-31T16:28:25Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=531047",
-        "name": "Enigmail",
-        "why": "This add-on causes a high volume of crashes and other stability issues. Users should <a href=\"https://addons.mozilla.org/en-US/thunderbird/addon/enigmail/\">update Enigmail</a>."
-      },
-      "versionRange": [
-        {
-          "minVersion": " ",
-          "maxVersion": "0.97a",
-          "targetApplication": [
-            {
-              "minVersion": "3.0pre",
-              "guid": "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
-              "maxVersion": "*"
-            }
-          ]
-        }
-      ],
-      "prefs": [],
-      "id": "115f46b6-059d-202a-4373-2ca79b096347",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "support@vide1flash2.com",
       "blockID": "i246",
       "enabled": true,
@@ -325,36 +2261,6 @@
       ],
       "prefs": [],
       "id": "b2b4236d-5d4d-82b2-99cd-00ff688badf1",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "{4B3803EA-5230-4DC3-A7FC-33638F3D3542}",
-      "blockID": "i4",
-      "enabled": true,
-      "last_modified": 1480349216738,
-      "details": {
-        "who": "Users of Firefox 3 and later with version 1.2 of Crawler Toolbar",
-        "created": "2008-07-08T10:23:31Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=441649",
-        "name": "Crawler Toolbar",
-        "why": "This add-on causes a high volume of crashes."
-      },
-      "versionRange": [
-        {
-          "minVersion": "1.2",
-          "maxVersion": "1.2",
-          "targetApplication": [
-            {
-              "minVersion": "3.0a1",
-              "guid": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
-              "maxVersion": "*"
-            }
-          ]
-        }
-      ],
-      "prefs": [],
-      "id": "a9818d53-3a6a-8673-04dd-2a16f5644215",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -461,30 +2367,6 @@
       ],
       "prefs": [],
       "id": "3a124164-b177-805b-06f7-70a358b37e08",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "{95ff02bc-ffc6-45f0-a5c8-619b8226a9de}",
-      "blockID": "i105",
-      "enabled": true,
-      "last_modified": 1480349216537,
-      "details": {
-        "who": "All Firefox users who have this add-on installed.",
-        "created": "2012-06-08T14:34:25Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=763065",
-        "name": "Eklenti Dünyası (malware)",
-        "why": "This is a malicious add-on that inserts scripts into Facebook and hijacks the user's session.\r\n"
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "afbbc08d-2414-f51e-fdb8-74c0a2d90323",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -621,90 +2503,6 @@
       "_status": "synced"
     },
     {
-      "guid": "{B7082FAA-CB62-4872-9106-E42DD88EDE45}",
-      "blockID": "i25",
-      "enabled": true,
-      "last_modified": 1480349216346,
-      "details": {
-        "who": "Users of McAfee SiteAdvisor below version 3.3.1 for Firefox 4.\r\n\r\nUsers of McAfee SiteAdvisor 3.3.1 and below for Firefox 5 and higher.",
-        "created": "2011-03-14T15:53:07Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=637542",
-        "name": "McAfee SiteAdvisor",
-        "why": "This add-on causes a high volume of crashes and is incompatible with certain versions of Firefox."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0.1",
-          "maxVersion": "3.3.0.*",
-          "targetApplication": [
-            {
-              "minVersion": "3.7a1",
-              "guid": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
-              "maxVersion": "*"
-            }
-          ]
-        }
-      ],
-      "prefs": [],
-      "id": "c950501b-1f08-2ab2-d817-7c664c0d16fe",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "{B7082FAA-CB62-4872-9106-E42DD88EDE45}",
-      "blockID": "i38",
-      "enabled": true,
-      "last_modified": 1480349215868,
-      "details": {
-        "who": "Users of McAfee SiteAdvisor below version 3.3.1 for Firefox 4.\r\n\r\nUsers of McAfee SiteAdvisor 3.3.1 and below for Firefox 5 and higher.",
-        "created": "2011-05-27T13:55:02Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=660111",
-        "name": "McAfee SiteAdvisor",
-        "why": "This add-on causes a high volume of crashes and is incompatible with certain versions of Firefox."
-      },
-      "versionRange": [
-        {
-          "minVersion": "3.3.1",
-          "maxVersion": "*",
-          "targetApplication": [
-            {
-              "minVersion": "5.0a1",
-              "guid": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
-              "maxVersion": "*"
-            }
-          ]
-        }
-      ],
-      "prefs": [],
-      "id": "f11de388-4511-8d06-1414-95d3b2b122c5",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "{45147e67-4020-47e2-8f7a-55464fb535aa}",
-      "blockID": "i86",
-      "enabled": true,
-      "last_modified": 1480349215834,
-      "details": {
-        "who": "All Firefox users who have this add-on installed.",
-        "created": "2012-04-25T16:33:21Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=748993",
-        "name": "Mukemmel Face+",
-        "why": "This add-on injects scripts into Facebook and performs malicious activity."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "960443f9-cf48-0b71-1ff2-b8c34a3411ea",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "xz123@ya456.com",
       "blockID": "i486",
       "enabled": true,
@@ -782,30 +2580,6 @@
       ],
       "prefs": [],
       "id": "f34b00a6-c783-7851-a441-0d80fb1d1031",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "videoplugin@player.com",
-      "blockID": "i90",
-      "enabled": true,
-      "last_modified": 1480349215711,
-      "details": {
-        "who": "All Firefox users who have installed this add-on.",
-        "created": "2012-05-07T08:58:30Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=752483",
-        "name": "FlashPlayer 11 (malware)",
-        "why": "This add-on is malware disguised as a Flash Player update. It can hijack Google searches and Facebook accounts."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "d25943f1-39ef-b9ec-ab77-baeef3498365",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -1272,30 +3046,6 @@
       "_status": "synced"
     },
     {
-      "guid": "support3_en@adobe122.com",
-      "blockID": "i97",
-      "enabled": true,
-      "last_modified": 1480349215120,
-      "details": {
-        "who": "All Firefox users who have installed this add-on.",
-        "created": "2012-05-28T13:42:54Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=759164",
-        "name": "FlashPlayer 11 (malware)",
-        "why": "This add-on is malware disguised as the Flash Player plugin."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "decf93a1-2bb0-148c-a1a6-10b3757b554b",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "amo-validator-bypass@example.com",
       "blockID": "i1058",
       "enabled": true,
@@ -1317,30 +3067,6 @@
       ],
       "prefs": [],
       "id": "86e38e3e-a729-b5a2-20a8-4738b376eea6",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "kdrgun@gmail.com",
-      "blockID": "i103",
-      "enabled": true,
-      "last_modified": 1480349214675,
-      "details": {
-        "who": "All Firefox users who have this add-on installed.",
-        "created": "2012-06-08T14:32:51Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=763065",
-        "name": "Timeline Kapat (malware)",
-        "why": "This is a malicious add-on that inserts scripts into Facebook and hijacks the user's session."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "a9a46ab2-2f56-1046-201c-5faa3435e248",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -1601,24 +3327,6 @@
       "_status": "synced"
     },
     {
-      "guid": "support@update-firefox.com",
-      "blockID": "i21",
-      "enabled": true,
-      "last_modified": 1480349214106,
-      "details": {
-        "who": "All users of the add-on in all Mozilla applications.",
-        "created": "2011-01-31T16:23:48Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=629717",
-        "name": "Browser Update (spyware)",
-        "why": "This add-on is adware/spyware masquerading as a Firefox update mechanism."
-      },
-      "versionRange": [],
-      "prefs": [],
-      "id": "dfb06be8-3594-28e4-d163-17e27119f15d",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "{bbea93c6-64a3-4a5a-854a-9cc61c8d309e}",
       "blockID": "i1126",
       "enabled": true,
@@ -1872,30 +3580,6 @@
       "_status": "synced"
     },
     {
-      "guid": "youtb3@youtb3.com",
-      "blockID": "i60",
-      "enabled": true,
-      "last_modified": 1480349213745,
-      "details": {
-        "who": "All Firefox users who have this extension installed.",
-        "created": "2012-02-02T16:38:41Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=723753",
-        "name": "Video extension (malware)",
-        "why": "Malicious extension installed under false pretenses."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "cae3093f-a7b3-5352-a264-01dbfbf347ce",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "jid1-0xtMKhXFEs4jIg@jetpack",
       "blockID": "i586",
       "enabled": true,
@@ -1917,30 +3601,6 @@
       ],
       "prefs": [],
       "id": "50ca2179-83ab-1817-163d-39ed2a9fbd28",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "{392e123b-b691-4a5e-b52f-c4c1027e749c}",
-      "blockID": "i109",
-      "enabled": true,
-      "last_modified": 1480349213372,
-      "details": {
-        "who": "All Firefox users who have this add-on installed.",
-        "created": "2012-06-29T13:20:22Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=769781",
-        "name": "Zaman Tuneline Hayır! (malware)",
-        "why": "This add-on pretends to be developed by Facebook and injects scripts that manipulate users' Facebook accounts."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "b9a805aa-cae7-58d6-5a53-2af4442e4cf6",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -2101,29 +3761,6 @@
       "_status": "synced"
     },
     {
-      "guid": "masterfiler@gmail.com",
-      "blockID": "i12",
-      "enabled": true,
-      "last_modified": 1480349213159,
-      "details": {
-        "who": "All users of this add-on for all Mozilla applications.",
-        "created": "2010-02-05T15:01:27Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=542081",
-        "name": "Master File (malware)",
-        "why": "This add-on is malware and attempts to install a Trojan on the user's computer."
-      },
-      "versionRange": [
-        {
-          "targetApplication": [],
-          "severity": 3
-        }
-      ],
-      "prefs": [],
-      "id": "a256d79d-5af8-92e9-a29d-350adf822efe",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "lbmsrvfvxcblvpane@lpaezhjez.org",
       "blockID": "i342",
       "enabled": true,
@@ -2202,30 +3839,6 @@
       "_status": "synced"
     },
     {
-      "guid": "{8f42fb8b-b6f6-45de-81c0-d6d39f54f971}",
-      "blockID": "i82",
-      "enabled": true,
-      "last_modified": 1480349213049,
-      "details": {
-        "who": "All Firefox users who have installed this add-on.",
-        "created": "2012-04-09T10:04:28Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=743012",
-        "name": "Face Plus (malware)",
-        "why": "This add-on maliciously manipulates Facebook and is installed under false pretenses."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "09319ab3-55e7-fec1-44e0-84067d014b9b",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "{b6ef1336-69bb-45b6-8cba-e578fc0e4433}",
       "blockID": "i780",
       "enabled": true,
@@ -2298,24 +3911,6 @@
       "prefs": [],
       "os": "WINNT",
       "id": "d3f96257-7635-555f-ef48-34d426322992",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "{2224e955-00e9-4613-a844-ce69fccaae91}",
-      "blockID": "i7",
-      "enabled": true,
-      "last_modified": 1480349212946,
-      "details": {
-        "who": "All users of Internet Saving Optimizer for all Mozilla applications.",
-        "created": "2011-03-31T16:28:25Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=512406",
-        "name": "Internet Saving Optimizer (extension)",
-        "why": "This add-on causes a high volume of Firefox crashes and is considered malware."
-      },
-      "versionRange": [],
-      "prefs": [],
-      "id": "b9efb796-97c2-6434-d28f-acc83436f8e5",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -2472,30 +4067,6 @@
       "_status": "synced"
     },
     {
-      "guid": "plugin@youtubeplayer.com",
-      "blockID": "i127",
-      "enabled": true,
-      "last_modified": 1480349212691,
-      "details": {
-        "who": "All users who have this add-on installed.",
-        "created": "2012-08-16T13:03:10Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=783356",
-        "name": "Youtube Facebook Player (malware)",
-        "why": "This add-on tries to pass as a YouTube player and runs malicious scripts on webpages."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "17a8bece-e2df-a55d-8a72-95faff028b83",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "{336D0C35-8A85-403a-B9D2-65C292C39087}",
       "blockID": "i224",
       "enabled": true,
@@ -2517,30 +4088,6 @@
       ],
       "prefs": [],
       "id": "c87666e6-ec9a-2f1e-ad03-a722d2fa2a25",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "{27182e60-b5f3-411c-b545-b44205977502}",
-      "blockID": "i16",
-      "enabled": true,
-      "last_modified": 1480349212629,
-      "details": {
-        "who": "Users of version 1.0 of this add-on in all versions of Firefox.",
-        "created": "2011-03-31T16:28:25Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=599971",
-        "name": "Search Helper Extension (Microsoft)",
-        "why": "This add-on has security issues and was blocked at Microsoft's request. For more information, please see <a href=\"http://support.microsoft.com/kb/2430460\">this article</a>."
-      },
-      "versionRange": [
-        {
-          "minVersion": "1.0",
-          "maxVersion": "1.0",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "2655f230-11f3-fe4c-7c3d-757d37d5f9a5",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -2668,30 +4215,6 @@
       ],
       "prefs": [],
       "id": "f43859d4-46b7-c028-4738-d40a73ddad7b",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "{fa277cfc-1d75-4949-a1f9-4ac8e41b2dfd}",
-      "blockID": "i77",
-      "enabled": true,
-      "last_modified": 1480349212127,
-      "details": {
-        "who": "All Firefox users who have installed this add-on.",
-        "created": "2012-03-22T14:39:08Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=738419",
-        "name": "Adobe Flash (malware)",
-        "why": "This add-on is malware that is installed under false pretenses as an Adobe plugin."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "81753a93-382d-5f9d-a4ca-8a21b679ebb1",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -2877,30 +4400,6 @@
       "_status": "synced"
     },
     {
-      "guid": "youtube@youtuber.com",
-      "blockID": "i63",
-      "enabled": true,
-      "last_modified": 1480349211866,
-      "details": {
-        "who": "All Firefox users who have installed this add-on.",
-        "created": "2012-02-06T15:39:38Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=724691",
-        "name": "Mozilla Essentials (malware)",
-        "why": "Installs under false pretenses and delivers malware."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "18216e6f-9d70-816f-4d4c-63861f43ff3c",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "JMLv@njMaHh.org",
       "blockID": "i790",
       "enabled": true,
@@ -2922,30 +4421,6 @@
       ],
       "prefs": [],
       "id": "070d5747-137d-8500-8713-cfc6437558a3",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "youtube@2youtube.com",
-      "blockID": "i71",
-      "enabled": true,
-      "last_modified": 1480349211812,
-      "details": {
-        "who": "All Firefox users who have installed this add-on.",
-        "created": "2012-02-27T10:23:23Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=730399",
-        "name": "YouTube extension (malware)",
-        "why": "Extension is malware, installed under false pretenses."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "5d389c1f-b3a0-b06f-6ffb-d1e8aa055e3c",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -3155,48 +4630,6 @@
       ],
       "prefs": [],
       "id": "cd174588-940e-f5b3-12ea-896c957bd4b3",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "{3f963a5b-e555-4543-90e2-c3908898db71}",
-      "blockID": "i6",
-      "enabled": true,
-      "last_modified": 1480349211524,
-      "details": {
-        "who": "Users of AVG SafeSearch version 8.5 and older for all Mozilla applications.",
-        "created": "2009-06-17T13:12:12Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=527135",
-        "name": "AVG SafeSearch",
-        "why": "This add-on causes a high volume of crashes and causes other stability issues."
-      },
-      "versionRange": [
-        {
-          "minVersion": " ",
-          "maxVersion": "8.5",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "0d6f7d4c-bf5d-538f-1ded-ea4c6b775617",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "sigma@labs.mozilla",
-      "blockID": "i44",
-      "enabled": true,
-      "last_modified": 1480349211189,
-      "details": {
-        "who": "All users of Lab Kit in all versions of Firefox.",
-        "created": "2011-10-11T11:51:34Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=690819",
-        "name": "Mozilla Labs: Lab Kit",
-        "why": "The Lab Kit add-on has been retired due to compatibility issues with Firefox 7 and future Firefox browser releases. You can still install Mozilla Labs add-ons <a href=\"https://addons.mozilla.org/en-US/firefox/user/5133025/\">individually</a>.\r\n\r\nFor more information, please read <a href=\"http://mozillalabs.com/blog/2011/10/lab-kit-is-retiring/\">this announcement</a>."
-      },
-      "versionRange": [],
-      "prefs": [],
-      "id": "d614e9cd-220f-3a19-287b-57e122f8c4b5",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -3526,36 +4959,6 @@
       "_status": "synced"
     },
     {
-      "guid": "yslow@yahoo-inc.com",
-      "blockID": "i11",
-      "enabled": true,
-      "last_modified": 1480349210640,
-      "details": {
-        "who": "Users of YSlow version 2.0.5 for Firefox 3.5.7 and later.",
-        "created": "2011-03-31T16:28:25Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=542686",
-        "name": "YSlow",
-        "why": "This add-on causes a high volume of Firefox crashes and other stability issues. Users should <a href=\"https://addons.mozilla.org/firefox/addon/yslow/\">update to the latest version</a>."
-      },
-      "versionRange": [
-        {
-          "minVersion": "2.0.5",
-          "maxVersion": "2.0.5",
-          "targetApplication": [
-            {
-              "minVersion": "3.5.7",
-              "guid": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
-              "maxVersion": "*"
-            }
-          ]
-        }
-      ],
-      "prefs": [],
-      "id": "a9b34e8f-45ce-9217-b791-98e094c26352",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "/^({d6e79525-4524-4707-9b97-1d70df8e7e59}|{ddb4644d-1a37-4e6d-8b6e-8e35e2a8ea6c}|{e55007f4-80c5-418e-ac33-10c4d60db01e}|{e77d8ca6-3a60-4ae9-8461-53b22fa3125b}|{e89a62b7-248e-492f-9715-43bf8c507a2f}|{5ce3e0cb-aa83-45cb-a7da-a2684f05b8f3})$/",
       "blockID": "i518",
       "enabled": true,
@@ -3577,24 +4980,6 @@
       ],
       "prefs": [],
       "id": "145b0f22-501e-39eb-371e-ec8342a5add9",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "{8CE11043-9A15-4207-A565-0C94C42D590D}",
-      "blockID": "i10",
-      "enabled": true,
-      "last_modified": 1480349210568,
-      "details": {
-        "who": "All users of this add-on in all Mozilla applications.",
-        "created": "2011-03-31T16:28:25Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=541302",
-        "name": "Internal security options editor (malware)",
-        "why": "This add-on secretly hijacks all search results in most major search engines and masks as a security add-on."
-      },
-      "versionRange": [],
-      "prefs": [],
-      "id": "e2e0ac09-6d68-75f5-2424-140f51904876",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -3773,30 +5158,6 @@
       "prefs": [],
       "os": "Darwin",
       "id": "cee484f6-2d5d-f708-88be-cd12d825a79a",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "langpack-vi-VN@firefox.mozilla.org",
-      "blockID": "i3",
-      "enabled": true,
-      "last_modified": 1480349210205,
-      "details": {
-        "who": "Users of Vietnamese Language Pack version 2.0 for all Mozilla applications.",
-        "created": "2011-03-31T16:28:25Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=432406",
-        "name": "Vietnamese Language Pack",
-        "why": "Corrupted files. For more information, please see <a href=\"http://blog.mozilla.com/security/2008/05/07/compromised-file-in-vietnamese-language-pack-for-firefox-2/\">this blog post</a>."
-      },
-      "versionRange": [
-        {
-          "minVersion": "2.0",
-          "maxVersion": "2.0",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "51d4b581-d21c-20a1-6147-b17c3adc7867",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -4147,30 +5508,6 @@
       ],
       "prefs": [],
       "id": "6afbf9b8-ae3a-6a48-0f6c-7a3e065ec043",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "youtubeeing@youtuberie.com",
-      "blockID": "i98",
-      "enabled": true,
-      "last_modified": 1480349209047,
-      "details": {
-        "who": "All Firefox users who have installed this add-on.",
-        "created": "2012-05-30T09:30:14Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=759663",
-        "name": "Youtube Video Player (malware)",
-        "why": "This add-on is malware disguised as a Youtube add-on."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "3484f860-56e1-28e8-5a70-cdcd5ab9d6ee",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -4803,30 +6140,6 @@
       "_status": "synced"
     },
     {
-      "guid": "{B13721C7-F507-4982-B2E5-502A71474FED}",
-      "blockID": "i8",
-      "enabled": true,
-      "last_modified": 1480349207511,
-      "details": {
-        "who": "Users of all versions of the original Skype Toolbar in all versions of Firefox.",
-        "created": "2011-03-31T16:28:25Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=627278",
-        "name": "Original Skype Toolbar",
-        "why": "This add-on causes a high volume of Firefox crashes and introduces severe performance issues. Please <a href=\"http://www.skype.com/intl/en/get-skype/on-your-computer/click-and-call/\">update to the latest version</a>. For more information, please <a href=\"http://blog.mozilla.com/addons/2011/01/20/blocking-the-skype-toolbar-in-firefox/\">read our announcement</a>."
-      },
-      "versionRange": [
-        {
-          "targetApplication": [],
-          "minVersion": " ",
-          "severity": 1
-        }
-      ],
-      "prefs": [],
-      "id": "5a320611-59a3-0eee-bb30-9052be870e00",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "344141-fasf9jas08hasoiesj9ia8ws@jetpack",
       "blockID": "i1038",
       "enabled": true,
@@ -4898,36 +6211,6 @@
       ],
       "prefs": [],
       "id": "30c3e511-9e8d-15ee-0867-d61047e56515",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "personas@christopher.beard",
-      "blockID": "i15",
-      "enabled": true,
-      "last_modified": 1480349207344,
-      "details": {
-        "who": "All users of Personas Plus 1.6 in all versions of Firefox.",
-        "created": "2011-03-31T16:28:25Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=590978",
-        "name": "Personas Plus",
-        "why": "This version of Personas Plus is incompatible with certain Firefox functionality and other add-ons. Users should upgrade to the latest version."
-      },
-      "versionRange": [
-        {
-          "minVersion": "1.6",
-          "maxVersion": "1.6",
-          "targetApplication": [
-            {
-              "minVersion": "3.6",
-              "guid": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
-              "maxVersion": "3.6.*"
-            }
-          ]
-        }
-      ],
-      "prefs": [],
-      "id": "e36479c6-ca00-48d4-4fd9-ec677fd032da",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -5006,54 +6289,6 @@
       ],
       "prefs": [],
       "id": "aa246b36-0a80-81e3-2129-4847e872d5fe",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "applebeegifts@mozilla.doslash.org",
-      "blockID": "i54",
-      "enabled": true,
-      "last_modified": 1480349207230,
-      "details": {
-        "who": "All Firefox users that install this add-on.",
-        "created": "2012-01-26T16:17:49Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=721562",
-        "name": "Applebees Gift Card (malware)",
-        "why": "Add-on is malware installed under false pretenses."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "1372c8ab-5452-745a-461a-aa78e3e12c4b",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "jid0-EcdqvFOgWLKHNJPuqAnawlykCGZ@jetpack",
-      "blockID": "i62",
-      "enabled": true,
-      "last_modified": 1480349207202,
-      "details": {
-        "who": "All Firefox users who have installed this add-on.",
-        "created": "2012-02-06T14:46:33Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=724650",
-        "name": "YouTube extension (malware)",
-        "why": "Add-on is installed under false pretenses and delivers malware."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "5ae1e642-b53c-54c0-19e7-5562cfdac3a3",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -5208,30 +6443,6 @@
       "_status": "synced"
     },
     {
-      "guid": "{a3a5c777-f583-4fef-9380-ab4add1bc2a8}",
-      "blockID": "i53",
-      "enabled": true,
-      "last_modified": 1480349206653,
-      "details": {
-        "who": "All users of Firefox with this add-on installed.",
-        "created": "2012-01-19T15:58:10Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=719605",
-        "name": "Peliculas-FLV (malware)",
-        "why": "This add-on is being offered as an online movie viewer, when it reality it only inserts scripts and ads into known sites."
-      },
-      "versionRange": [
-        {
-          "minVersion": "2.0.3",
-          "maxVersion": "2.0.3",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "07bc0962-60da-087b-c3ab-f2a6ab84d81c",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "hansin@topvest.id",
       "blockID": "i836",
       "enabled": true,
@@ -5303,30 +6514,6 @@
       ],
       "prefs": [],
       "id": "2865addd-da1c-20c4-742f-6a2270da2e78",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "admin@youtubeplayer.com",
-      "blockID": "i51",
-      "enabled": true,
-      "last_modified": 1480349206552,
-      "details": {
-        "who": "All Firefox users with this extension installed.",
-        "created": "2012-01-18T14:34:55Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=717165",
-        "name": "Youtube player (malware)",
-        "why": "This add-on is malware, doing nothing more than inserting advertisements into websites through iframes."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "16b2ce94-88db-0d79-33fc-a93070ceb509",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -5431,30 +6618,6 @@
       "_status": "synced"
     },
     {
-      "guid": "flash@adobe.com",
-      "blockID": "i56",
-      "enabled": true,
-      "last_modified": 1480349206411,
-      "details": {
-        "who": "All Firefox users who have this add-on installed.",
-        "created": "2012-01-30T15:41:51Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=722526",
-        "name": "Adobe Flash Update (malware)",
-        "why": "This add-on poses as an Adobe Flash update and injects malicious scripts into web pages. It hides itself in the Add-ons Manager."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "696db959-fb0b-8aa4-928e-65f157cdd77a",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "info@bflix.info",
       "blockID": "i172",
       "enabled": true,
@@ -5476,30 +6639,6 @@
       ],
       "prefs": [],
       "id": "7a9062f4-218d-51d2-9b8c-b282e6eada4f",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "youtubeer@youtuber.com",
-      "blockID": "i66",
-      "enabled": true,
-      "last_modified": 1480349206353,
-      "details": {
-        "who": "All Firefox users who have installed this add-on.",
-        "created": "2012-02-13T15:44:20Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=726787",
-        "name": "Plug VDS (malware)",
-        "why": "Add-on behaves maliciously, and is installed under false pretenses."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "0878ce4e-b476-ffa3-0e06-21a65b7917a1",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -5604,30 +6743,6 @@
       "_status": "synced"
     },
     {
-      "guid": "ghostviewer@youtube2.com",
-      "blockID": "i59",
-      "enabled": true,
-      "last_modified": 1480349206195,
-      "details": {
-        "who": "All Firefox users who have installed this add-on.",
-        "created": "2012-02-02T16:32:15Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=723683",
-        "name": "Ghost Viewer (malware)",
-        "why": "Malicious add-on that automatically posts to Facebook."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "06dfe833-8c3d-90ee-3aa8-37c3c28f7c56",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "{41339ee8-61ed-489d-b049-01e41fd5d7e0}",
       "blockID": "i810",
       "enabled": true,
@@ -5699,30 +6814,6 @@
       ],
       "prefs": [],
       "id": "8538ccb4-3b71-9858-3f6d-c0fff7af58b0",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "{68b8676b-99a5-46d1-b390-22411d8bcd61}",
-      "blockID": "i93",
-      "enabled": true,
-      "last_modified": 1480349205720,
-      "details": {
-        "who": "All Firefox users who have this add-on installed.",
-        "created": "2012-05-16T10:44:42Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=755635",
-        "name": "Zaman Tünelini Kaldır! (malware)",
-        "why": "This is a malicious add-on that post content on Facebook accounts and steals user data."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "733aff15-9b1f-ec04-288f-b78a55165a1c",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -5852,54 +6943,6 @@
       "_status": "synced"
     },
     {
-      "guid": "play5@vide04flash.com",
-      "blockID": "i92",
-      "enabled": true,
-      "last_modified": 1480349205413,
-      "details": {
-        "who": "All Firefox users who have this add-on installed.",
-        "created": "2012-05-15T13:27:22Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=755443",
-        "name": "Lastest Flash PLayer (malware)",
-        "why": "This add-on impersonates a Flash Player update (poorly), and inserts malicious scripts into Facebook."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "7190860e-fc1f-cd9f-5d25-778e1e9043b2",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "ShopperReports@ShopperReports.com",
-      "blockID": "i22",
-      "enabled": true,
-      "last_modified": 1480349205336,
-      "details": {
-        "who": "Users of Shopper Reports version 3.1.22.0 in Firefox 4 and later.",
-        "created": "2011-02-09T17:03:39Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=630191",
-        "name": "Shopper Reports",
-        "why": "This add-on causes a high volume of Firefox crashes."
-      },
-      "versionRange": [
-        {
-          "minVersion": "3.1.22.0",
-          "maxVersion": "3.1.22.0",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "f26b049c-d856-750f-f050-996e6bec7cbb",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "/^(4cb61367-efbf-4aa1-8e3a-7f776c9d5763@cdece6e9-b2ef-40a9-b178-291da9870c59\\.com|0efc9c38-1ec7-49ed-8915-53a48b6b7600@e7f17679-2a42-4659-83c5-7ba961fdf75a\\.com|6be3335b-ef79-4b0b-a0ba-b87afbc6f4ad@6bbb4d2e-e33e-4fa5-9b37-934f4fb50182\\.com)$/",
       "blockID": "i531",
       "enabled": true,
@@ -5921,30 +6964,6 @@
       ],
       "prefs": [],
       "id": "46aa79a9-d329-f713-d4f2-07d31fe7071e",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "support@daemon-tools.cc",
-      "blockID": "i5",
-      "enabled": true,
-      "last_modified": 1480349205205,
-      "details": {
-        "who": "Users of Daemon Tools Toolbar version 1.0.0.5 and older for all Mozilla applications.",
-        "created": "2009-02-13T18:39:01Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=459850",
-        "name": "Daemon Tools Toolbar",
-        "why": "This add-on causes a high volume of crashes."
-      },
-      "versionRange": [
-        {
-          "minVersion": " ",
-          "maxVersion": "1.0.0.5",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "8cabafd3-576a-b487-31c8-ab59e0349a0e",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -6448,48 +7467,6 @@
       "_status": "synced"
     },
     {
-      "guid": "supportaccessplugin@gmail.com",
-      "blockID": "i43",
-      "enabled": true,
-      "last_modified": 1480349203724,
-      "details": {
-        "who": "All users with Firefox Access Plugin installed",
-        "created": "2011-10-11T11:24:05Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=693673",
-        "name": "Firefox Access Plugin (spyware)",
-        "why": "This add-on is spyware that reports all visited websites to a third party with no user value."
-      },
-      "versionRange": [],
-      "prefs": [],
-      "id": "1ed230a4-e174-262a-55ab-0c33f93a2529",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "youtube2@youtube2.com",
-      "blockID": "i67",
-      "enabled": true,
-      "last_modified": 1480349203697,
-      "details": {
-        "who": "All Firefox users who have installed this add-on.",
-        "created": "2012-02-18T09:10:30Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=728476",
-        "name": "Youtube Online (malware)",
-        "why": "This add-on is malware, installed under false pretenses."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "14650ece-295b-a667-f9bc-a3d973e2228c",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "jid1-4vUehhSALFNqCw@jetpack",
       "blockID": "i632",
       "enabled": true,
@@ -6586,36 +7563,6 @@
       ],
       "prefs": [],
       "id": "9b5b15b3-6da7-cb7c-3c44-30b4fe079d52",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "mozilla_cc@internetdownloadmanager.com",
-      "blockID": "i14",
-      "enabled": true,
-      "last_modified": 1480349203556,
-      "details": {
-        "who": "Users of Firefox 4 and later with Internet Download Manager version 6.9.8 and older.",
-        "created": "2011-03-31T16:28:25Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=578443",
-        "name": "Internet Download Manager",
-        "why": "This add-on causes a high volume of crashes and has other stability issues."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "6.9.8",
-          "targetApplication": [
-            {
-              "minVersion": "3.7a1pre",
-              "guid": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
-              "maxVersion": "*"
-            }
-          ]
-        }
-      ],
-      "prefs": [],
-      "id": "773ffcfb-75d1-081d-7431-ebe3fa5dbb44",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -6748,30 +7695,6 @@
       "_status": "synced"
     },
     {
-      "guid": "crossriderapp3924@crossrider.com",
-      "blockID": "i76",
-      "enabled": true,
-      "last_modified": 1480349203370,
-      "details": {
-        "who": "All Firefox users who have installed this add-on.",
-        "created": "2012-03-22T10:38:47Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=738282",
-        "name": "Fblixx (malware)",
-        "why": "This add-on compromises Facebook privacy and security and spams friends lists without user intervention."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "39d0a019-62fb-837b-1f1f-6831e56442b5",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "FXqG@xeeR.net",
       "blockID": "i720",
       "enabled": true,
@@ -6870,30 +7793,6 @@
       ],
       "prefs": [],
       "id": "ffe94023-b4aa-87ac-962c-5beabe34b1a0",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "royal@facebook.com",
-      "blockID": "i64",
-      "enabled": true,
-      "last_modified": 1480349203181,
-      "details": {
-        "who": "All Firefox users who have installed this add-on.",
-        "created": "2012-02-09T13:24:23Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=725777",
-        "name": "Facebook ! (malware)",
-        "why": "Malicious add-on posing as a Facebook tool."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "dd1d2623-0d15-c93e-8fbd-ba07b0299a44",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -7079,37 +7978,6 @@
       "_status": "synced"
     },
     {
-      "guid": "{841468a1-d7f4-4bd3-84e6-bb0f13a06c64}",
-      "blockID": "i46",
-      "enabled": true,
-      "last_modified": 1480349202489,
-      "details": {
-        "who": "Users of all versions of Nectar Search Toolbar in Firefox 9.",
-        "created": "2011-12-20T11:38:17Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=712369",
-        "name": "Nectar Search Toolbar",
-        "why": "This add-on causes crashes and other stability issues in Firefox."
-      },
-      "versionRange": [
-        {
-          "targetApplication": [
-            {
-              "minVersion": "9.0a1",
-              "guid": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
-              "maxVersion": "9.0"
-            }
-          ],
-          "minVersion": "0.1",
-          "maxVersion": "*",
-          "severity": 0
-        }
-      ],
-      "prefs": [],
-      "id": "b660dabd-0dc0-a55c-4b86-416080b345d9",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "firefoxaddon@youtubeenhancer.com",
       "blockID": "i648",
       "enabled": true,
@@ -7156,24 +8024,6 @@
       ],
       "prefs": [],
       "id": "df3fe753-5bae-bfb4-022b-6b6bfc534937",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "{E8E88AB0-7182-11DF-904E-6045E0D72085}",
-      "blockID": "i13",
-      "enabled": true,
-      "last_modified": 1480349202397,
-      "details": {
-        "who": "All users of this add-on for all Mozilla applications.",
-        "created": "2011-03-31T16:28:25Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=578085",
-        "name": "Mozilla Sniffer (malware)",
-        "why": "This add-on intercepts website login credentials and is malware. For more information, please <a href=\"http://blog.mozilla.com/addons/2010/07/13/add-on-security-announcement/\">read our security announcement</a>."
-      },
-      "versionRange": [],
-      "prefs": [],
-      "id": "ebbd6de9-fc8a-3e5b-2a07-232bee589c7c",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -7277,30 +8127,6 @@
       ],
       "prefs": [],
       "id": "71d961b2-37d1-d393-76f5-3afeef57e749",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "{46551EC9-40F0-4e47-8E18-8E5CF550CFB8}",
-      "blockID": "i19",
-      "enabled": true,
-      "last_modified": 1480349202222,
-      "details": {
-        "who": "Users of Stylish version 1.1b1 for Firefox.",
-        "created": "2011-03-31T16:28:25Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=621660",
-        "name": "Stylish",
-        "why": "Version 1.1b1 of this add-on causes compatibility issues with Firefox. Users should update to the latest version."
-      },
-      "versionRange": [
-        {
-          "minVersion": "1.1b1",
-          "maxVersion": "1.1b1",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "aaea37e1-ff86-4565-8bd5-55a6bf942791",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -7511,54 +8337,6 @@
       "_status": "synced"
     },
     {
-      "guid": "flashupdate@adobe.com",
-      "blockID": "i68",
-      "enabled": true,
-      "last_modified": 1480349201950,
-      "details": {
-        "who": "All Firefox users who have this add-on installed.",
-        "created": "2012-02-21T13:55:10Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=722526",
-        "name": "Flash Update (malware)",
-        "why": "Add-on is malware, installed under false pretenses."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "1ba5b46e-790d-5af2-9580-a5f1e6e65522",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "ff-ext@youtube",
-      "blockID": "i52",
-      "enabled": true,
-      "last_modified": 1480349201906,
-      "details": {
-        "who": "All Firefox users that have this add-on installed.",
-        "created": "2012-01-19T08:26:35Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=719296",
-        "name": "Youtube player (malware)",
-        "why": "This add-on poses as a YouTube player while posting spam into Facebook account."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "cd2dd72a-dd52-6752-a0cd-a4b312fd0b65",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "{f2548724-373f-45fe-be6a-3a85e87b7711}",
       "blockID": "i768",
       "enabled": true,
@@ -7608,24 +8386,6 @@
       ],
       "prefs": [],
       "id": "3d9188ac-235f-773a-52a2-261b3ea9c03c",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "youtube@youtube2.com",
-      "blockID": "i47",
-      "enabled": true,
-      "last_modified": 1480349201479,
-      "details": {
-        "who": "All users with any version of Free Cheesecake Factory installed on any Mozilla product.",
-        "created": "2011-12-22T13:11:36Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=713050",
-        "name": "Free Cheesecake Factory (malware)",
-        "why": "This add-on hijacks your Facebook account."
-      },
-      "versionRange": [],
-      "prefs": [],
-      "id": "85f5c1db-433b-bee3-2a3b-325165cacc6e",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -7729,60 +8489,6 @@
       ],
       "prefs": [],
       "id": "52e1a2de-ab35-be27-4810-334f681ccc4a",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "yasd@youasdr3.com",
-      "blockID": "i104",
-      "enabled": true,
-      "last_modified": 1480349201332,
-      "details": {
-        "who": "All Firefox users who have this add-on installed.",
-        "created": "2012-06-08T14:33:31Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=763065",
-        "name": "Play Now (malware)",
-        "why": "This is a malicious add-on that inserts scripts into Facebook and hijacks the user's session.\r\n"
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "8a352dff-d09d-1e78-7feb-45dec7ace5a5",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "fdm_ffext@freedownloadmanager.org",
-      "blockID": "i2",
-      "enabled": true,
-      "last_modified": 1480349201307,
-      "details": {
-        "who": "Users of Firefox 3 and later with versions 1.0 through 1.3.1 of Free Download Manager",
-        "created": "2011-03-31T16:28:25Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=408445",
-        "name": "Free Download Manager",
-        "why": "This add-on causes a high volume of crashes."
-      },
-      "versionRange": [
-        {
-          "minVersion": "1.0",
-          "maxVersion": "1.3.1",
-          "targetApplication": [
-            {
-              "minVersion": "3.0a1",
-              "guid": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
-              "maxVersion": "*"
-            }
-          ]
-        }
-      ],
-      "prefs": [],
-      "id": "fc46f8e7-0489-b90f-a373-d93109479ca5",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -8165,30 +8871,6 @@
       "_status": "synced"
     },
     {
-      "guid": "youtube@youtube7.com",
-      "blockID": "i55",
-      "enabled": true,
-      "last_modified": 1480349200726,
-      "details": {
-        "who": "All Firefox users with this add-on installed.",
-        "created": "2012-01-27T09:39:31Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=721646",
-        "name": "Plugin Video (malware)",
-        "why": "This is malware posing as video software."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "08ceedf5-c7c1-f54f-db0c-02f01f0e319a",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "{6e7f6f9f-8ce6-4611-add2-05f0f7049ee6}",
       "blockID": "i868",
       "enabled": true,
@@ -8289,72 +8971,6 @@
       "_status": "synced"
     },
     {
-      "guid": "socialnetworktools@mozilla.doslash.org",
-      "blockID": "i78",
-      "enabled": true,
-      "last_modified": 1480349200263,
-      "details": {
-        "who": "All Firefox users who have installed this add-on.",
-        "created": "2012-03-26T16:46:55Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=739441",
-        "name": "Social Network Tools (malware)",
-        "why": "This add-on hijacks the Facebook UI and adds scripts to track users."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "1064cd25-3b87-64bb-b0a6-2518ad281574",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "admin@youtubespeedup.com",
-      "blockID": "i48",
-      "enabled": true,
-      "last_modified": 1480349200236,
-      "details": {
-        "who": "All users with any version of Youtube Speed UP! installed on any Mozilla product.",
-        "created": "2011-12-29T19:48:06Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=714221",
-        "name": "Youtube Speed UP! (malware)",
-        "why": "This add-on hijacks your Facebook account."
-      },
-      "versionRange": [],
-      "prefs": [],
-      "id": "a93922c4-8a8a-5230-8f76-76fecb0653b6",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "{3a12052a-66ef-49db-8c39-e5b0bd5c83fa}",
-      "blockID": "i101",
-      "enabled": true,
-      "last_modified": 1480349200208,
-      "details": {
-        "who": "All Firefox users who have installed this add-on.",
-        "created": "2012-06-05T18:37:42Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=761874",
-        "name": "Timeline Remove (malware)",
-        "why": "This add-on is malware disguised as a Facebook timeline remover."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "b01b321b-6628-7166-bd15-52f21a04d8bd",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "{b12785f5-d8d0-4530-a3ea-5c4263b85bef}",
       "blockID": "i988",
       "enabled": true,
@@ -8380,30 +8996,6 @@
       "_status": "synced"
     },
     {
-      "guid": "pfzPXmnzQRXX6@2iABkVe.com",
-      "blockID": "i99",
-      "enabled": true,
-      "last_modified": 1480349200122,
-      "details": {
-        "who": "All Firefox users who have this add-on installed.",
-        "created": "2012-05-30T17:10:18Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=759950",
-        "name": "Flash Player (malware)",
-        "why": "This add-on is malware disguised as a Flash Player update."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "29cc4abc-4f52-01f1-eb0b-cad84ba4db13",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "{c2d64ff7-0ab8-4263-89c9-ea3b0f8f050c}",
       "blockID": "i39",
       "enabled": true,
@@ -8425,30 +9017,6 @@
       ],
       "prefs": [],
       "id": "e928a115-9d8e-86a4-e2c7-de39627bd9bf",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "pink@rosaplugin.info",
-      "blockID": "i84",
-      "enabled": true,
-      "last_modified": 1480349199994,
-      "details": {
-        "who": "All Firefox users who have this add-on installed",
-        "created": "2012-04-09T10:13:51Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=743484",
-        "name": "Facebook Rosa (malware)",
-        "why": "Add-on acts like malware and performs user actions on Facebook without their consent."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "66ad8de9-311d-076c-7356-87fde6d30d8f",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -8888,54 +9456,6 @@
       "_status": "synced"
     },
     {
-      "guid": "youtubeee@youtuber3.com",
-      "blockID": "i96",
-      "enabled": true,
-      "last_modified": 1480349199002,
-      "details": {
-        "who": "All Firefox users who have installed this add-on.",
-        "created": "2012-05-25T09:26:47Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=758503",
-        "name": "Divx 2012 Plugins (malware)",
-        "why": "This is a malicious add-on that is disguised as a DivX plugin."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "f01be9cb-5cf2-774a-a4d7-e210a24db5b9",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "activity@facebook.com",
-      "blockID": "i65",
-      "enabled": true,
-      "last_modified": 1480349198978,
-      "details": {
-        "who": "All Firefox users who have installed this add-on.",
-        "created": "2012-02-13T15:41:02Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=726803",
-        "name": "Facebook extension (malware)",
-        "why": "Add-on behaves maliciously and poses as an official Facebook add-on."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "79ad1c9b-0828-7823-4574-dd1cdd46c3d6",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "{C4A4F5A0-4B89-4392-AFAC-D58010E349AF}",
       "blockID": "i678",
       "enabled": true,
@@ -9338,30 +9858,6 @@
       ],
       "prefs": [],
       "id": "76debc7b-b875-6da4-4342-1243cbe437f6",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "webmaster@buzzzzvideos.info",
-      "blockID": "i58",
-      "enabled": true,
-      "last_modified": 1480349198292,
-      "details": {
-        "who": "All Firefox users who have installed this add-on.",
-        "created": "2012-01-31T14:51:06Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=722844",
-        "name": "Buzz Video (malware)",
-        "why": "Malware add-on that is installed under false pretenses."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "f7aab105-e2c2-42f5-d9be-280eb9c0c8f7",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -9822,30 +10318,6 @@
       ],
       "prefs": [],
       "id": "0d6d84d7-0b3f-c5ab-57cc-6b66b0775a23",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
-      "guid": "cloudmask@cloudmask.com",
-      "blockID": "i1233",
-      "enabled": true,
-      "last_modified": 1480349197285,
-      "details": {
-        "who": "Any user who has version 2.0.788, or earlier, installed.",
-        "created": "2016-06-17T14:31:57Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=1280431",
-        "name": "CloudMask",
-        "why": "These versions of the add-on (before 2.0.788) execute code from a website in a privileged local browser context, potentially allowing dangerous, unreviewed, actions to affect the user's computer.  This is fixed in later versions."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "2.0.788",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "2a8b40c7-a1d2-29f4-b7d7-ccfc5066bae1",
       "schema": 1480349193877,
       "_status": "synced"
     },
@@ -10763,30 +11235,6 @@
       "_status": "synced"
     },
     {
-      "guid": "youtube@youtube3.com",
-      "blockID": "i57",
-      "enabled": true,
-      "last_modified": 1480349195377,
-      "details": {
-        "who": "All Firefox users that have installed this add-on.",
-        "created": "2012-01-31T13:54:20Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=722823",
-        "name": "Divx 2012 Plugin (malware)",
-        "why": "Malware installed on false pretenses."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "4a93a0eb-a513-7272-6199-bc4d6228ff50",
-      "schema": 1480349193877,
-      "_status": "synced"
-    },
-    {
       "guid": "/^(saamazon@mybrowserbar\\.com)|(saebay@mybrowserbar\\.com)$/",
       "blockID": "i672",
       "enabled": true,
@@ -11532,30 +11980,6 @@
       "_status": "synced"
     },
     {
-      "guid": "a1g0a9g219d@a1.com",
-      "blockID": "i73",
-      "enabled": true,
-      "last_modified": 1480349193697,
-      "details": {
-        "who": "All Firefox users who have installed this add-on.",
-        "created": "2012-03-15T15:03:04Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=736275",
-        "name": "Flash Player (malware)",
-        "why": "This add-on is malware disguised as Flash Player. It steals user cookies and sends them to a remote location."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "6dd66b43-897d-874a-2227-54e240b8520f",
-      "schema": 1480343836083,
-      "_status": "synced"
-    },
-    {
       "guid": "{94cd2cc3-083f-49ba-a218-4cda4b4829fd}",
       "blockID": "i590",
       "enabled": true,
@@ -11627,30 +12051,6 @@
       ],
       "prefs": [],
       "id": "2d83e640-ef9d-f260-f5a3-a1a5c8390bfc",
-      "schema": 1480343836083,
-      "_status": "synced"
-    },
-    {
-      "guid": "{3252b9ae-c69a-4eaf-9502-dc9c1f6c009e}",
-      "blockID": "i17",
-      "enabled": true,
-      "last_modified": 1480349193569,
-      "details": {
-        "who": "Users of version 2.2 of this add-on in all versions of Firefox.",
-        "created": "2011-03-31T16:28:25Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=599971",
-        "name": "Default Manager (Microsoft)",
-        "why": "This add-on has security issues and was blocked at Microsoft's request. For more information, please see <a href=\"http://support.microsoft.com/kb/2430460\">this article</a>."
-      },
-      "versionRange": [
-        {
-          "minVersion": "2.2",
-          "maxVersion": "2.2",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "38be28ac-2e30-37fa-4332-852a55fafb43",
       "schema": 1480343836083,
       "_status": "synced"
     },
@@ -11880,30 +12280,6 @@
       "_status": "synced"
     },
     {
-      "guid": "GifBlock@facebook.com",
-      "blockID": "i79",
-      "enabled": true,
-      "last_modified": 1480349193212,
-      "details": {
-        "who": "All Firefox users who have installed this extension.",
-        "created": "2012-03-27T10:53:33Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=739482",
-        "name": "Facebook Essentials (malware)",
-        "why": "This extension is malicious and is installed under false pretenses."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "728451e8-1273-d887-37e9-5712b1cc3bff",
-      "schema": 1480343836083,
-      "_status": "synced"
-    },
-    {
       "guid": "/^((support2_en@adobe14\\.com)|(XN4Xgjw7n4@yUWgc\\.com)|(C7yFVpIP@WeolS3acxgS\\.com)|(Kbeu4h0z@yNb7QAz7jrYKiiTQ3\\.com)|(aWQzX@a6z4gWdPu8FF\\.com)|(CBSoqAJLYpCbjTP90@JoV0VMywCjsm75Y0toAd\\.com)|(zZ2jWZ1H22Jb5NdELHS@o0jQVWZkY1gx1\\.com))$/",
       "blockID": "i326",
       "enabled": true,
@@ -11975,30 +12351,6 @@
       ],
       "prefs": [],
       "id": "a14d355f-719f-3b97-506c-083cc97cebaa",
-      "schema": 1480343836083,
-      "_status": "synced"
-    },
-    {
-      "guid": "{28bfb930-7620-11e1-b0c4-0800200c9a66}",
-      "blockID": "i108",
-      "enabled": true,
-      "last_modified": 1480349193040,
-      "details": {
-        "who": "All Firefox user who have this add-on installed.",
-        "created": "2012-06-21T09:24:11Z",
-        "bug": "https://bugzilla.mozilla.org/show_bug.cgi?id=766852",
-        "name": "Aplicativo (malware)",
-        "why": "This is malware disguised as an Adobe product. It spams Facebook pages."
-      },
-      "versionRange": [
-        {
-          "minVersion": "0",
-          "maxVersion": "*",
-          "targetApplication": []
-        }
-      ],
-      "prefs": [],
-      "id": "908dc4fb-ebc9-cea1-438f-55e4507ba834",
       "schema": 1480343836083,
       "_status": "synced"
     },
