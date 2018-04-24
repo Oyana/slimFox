@@ -1,4 +1,7 @@
 # slimFox
+>    Deprecated repo worck only on FF <= 56 or waterfox   
+>    Please try [DarkerQuantum](https://addons.mozilla.org/fr/firefox/addon/darkerquantum/)   
+
 
 ![preview slimFox](/screenShoot.jpg)
 
